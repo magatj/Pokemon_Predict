@@ -659,18 +659,28 @@ rest of the application stays static and cheap.
 
 ## Design
 
-The look is "modern TCG": cues taken from the cards themselves rather than from
-characters or logos. A Poké Ball is drawn as SVG geometry at 11% opacity behind
-the hero, machine cards carry a thin accent rule across the top like a card
-frame with a very restrained holographic sweep on hover, and headings use
-Outfit — a geometric sans with softly rounded terminals — while body copy stays
-on the system stack. No mascots, no comic type.
+A dark navy operations dashboard: fixed sidebar, panelled content, a headline
+forecast with a progress ring, a stat row, a labelled timeline and the raw
+reports behind it. Dark is the default look; a toggle in the sidebar switches to
+light and the choice is remembered per browser.
 
-Theme tokens are declared once using `light-dark()`, so the OS setting works out
-of the box and `<html data-theme="dark">` overrides it without a second copy of
-the palette.
+**Three things are deliberately not copied from the reference design.** The
+Pokémon wordmark and character art are trademarked, and putting them in the
+chrome would contradict the app's own "not affiliated" notice, so the brand is
+an original wordmark beside a Poké Ball drawn as SVG geometry. There is no
+photograph of a machine, because there is no licensed one. And every figure on
+screen comes from the generated data — a mock-up can show a confident 72% and a
+full table of user reports, but this app shows what the pipeline actually has,
+which today is mostly regional patterns and empty report tables.
 
-The data colours were **not** chosen by eye. They were run through the palette
+The navigation lists only destinations that exist. A "Map", "Alerts" or
+"Settings" entry that goes nowhere looks like a feature and is really a dead
+link.
+
+Theme tokens are declared once with `light-dark()`, so one palette serves both
+modes and `data-theme` overrides the OS setting.
+
+The data colours were not chosen by eye. They were run through the palette
 validator for lightness band, chroma floor, colour-vision separation and
 contrast against each surface, in both modes:
 
@@ -682,16 +692,19 @@ contrast against each surface, in both modes:
 The first attempt failed two of them — red/green were 6.2 ΔE apart under deutan
 simulation, and the gold sat at 2.74:1 against white — so the green was stepped
 toward teal and the gold darkened until both passed. Red and green are never the
-only signal either: every status also carries a word.
+only signal: every status also carries a word.
 
-Gold is reserved for exactly one thing, the machine-specific headline number. A
-network-pattern figure is deliberately smaller and in muted ink so the two can
-never be mistaken for each other.
+Green is reserved for a confirmed-good outcome, which is why a machine's own
+forecast is green while a regional pattern stays in the accent and is rendered
+smaller. The two must never be mistaken for each other.
 
 The forecast chart follows the same rules: single series so no legend, zero
 baseline with a clean adaptive ceiling (a fixed 0–100% squashed a forecast that
 never exceeds 25%), one direct label on the selected bar rather than a number
 above every column, and recessive grid and axes.
+
+The map is an OpenStreetMap embed — no API key, no tracking script and no
+per-view billing, which suits a static site.
 
 ---
 

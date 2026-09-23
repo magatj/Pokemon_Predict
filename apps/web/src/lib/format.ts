@@ -79,6 +79,10 @@ const SIGNAL_LABELS: Record<string, string> = {
   recentActivity: "Recent activity",
   nearbyActivity: "Nearby activity",
   sampleConfidence: "Sample confidence",
+  basis: "Basis",
+  networkReports: "Network reports",
+  machineReports: "This machine",
+  scope: "Scope",
 };
 
 export function signalLabel(key: string): string {

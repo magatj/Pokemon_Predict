@@ -2,13 +2,24 @@ import { Suspense, lazy } from "react";
 import { Link, useParams } from "react-router-dom";
 
 import { Disclaimer } from "../components/Disclaimer";
-import { ForecastBadge } from "../components/ForecastBadge";
 import { LastKnownStatus } from "../components/LastKnownStatus";
-import { PokeballMark } from "../components/PokeballMark";
+import { LocationCard } from "../components/LocationCard";
+import { ProgressRing } from "../components/ProgressRing";
+import { RecentReports } from "../components/RecentReports";
 import { ReportForm } from "../components/ReportForm";
+import { StatCard } from "../components/StatCard";
+import { icons } from "../components/icons";
 import { useDashboardData } from "../hooks/useDashboardData";
-import { formatDistance, formatRelative, orderedHours, titleCase } from "../lib/format";
-import type { MachineWithForecast } from "../lib/types";
+import { observationsForMachine } from "../lib/data";
+import {
+  confidenceLabel,
+  formatDistance,
+  formatPercent,
+  formatRelative,
+  formatWindow,
+  productLabel,
+} from "../lib/format";
+import type { ExternalObservation, MachineWithForecast } from "../lib/types";
 
 // Recharts is the single largest dependency and only the timeline needs it, so
 // it is split out of the dashboard's initial bundle.
@@ -25,237 +36,267 @@ export function MachineDetail() {
   const entry = data?.machines.find((candidate) => candidate.machine.id === machineId);
 
   if (loading && !data) {
-    return <p className="empty-note page">Loading machine…</p>;
+    return <p className="empty-note">Loading machine…</p>;
   }
 
   if (!entry) {
     return (
-      <div className="page">
+      <>
         <Link className="back-link" to="/">
           ← All machines
         </Link>
         <p className="empty-note">
           No machine with id <code>{machineId}</code> is in the current search area.
         </p>
-      </div>
+      </>
     );
   }
 
-  return <MachineDetailView entry={entry} onReported={reload} />;
+  return (
+    <MachineDetailView
+      entry={entry}
+      observations={observationsForMachine(data?.observations ?? [], entry.machine.id)}
+      onReported={reload}
+    />
+  );
 }
 
 function MachineDetailView({
   entry,
+  observations,
   onReported,
 }: {
   entry: MachineWithForecast;
+  observations: ExternalObservation[];
   onReported: () => void;
 }) {
   const { machine, raw, forecast } = entry;
   const features = forecast?.features;
-  const hours = orderedHours(raw.store_hours);
+  const next = forecast?.next ?? null;
+  const isNetwork = forecast?.status === "NETWORK_PATTERN";
+  const runnerUp = forecast?.windows?.[1] ?? null;
+  const known = features?.lastKnownStatus ?? null;
 
   return (
-    <div className="page">
-      <Link className="back-link" to="/">
-        ← All machines
-      </Link>
+    <>
+      <header className="page-head">
+        <Link className="back-link" to="/">
+          ← All machines
+        </Link>
 
-      <header className="hero hero--detail">
-        <PokeballMark className="hero__mark" />
-        <p className="eyebrow">
-          <span className="eyebrow__dot" aria-hidden="true" />
-          Machine forecast
-        </p>
-        <h1 className="hero__title">
-          {machine.retailer} — {machine.city}
-        </h1>
-        <p className="hero__subtitle">
-          {machine.address}
-          <br />
-          {machine.city}, {machine.state} {machine.zip}
-        </p>
-        <p className="hero__meta">
-          {formatDistance(machine.distanceMiles)} from the search centre · machine{" "}
-          <code>{machine.name}</code>
-        </p>
-      </header>
-
-      <section
-        className="card card--featured"
-        data-forecast-status={forecast?.status.toLowerCase() ?? "none"}
-      >
-        <ForecastBadge forecast={forecast} />
-
-        {forecast?.status === "OK" && (
-          <LastKnownStatus status={forecast.features.lastKnownStatus} />
-        )}
-
-        {forecast?.explanation?.reasons?.length ? (
-          <div className="why">
-            <h3 className="why__title">Why?</h3>
-            <ul>
-              {forecast.explanation.reasons.map((reason) => (
-                <li key={reason}>{reason}</li>
-              ))}
-            </ul>
-            <p className="why__reports">
-              Reports used: <strong>{forecast.explanation.reportsUsed}</strong>
+        <div className="page-head__row">
+          <span className="page-head__pin" aria-hidden="true">
+            {icons.pin}
+          </span>
+          <div>
+            <h1 className="page-head__title">
+              {machine.retailer} — {machine.city}
+            </h1>
+            <p className="page-head__sub">
+              {machine.address}, {machine.city}, {machine.state} {machine.zip}
+            </p>
+            <p className="page-head__meta">
+              Machine ID: <code>{machine.name}</code>
+              <span className="page-head__dot">·</span>
+              {formatDistance(machine.distanceMiles)} away
+              {raw.kiosk_listed && (
+                <span className="pill pill--good pill--inline">Kiosk listed by retailer</span>
+              )}
             </p>
           </div>
-        ) : null}
-      </section>
+        </div>
+      </header>
 
-      {forecast && forecast.windows.length > 0 && (
-        <section>
-          <h2 className="section-title">
-            {forecast.status === "NETWORK_PATTERN"
-              ? "Best hours across the region"
-              : "Upcoming opportunities"}
-            {forecast.status === "NETWORK_PATTERN" && (
-              <span className="section-title__count">
-                Regional pattern, not this machine
-              </span>
-            )}
-          </h2>
-          <Suspense fallback={<p className="empty-note">Loading timeline…</p>}>
-            <ForecastTimeline windows={forecast.windows} />
-          </Suspense>
-        </section>
-      )}
+      {/* -- headline forecast -------------------------------------------- */}
+      <section className="hero-card">
+        <div className="hero-card__main">
+          <header className="panel__head">
+            <span className="panel__icon" aria-hidden="true">
+              {icons.clock}
+            </span>
+            <h2 className="panel__title">
+              {isNetwork ? "Best time to try" : "Next predicted availability"}
+            </h2>
+            {isNetwork && <span className="pill pill--info">Regional pattern</span>}
+          </header>
 
-      <ReportForm machineId={machine.id} onSubmitted={onReported} />
-
-      {features && (
-        <section className="card">
-          <h2 className="section-title">Observation summary</h2>
-          <dl className="stats">
-            <Stat label="Observations" value={String(features.observationCount)} />
-            <Stat label="Positive reports" value={String(features.positiveCount)} />
-            <Stat label="Sold-out reports" value={String(features.negativeCount)} />
-            <Stat label="Confirmed purchases" value={String(features.purchaseCount)} />
-            <Stat
-              label="Last observation"
-              value={formatRelative(features.lastObservationAt)}
-            />
-            <Stat
-              label="Minute pattern"
-              value={
-                features.minutePattern
-                  ? `:${String(features.minutePattern.patternMinute).padStart(2, "0")} ±${features.minutePattern.toleranceMinutes}`
-                  : "none detected"
-              }
-            />
-            <Stat
-              label="Recurring interval"
-              value={
-                features.interval ? `${features.interval.intervalMinutes} minutes` : "none detected"
-              }
-            />
-            <Stat
-              label="Nearby machines active"
-              value={
-                features.nearby
-                  ? `${features.nearby.activeMachineIds.length} in the last ${features.nearby.windowMinutes} min`
-                  : "—"
-              }
-            />
-          </dl>
-        </section>
-      )}
-
-      <section className="card">
-        <h2 className="section-title">Data sources for this machine</h2>
-        <ul className="sources">
-          <li className="sources__item">
-            <div className="sources__head">
-              <span className="sources__name">Official Pokémon locator</span>
-              <span className="status status--healthy">OFFICIAL</span>
-            </div>
-            <p className="sources__meta">
-              Verified {formatRelative(raw.last_verified_at)}
-              {raw.source_url ? (
-                <>
-                  {" · "}
-                  <a href={raw.source_url} target="_blank" rel="noreferrer noopener">
-                    source
-                  </a>
-                </>
-              ) : null}
-            </p>
-          </li>
-
-          {raw.verifications.map((verification) => (
-            <li key={verification.url ?? verification.verified_at} className="sources__item">
-              <div className="sources__head">
-                <span className="sources__name">
-                  {verification.retailer ?? "Retailer"} website
-                </span>
-                <span className="status status--healthy">VERIFICATION</span>
-              </div>
-              <p className="sources__meta">
-                Verified {formatRelative(verification.verified_at)} · kiosk listed:{" "}
-                {verification.kiosk_listed ? "yes" : "no"} · address match{" "}
-                {verification.address_match_score.toFixed(2)}
-                {verification.url ? (
-                  <>
-                    {" · "}
-                    <a href={verification.url} target="_blank" rel="noreferrer noopener">
-                      store page
-                    </a>
-                  </>
-                ) : null}
+          {next ? (
+            <>
+              <p className={`hero-card__window ${isNetwork ? "hero-card__window--muted" : ""}`}>
+                {formatWindow(next)}
               </p>
-            </li>
-          ))}
-
-          {features && (
-            <li className="sources__item">
-              <div className="sources__head">
-                <span className="sources__name">Observations used</span>
-                <span className="status status--healthy">{features.observationCount}</span>
-              </div>
-              <p className="sources__meta">
-                Mean source confidence {features.meanSourceConfidence.toFixed(2)} · mean machine
-                match {features.meanMatchConfidence.toFixed(2)}
+              <p className="hero-card__date">
+                {new Date(next.windowStart).toLocaleDateString(undefined, {
+                  weekday: "long",
+                  month: "short",
+                  day: "numeric",
+                })}
               </p>
-            </li>
+
+              <dl className="hero-card__rows">
+                {runnerUp && (
+                  <div className="hero-card__row">
+                    <span className="hero-card__row-icon" aria-hidden="true">
+                      {icons.calendar}
+                    </span>
+                    <div>
+                      <dt>Next best window</dt>
+                      <dd>
+                        {formatWindow(runnerUp)}{" "}
+                        <span className="muted">({formatPercent(runnerUp.probability)})</span>
+                      </dd>
+                    </div>
+                  </div>
+                )}
+
+                <div className="hero-card__row">
+                  <span className="hero-card__row-icon" aria-hidden="true">
+                    {icons.pulse}
+                  </span>
+                  <div>
+                    <dt>Typical pattern</dt>
+                    <dd>
+                      {features?.minutePattern
+                        ? `:${String(features.minutePattern.patternMinute).padStart(2, "0")} past each hour`
+                        : isNetwork
+                          ? "Not enough history from this machine"
+                          : "No repeating pattern found"}
+                    </dd>
+                    <p className="hero-card__row-note">
+                      {features?.minutePattern
+                        ? `Seen in ${features.minutePattern.sampleCount} of ${features.minutePattern.totalSamples} positive reports`
+                        : `${forecast?.observationCount ?? 0} of ${forecast?.minimumObservations ?? 8} reports collected`}
+                    </p>
+                  </div>
+                </div>
+              </dl>
+
+              <LastKnownStatus status={known} />
+            </>
+          ) : (
+            <p className="empty-note">No window scored above zero in the forecast horizon.</p>
           )}
-        </ul>
+        </div>
+
+        <div className="hero-card__side">
+          {next && (
+            <ProgressRing
+              value={next.probability}
+              label={isNetwork ? "Network-wide" : "Probability"}
+              muted={isNetwork}
+            />
+          )}
+          {isNetwork && forecast?.networkPrior && (
+            <p className="hero-card__caveat">
+              From {forecast.networkPrior.sampleCount} community reports within{" "}
+              {forecast.networkPrior.regionalRadiusMiles} miles — not specific to this machine.
+            </p>
+          )}
+        </div>
       </section>
 
-      {hours.length > 0 && (
-        <section className="card">
-          <h2 className="section-title">Store hours</h2>
-          <dl className="stats stats--hours">
-            {hours.map(([day, intervals]) => (
-              <Stat
-                key={day}
-                label={titleCase(day)}
-                value={
-                  intervals.length === 0
-                    ? "Closed"
-                    : intervals.map((pair) => `${pair[0]}–${pair[1]}`).join(", ")
-                }
-              />
+      {/* -- stat row ------------------------------------------------------ */}
+      <div className="stat-row">
+        <StatCard
+          icon={icons.signal}
+          title="Machine status"
+          value={raw.kiosk_listed ? "Listed" : "Unconfirmed"}
+          tone={raw.kiosk_listed ? "good" : "muted"}
+          dot
+          detail={`Verified ${formatRelative(raw.last_verified_at)}`}
+        />
+        <StatCard
+          icon={icons.box}
+          title="Last confirmed product"
+          value={known?.product ? productLabel(known.product) : "None reported"}
+          tone={known?.product ? "default" : "muted"}
+          detail={
+            known
+              ? `${formatRelative(known.observedAt)}${
+                  known.purchaseConfirmed ? " · purchase confirmed" : ""
+                }`
+              : "No product has been reported here"
+          }
+        />
+        <StatCard
+          icon={icons.clock}
+          title="Average interval"
+          value={features?.interval ? `~${features.interval.intervalMinutes} minutes` : "Unknown"}
+          tone={features?.interval ? "default" : "muted"}
+          detail={
+            features?.interval
+              ? `Support ${Math.round(features.interval.support * 100)}%`
+              : "Needs repeat sightings to detect"
+          }
+        />
+        <StatCard
+          icon={icons.pulse}
+          title="Data confidence"
+          value={forecast ? confidenceLabel(forecast.confidence) : "—"}
+          tone={
+            forecast?.confidence === "HIGH"
+              ? "good"
+              : forecast?.confidence === "MEDIUM"
+                ? "warn"
+                : "muted"
+          }
+          detail={`Based on ${forecast?.observationCount ?? 0} report${
+            forecast?.observationCount === 1 ? "" : "s"
+          }`}
+        />
+      </div>
+
+      {/* -- timeline + reporting ------------------------------------------ */}
+      <div className="split">
+        <section className="panel">
+          <header className="panel__head">
+            <span className="panel__icon" aria-hidden="true">
+              {icons.pulse}
+            </span>
+            <h2 className="panel__title">
+              {isNetwork ? "Best hours across the region" : "Probability timeline"}
+            </h2>
+            {isNetwork && <span className="panel__meta">not this machine</span>}
+          </header>
+
+          {forecast && forecast.windows.length > 0 ? (
+            <Suspense fallback={<p className="empty-note">Loading timeline…</p>}>
+              <ForecastTimeline windows={forecast.windows} />
+            </Suspense>
+          ) : (
+            <p className="empty-note">No scored windows yet.</p>
+          )}
+        </section>
+
+        <ReportForm machineId={machine.id} onSubmitted={onReported} />
+      </div>
+
+      {/* -- evidence ------------------------------------------------------ */}
+      <div className="split">
+        <RecentReports observations={observations} />
+        <LocationCard machine={raw} />
+      </div>
+
+      {forecast?.explanation?.reasons?.length ? (
+        <section className="panel">
+          <header className="panel__head">
+            <span className="panel__icon" aria-hidden="true">
+              {icons.doc}
+            </span>
+            <h2 className="panel__title">Why this prediction</h2>
+          </header>
+          <ul className="reason-list">
+            {forecast.explanation.reasons.map((reason) => (
+              <li key={reason}>{reason}</li>
             ))}
-          </dl>
-          <p className="empty-note">
-            Store hours bound when a machine is reachable; they are not a restock schedule.
+          </ul>
+          <p className="panel__foot">
+            Reports used: <strong>{forecast.explanation.reportsUsed}</strong>
           </p>
         </section>
-      )}
+      ) : null}
 
       <Disclaimer />
-    </div>
-  );
-}
-
-function Stat({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="stats__item">
-      <dt>{label}</dt>
-      <dd>{value}</dd>
-    </div>
+    </>
   );
 }

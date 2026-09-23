@@ -82,6 +82,11 @@ export function ForecastTimeline({ windows }: Props) {
   // Bars encode magnitude by length, so the baseline stays at zero - but a
   // fixed 0-100 ceiling squashes a forecast that never exceeds 25%. The top
   // rounds up to a clean number above the data instead.
+  // Green is reserved for a machine's own forecast; a regional pattern keeps
+  // the accent so a population rate never looks like a confirmed good outcome.
+  const isNetwork = windows[0]?.basis === "NETWORK";
+  const selectedFill = isNetwork ? "var(--accent)" : "var(--good)";
+
   const peak = Math.max(...rows.map((row) => row.probability));
   const axisMax = Math.min(100, Math.max(20, Math.ceil((peak + 8) / 10) * 10));
   const step = axisMax <= 40 ? 10 : 25;
@@ -138,9 +143,7 @@ export function ForecastTimeline({ windows }: Props) {
               {rows.map((row) => (
                 <Cell
                   key={row.index}
-                  fill={
-                    row.index === selectedIndex ? "var(--accent)" : "var(--accent-soft)"
-                  }
+                  fill={row.index === selectedIndex ? selectedFill : "var(--bar-rest)"}
                 />
               ))}
               <LabelList

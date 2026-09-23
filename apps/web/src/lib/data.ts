@@ -7,6 +7,7 @@
 
 import { dataUrl } from "./config";
 import type {
+  ExternalObservation,
   ForecastsFile,
   MachineWithForecast,
   MachinesFile,
@@ -70,6 +71,8 @@ export interface DashboardData {
   demoData: boolean;
   machines: MachineWithForecast[];
   observationCount: number;
+  /** Every published observation, newest first. */
+  observations: ExternalObservation[];
   sources: SourceHealthFile["sources"];
   /** Files that could not be loaded; the UI says so rather than showing nothing. */
   errors: string[];
@@ -90,10 +93,12 @@ export async function loadDashboardData(signal?: AbortSignal): Promise<Dashboard
     fetchJson<ForecastsFile>("forecasts.json", signal),
   ]);
 
-  let observationCount = 0;
+  let observations: ExternalObservation[] = [];
   try {
-    const observations = await fetchJson<ObservationsFile>("observations.json", signal);
-    observationCount = observations.observations?.length ?? 0;
+    const file = await fetchJson<ObservationsFile>("observations.json", signal);
+    observations = [...(file.observations ?? [])].sort((a, b) =>
+      (b.observedAt ?? b.postedAt).localeCompare(a.observedAt ?? a.postedAt),
+    );
   } catch (error) {
     errors.push((error as Error).message);
   }
@@ -121,10 +126,24 @@ export async function loadDashboardData(signal?: AbortSignal): Promise<Dashboard
     search: machinesFile.search ?? {},
     demoData: machinesFile.demoData === true,
     machines,
-    observationCount,
+    observationCount: observations.length,
+    observations,
     sources,
     errors,
   };
+}
+
+/** Observations confidently attributed to one machine, newest first. */
+export function observationsForMachine(
+  observations: ExternalObservation[],
+  machineId: string,
+  minMatchConfidence = 0.7,
+): ExternalObservation[] {
+  return observations.filter(
+    (observation) =>
+      observation.machineId === machineId &&
+      observation.machineMatchConfidence >= minMatchConfidence,
+  );
 }
 
 export type SortKey =

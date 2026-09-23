@@ -14,6 +14,7 @@ import { MemoryRouter } from "react-router-dom";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 import { Dashboard } from "./Dashboard";
+import { Sources } from "./Sources";
 
 const dataDir = join(dirname(fileURLToPath(import.meta.url)), "..", "..", "public", "data");
 
@@ -26,7 +27,11 @@ const machinesFile = readData("machines.json") as {
   search: { zipCode: string; radiusMiles: number };
 };
 const forecastsFile = readData("forecasts.json") as {
-  forecasts: { machineId: string; status: string }[];
+  forecasts: {
+    machineId: string;
+    status: string;
+    features: { lastKnownStatus: { availability: string } | null };
+  }[];
 };
 
 beforeEach(() => {
@@ -35,11 +40,7 @@ beforeEach(() => {
     vi.fn(async (url: string) => {
       const file = String(url).split("/").pop() ?? "";
       try {
-        return {
-          ok: true,
-          status: 200,
-          json: async () => readData(file),
-        } as Response;
+        return { ok: true, status: 200, json: async () => readData(file) } as Response;
       } catch {
         return { ok: false, status: 404 } as Response;
       }
@@ -51,12 +52,8 @@ afterEach(() => {
   vi.unstubAllGlobals();
 });
 
-function renderDashboard() {
-  return render(
-    <MemoryRouter>
-      <Dashboard />
-    </MemoryRouter>,
-  );
+function renderPage(element: React.ReactElement) {
+  return render(<MemoryRouter>{element}</MemoryRouter>);
 }
 
 describe("Dashboard against the generated data bundle", () => {
@@ -66,23 +63,26 @@ describe("Dashboard against the generated data bundle", () => {
   });
 
   it("shows the configured search area", async () => {
-    renderDashboard();
+    renderPage(<Dashboard />);
 
-    expect(await screen.findByText(machinesFile.search.zipCode)).toBeInTheDocument();
     expect(
-      screen.getByText(`${machinesFile.search.radiusMiles} miles`),
+      await screen.findByRole("heading", {
+        name: new RegExp(`Machines near ${machinesFile.search.zipCode}`),
+      }),
     ).toBeInTheDocument();
+    // The radius appears in the header and again on the stat card.
+    expect(
+      screen.getAllByText(new RegExp(`Within ${machinesFile.search.radiusMiles} miles`)).length,
+    ).toBeGreaterThan(0);
   });
 
-  it("renders every machine in the bundle", async () => {
-    renderDashboard();
+  it("renders a card for every machine in the bundle", async () => {
+    renderPage(<Dashboard />);
 
     await waitFor(() => {
-      expect(
-        screen.getByText(
-          `${machinesFile.machines.length} within ${machinesFile.search.radiusMiles} miles`,
-        ),
-      ).toBeInTheDocument();
+      expect(screen.getAllByText(/Details and reporting/)).toHaveLength(
+        machinesFile.machines.length,
+      );
     });
   });
 
@@ -90,8 +90,8 @@ describe("Dashboard against the generated data bundle", () => {
     const cities = new Set(machinesFile.machines.map((machine) => machine.city));
     expect(cities.size).toBeGreaterThan(1);
 
-    renderDashboard();
-    await screen.findByText(machinesFile.search.zipCode);
+    renderPage(<Dashboard />);
+    await screen.findAllByText(/Details and reporting/);
 
     for (const city of cities) {
       expect(screen.getAllByText(new RegExp(city, "i")).length).toBeGreaterThan(0);
@@ -108,81 +108,45 @@ describe("Dashboard against the generated data bundle", () => {
     const unscored = forecastsFile.forecasts.filter(
       (forecast) => forecast.status === "INSUFFICIENT_DATA",
     );
-    if (unscored.length === 0) {
-      return; // bundle is fully scored; nothing to assert here
-    }
+    if (unscored.length === 0) return;
 
-    renderDashboard();
+    renderPage(<Dashboard />);
 
     const badges = await screen.findAllByText("INSUFFICIENT DATA");
     expect(badges).toHaveLength(unscored.length);
 
     for (const badge of badges) {
       const card = badge.closest(".machine-card");
-      expect(card).not.toBeNull();
-      // An unscored machine must not display a probability anywhere on its card.
       expect(within(card as HTMLElement).queryByText(/^\d+%$/)).toBeNull();
     }
-  });
-
-  it("surfaces the real last-known status parsed from community trackers", async () => {
-    const withStatus = (
-      forecastsFile.forecasts as unknown as {
-        features: { lastKnownStatus: { availability: string } | null };
-      }[]
-    ).filter((forecast) => forecast.features?.lastKnownStatus);
-
-    if (withStatus.length === 0) {
-      return; // no community status ingested yet
-    }
-
-    renderDashboard();
-
-    // Every machine that has a real observation shows it, even though it has
-    // far too little history to be forecast from.
-    const panels = await screen.findAllByText("Last known status");
-    expect(panels).toHaveLength(withStatus.length);
   });
 
   it("shows a regional network pattern instead of a bare INSUFFICIENT DATA", async () => {
     const network = forecastsFile.forecasts.filter(
       (forecast) => forecast.status === "NETWORK_PATTERN",
     );
-    if (network.length === 0) {
-      return; // no prior available in this bundle
-    }
+    if (network.length === 0) return;
 
-    renderDashboard();
+    renderPage(<Dashboard />);
 
-    const badges = await screen.findAllByText("NETWORK PATTERN");
-    expect(badges).toHaveLength(network.length);
-
+    expect(await screen.findAllByText("NETWORK PATTERN")).toHaveLength(network.length);
     // Every network figure must be labelled as not machine-specific.
-    expect(screen.getAllByText(/Network-wide, not this machine/i)).toHaveLength(
-      network.length,
-    );
+    expect(screen.getAllByText(/Network-wide, not this machine/i)).toHaveLength(network.length);
   });
 
-  it("reports source health, including skipped sources and their reason", async () => {
-    renderDashboard();
+  it("surfaces the real last-known status parsed from community trackers", async () => {
+    const withStatus = forecastsFile.forecasts.filter(
+      (forecast) => forecast.features?.lastKnownStatus,
+    );
+    if (withStatus.length === 0) return;
 
-    expect(await screen.findByText("Data sources")).toBeInTheDocument();
-    expect(screen.getByText("pokemon_locator")).toBeInTheDocument();
+    renderPage(<Dashboard />);
 
-    const health = readData("source-health.json") as {
-      sources: { name: string; status: string; reason: string | null }[];
-    };
-    const skipped = health.sources.filter((source) => source.status !== "HEALTHY");
-    for (const source of skipped) {
-      expect(screen.getByText(source.name)).toBeInTheDocument();
-      if (source.reason) {
-        expect(screen.getAllByText(source.reason).length).toBeGreaterThan(0);
-      }
-    }
+    expect(await screen.findAllByText("Last known status")).toHaveLength(withStatus.length);
   });
 
   it("always shows the disclaimer", async () => {
-    renderDashboard();
+    renderPage(<Dashboard />);
     expect(
       await screen.findByText(/Independent community forecasting tool/i),
     ).toBeInTheDocument();
@@ -195,9 +159,32 @@ describe("Dashboard against the generated data bundle", () => {
       vi.fn(async () => ({ ok: false, status: 500 }) as Response),
     );
 
-    renderDashboard();
+    renderPage(<Dashboard />);
 
     const alert = await screen.findByRole("alert");
     expect(alert).toHaveTextContent(/Could not load forecast data/i);
+  });
+});
+
+describe("Sources page", () => {
+  it("reports source health, including skipped sources and their reason", async () => {
+    renderPage(<Sources />);
+
+    expect(
+      await screen.findByRole("heading", { level: 1, name: "Data sources" }),
+    ).toBeInTheDocument();
+    expect(screen.getByText("pokemon_locator")).toBeInTheDocument();
+
+    const health = readData("source-health.json") as {
+      sources: { name: string; status: string; reason: string | null }[];
+    };
+    // A source that is off, blocked or broken must say so, with its reason.
+    const skipped = health.sources.filter((source) => source.status !== "HEALTHY");
+    for (const source of skipped) {
+      expect(screen.getByText(source.name)).toBeInTheDocument();
+      if (source.reason) {
+        expect(screen.getAllByText(source.reason).length).toBeGreaterThan(0);
+      }
+    }
   });
 });

@@ -24,7 +24,7 @@ export function SourceHealthPanel({ sources }: Props) {
   if (sources.length === 0) {
     return (
       <section className="card source-health-card">
-        <h2 className="section-title">Data sources</h2>
+        <h2 className="section-title">Source health</h2>
         <p className="empty-note">No source health has been recorded yet.</p>
       </section>
     );
@@ -34,7 +34,7 @@ export function SourceHealthPanel({ sources }: Props) {
 
   return (
     <section className="card source-health-card">
-      <h2 className="section-title">Data sources</h2>
+      <h2 className="section-title">Source health</h2>
       <ul className="sources">
         {ordered.map((source) => (
           <li key={source.name} className="sources__item">

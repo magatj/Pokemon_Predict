@@ -1,9 +1,10 @@
 import { useMemo, useState } from "react";
+import { Link } from "react-router-dom";
 
 import { Disclaimer } from "../components/Disclaimer";
-import { PokeballMark } from "../components/PokeballMark";
 import { MachineCard } from "../components/MachineCard";
-import { SourceHealthPanel } from "../components/SourceHealthPanel";
+import { StatCard } from "../components/StatCard";
+import { icons } from "../components/icons";
 import { useDashboardData } from "../hooks/useDashboardData";
 import { locationConfig } from "../lib/config";
 import { type SortKey, sortMachines, sortOptions } from "../lib/data";
@@ -28,32 +29,24 @@ export function Dashboard() {
   const collecting = machines.length - scored - networkPattern;
 
   return (
-    <div className="page">
-      <header className="hero">
-        <PokeballMark className="hero__mark" />
-        <p className="eyebrow">
-          <span className="eyebrow__dot" aria-hidden="true" />
-          Community stock intelligence
-        </p>
-        <h1 className="hero__title">Pokémon Vending Forecast</h1>
-        <p className="hero__subtitle">
-          Find the best time to check a nearby machine, powered by community reports and
-          local availability patterns.
-        </p>
-        <dl className="hero__search">
+    <>
+      <header className="page-head">
+        <div className="page-head__row">
+          <span className="page-head__pin" aria-hidden="true">
+            {icons.pin}
+          </span>
           <div>
-            <dt>Search area</dt>
-            <dd>{zipCode}</dd>
+            <h1 className="page-head__title">Machines near {zipCode}</h1>
+            <p className="page-head__sub">
+              When is a machine near you most likely to dispense a product?
+            </p>
+            <p className="page-head__meta">
+              Within {radiusMiles} miles
+              <span className="page-head__dot">·</span>
+              Updated {data ? formatRelative(data.generatedAt) : "—"}
+            </p>
           </div>
-          <div>
-            <dt>Radius</dt>
-            <dd>{radiusMiles} miles</dd>
-          </div>
-          <div>
-            <dt>Forecast data updated</dt>
-            <dd>{data ? formatRelative(data.generatedAt) : "—"}</dd>
-          </div>
-        </dl>
+        </div>
       </header>
 
       {data?.demoData && (
@@ -88,12 +81,52 @@ export function Dashboard() {
 
       {data && (
         <>
-          <section className="machine-section">
+          <div className="stat-row">
+            <StatCard
+              icon={icons.pin}
+              title="Machines in range"
+              value={String(machines.length)}
+              detail={`Within ${radiusMiles} miles of ${zipCode}`}
+            />
+            <StatCard
+              icon={icons.pulse}
+              title="Own-history forecasts"
+              value={String(scored)}
+              tone={scored > 0 ? "good" : "muted"}
+              detail={
+                scored > 0
+                  ? "Scored from their own reports"
+                  : "None have enough reports yet"
+              }
+            />
+            <StatCard
+              icon={icons.clock}
+              title="Regional pattern"
+              value={String(networkPattern)}
+              tone={networkPattern > 0 ? "default" : "muted"}
+              detail="Using the wider community rate"
+            />
+            <StatCard
+              icon={icons.doc}
+              title="Observations"
+              value={String(data.observationCount)}
+              detail={
+                <>
+                  Ingested overall ·{" "}
+                  <Link to="/sources" className="stat-card__link">
+                    sources
+                  </Link>
+                </>
+              }
+            />
+          </div>
+
+          <section>
             <div className="section-head">
               <h2 className="section-title">
-                Nearby machines
+                All machines
                 <span className="section-title__count">
-                  {machines.length} within {radiusMiles} miles
+                  {scored} own history · {networkPattern} regional · {collecting} collecting
                 </span>
               </h2>
 
@@ -112,25 +145,6 @@ export function Dashboard() {
               </label>
             </div>
 
-            <div className="summary-grid" aria-label="Forecast coverage">
-              <div className="summary-card summary-card--scored">
-                <strong>{scored}</strong>
-                <span>Machine forecast{scored === 1 ? "" : "s"}</span>
-              </div>
-              <div className="summary-card summary-card--network">
-                <strong>{networkPattern}</strong>
-                <span>Regional pattern{networkPattern === 1 ? "" : "s"}</span>
-              </div>
-              <div className="summary-card summary-card--collecting">
-                <strong>{collecting}</strong>
-                <span>Still collecting</span>
-              </div>
-              <div className="summary-card summary-card--reports">
-                <strong>{data.observationCount}</strong>
-                <span>Report{data.observationCount === 1 ? "" : "s"} analyzed</span>
-              </div>
-            </div>
-
             {machines.length === 0 ? (
               <p className="empty-note">
                 No machines were found within {radiusMiles} miles of {zipCode}.
@@ -143,12 +157,10 @@ export function Dashboard() {
               </div>
             )}
           </section>
-
-          <SourceHealthPanel sources={data.sources} />
         </>
       )}
 
       <Disclaimer />
-    </div>
+    </>
   );
 }
