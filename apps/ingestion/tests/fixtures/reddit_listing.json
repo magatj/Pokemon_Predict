@@ -1,0 +1,74 @@
+{
+  "_comment": "SYNTHETIC fixture. Reddit's robots.txt disallows crawling and unauthenticated JSON returns 403, so no live response is stored here. This mirrors the documented OAuth search listing shape and contains invented post text only.",
+  "kind": "Listing",
+  "data": {
+    "after": null,
+    "children": [
+      {
+        "kind": "t3",
+        "data": {
+          "name": "t3_aaa111",
+          "id": "aaa111",
+          "subreddit": "PokeInvesting",
+          "title": "Covington Fred Meyer pokemon vending machine restocked",
+          "selftext": "Saw it get refilled around 1:35pm, grabbed a booster bundle right after.",
+          "created_utc": 1789000000,
+          "permalink": "/r/PokeInvesting/comments/aaa111/example/",
+          "post_hint": "image"
+        }
+      },
+      {
+        "kind": "t3",
+        "data": {
+          "name": "t3_bbb222",
+          "id": "bbb222",
+          "subreddit": "SeattleWA",
+          "title": "Kent Safeway pokemon machine sold out again",
+          "selftext": "Machine Q01094 is empty, nothing left in it.",
+          "created_utc": 1789003600,
+          "permalink": "/r/SeattleWA/comments/bbb222/example/"
+        }
+      },
+      {
+        "kind": "t3",
+        "data": {
+          "name": "t3_ccc333",
+          "id": "ccc333",
+          "subreddit": "PokemonTCG",
+          "title": "Just pulled a great card from a pack I opened at home",
+          "selftext": "No machine involved, this should be filtered out.",
+          "created_utc": 1789007200,
+          "permalink": "/r/PokemonTCG/comments/ccc333/example/"
+        }
+      },
+      {
+        "kind": "t3",
+        "data": {
+          "name": "t3_ddd444",
+          "id": "ddd444",
+          "subreddit": "PokeInvesting",
+          "title": "Anyone know about the pokemon vending machine in Auburn",
+          "selftext": "Just wondering where it is.",
+          "created_utc": 1789010800,
+          "permalink": "/r/PokeInvesting/comments/ddd444/example/"
+        }
+      },
+      {
+        "kind": "t3",
+        "data": {
+          "name": "t3_eee555",
+          "id": "eee555",
+          "subreddit": "PokeInvesting",
+          "title": "pokemon vending machine 98042 in stock",
+          "created_utc": "not-a-timestamp",
+          "permalink": "/r/PokeInvesting/comments/eee555/example/"
+        }
+      },
+      {
+        "kind": "t3",
+        "data": null
+      },
+      "not-an-object"
+    ]
+  }
+}

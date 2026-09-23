@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+node_modules/
+apps/web/dist/
+.cache/http/
+
+# The GitLab Pages artifact directory at the repo root. Note the leading slash:
+# apps/web/public/data/ IS committed - it is the published data bundle.
+/public/
+
+# Synthetic demonstration output; never deployed.
+data-demo/
+.terraform/
+*.tfstate
+*.tfstate.backup
+.DS_Store

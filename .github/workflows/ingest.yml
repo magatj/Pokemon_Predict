@@ -1,0 +1,102 @@
+# Scheduled ingestion: discover machines, collect observations, forecast.
+#
+# This is what turns a current-state community API into a time series. Each run
+# records the status as it stands now; an observation's fingerprint is the
+# machine plus its lastUpdated timestamp, so an unchanged status collapses to
+# the record already stored while a genuine change becomes a new observation.
+# The history therefore only accumulates if this job actually runs on a
+# schedule - a one-off run yields at most one observation per machine.
+#
+# Sources that are disabled, blocked by robots.txt or missing credentials log
+# SOURCE_SKIPPED and the run still succeeds; a skipped source is not a failure.
+#
+# Optional secrets: REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET enable the Reddit
+# adapter. Without them it reports SOURCE_SKIPPED and contributes nothing.
+
+name: Ingest
+
+on:
+  schedule:
+    # Every 30 minutes. GitHub may delay scheduled runs under load, which is
+    # fine here: de-duplication means a late or repeated run costs nothing.
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+    inputs:
+      verify_retailers:
+        description: "Verify machines against retailer store pages (slower)"
+        type: boolean
+        default: true
+
+concurrency:
+  group: ingest
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  PYTHONPATH: ${{ github.workspace }}/apps/ingestion
+
+jobs:
+  ingest:
+    name: Refresh data
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: apps/ingestion/requirements-dev.txt
+
+      - name: Install dependencies
+        run: pip install -r apps/ingestion/requirements.txt
+
+      # Carries ETag / Last-Modified state between runs so unchanged pages come
+      # back as 304 instead of being downloaded again.
+      - name: Restore HTTP cache
+        uses: actions/cache@v4
+        with:
+          path: .cache/http
+          key: http-cache-${{ github.run_id }}
+          restore-keys: http-cache-
+
+      - name: Refresh machines
+        run: |
+          python -m pokevend.jobs.refresh_machines \
+            ${{ github.event.inputs.verify_retailers == 'false' && '--no-verify' || '' }} \
+            --log-level INFO
+
+      - name: Collect observations
+        run: python -m pokevend.jobs.collect_observations --log-level INFO
+
+      - name: Build forecasts
+        run: python -m pokevend.jobs.build_forecasts --log-level INFO
+
+      - name: Commit refreshed data
+        id: commit
+        run: |
+          git config user.name "pokevend-ingestion[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ apps/web/public/data/
+          if git diff --cached --quiet; then
+            echo "no data changes to persist"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "chore(data): scheduled ingestion refresh"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  deploy:
+    name: Publish refreshed forecasts
+    needs: ingest
+    if: needs.ingest.outputs.changed == 'true'
+    uses: ./.github/workflows/pages.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write

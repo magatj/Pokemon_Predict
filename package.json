@@ -1,0 +1,25 @@
+{
+  "name": "pokemon-vending-forecast",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Community forecasting for Pokemon vending machine availability",
+  "workspaces": [
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace apps/web",
+    "build": "npm run build --workspace apps/web",
+    "lint": "npm run lint --workspace apps/web",
+    "test": "npm run test --workspace apps/web",
+    "preview": "npm run preview --workspace apps/web",
+    "ingest:machines": "python -m pokevend.jobs.refresh_machines",
+    "ingest:observations": "python -m pokevend.jobs.collect_observations",
+    "ingest:forecasts": "python -m pokevend.jobs.build_forecasts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "allowScripts": {
+    "esbuild@0.21.5": true
+  }
+}

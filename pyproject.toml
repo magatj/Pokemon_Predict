@@ -1,0 +1,25 @@
+[tool.pytest.ini_options]
+testpaths = ["apps/ingestion/tests"]
+pythonpath = ["apps/ingestion"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+exclude = [".venv", "node_modules", "apps/web", "infrastructure"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "C4", "SIM"]
+ignore = [
+    "B008",
+    # The package targets Python 3.8, where typing.Dict/Optional are still the
+    # correct runtime spelling. PEP 585/604 syntax is deliberately not adopted.
+    "UP006",
+    "UP045",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"apps/ingestion/tests/*" = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["pokevend", "tests"]

@@ -1,0 +1,192 @@
+[
+  {
+    "location": {
+      "coordinates": [
+        -122.2272979,
+        47.2725758
+      ],
+      "type": "Point"
+    },
+    "id": "67e3617fbde12260e39a8baf",
+    "Address": "4010 A St SE, Auburn, WA",
+    "Coordinates": [
+      -122.2272979,
+      47.2725758
+    ],
+    "Machine_ID": "Q00804",
+    "Retailer": "Safeway",
+    "status": "MAINTENANCE",
+    "lastUpdated": "2026-02-06T00:35:37.430Z"
+  },
+  {
+    "location": {
+      "coordinates": [
+        -122.299441522168,
+        47.4099768
+      ],
+      "type": "Point"
+    },
+    "id": "67e361a3bde12260e39a8bd9",
+    "Address": "21401 Pacific Hwy S, Des Moines, WA",
+    "Coordinates": [
+      -122.29944152216797,
+      47.4099768
+    ],
+    "Machine_ID": "Q01141",
+    "Retailer": "Safeway",
+    "status": "OUT_OF_STOCK",
+    "lastUpdated": "2025-04-27T18:31:35.777Z"
+  },
+  {
+    "location": {
+      "coordinates": [
+        -122.3000143370548,
+        47.3425756
+      ],
+      "type": "Point"
+    },
+    "id": "67e361b3bde12260e39a8bee",
+    "Address": "28810 Military Rd S, Federal Way, WA",
+    "Coordinates": [
+      -122.30001433705476,
+      47.3425756
+    ],
+    "Machine_ID": "Q01490",
+    "Retailer": "Safeway",
+    "status": "OUT_OF_STOCK",
+    "lastUpdated": "2025-04-27T01:51:56.184Z"
+  },
+  {
+    "location": {
+      "coordinates": [
+        -122.2986082,
+        47.3745673
+      ],
+      "type": "Point"
+    },
+    "id": "67e361b8bde12260e39a8bf4",
+    "Address": "25250 Pacific Hwy S, Kent, WA",
+    "Coordinates": [
+      -122.2986082,
+      47.3745673
+    ],
+    "Machine_ID": "Q00158",
+    "Retailer": "Fred Meyer",
+    "status": "OUT_OF_STOCK",
+    "lastUpdated": "2025-10-06T14:37:36.079Z"
+  },
+  {
+    "location": {
+      "coordinates": [
+        -122.1667754761745,
+        47.35673145
+      ],
+      "type": "Point"
+    },
+    "id": "67e361c1bde12260e39a8bfd",
+    "Address": "13101 SE Kent Kangley Rd, Kent, WA",
+    "Coordinates": [
+      -122.16677547617454,
+      47.35673145
+    ],
+    "Machine_ID": "Q01094",
+    "Retailer": "Safeway",
+    "status": "INSTOCK",
+    "lastUpdated": "2026-05-18T00:24:50.781Z"
+  },
+  {
+    "location": {
+      "coordinates": [
+        -122.2189923483925,
+        47.4145827
+      ],
+      "type": "Point"
+    },
+    "id": "67e361c9bde12260e39a8c08",
+    "Address": "21100 91st Place South, Kent, WA",
+    "Coordinates": [
+      -122.21899234839255,
+      47.4145827
+    ],
+    "Machine_ID": "Q00940",
+    "Retailer": "WinCo Foods",
+    "status": "OUT_OF_STOCK",
+    "lastUpdated": "2025-10-01T17:34:39.644Z"
+  },
+  {
+    "location": {
+      "coordinates": [
+        -122.0195957,
+        47.3641562
+      ],
+      "type": "Point"
+    },
+    "id": "67e361d3bde12260e39a8c14",
+    "Address": "26520 Maple Valley Black Diamond Rd SE, Maple Valley, WA",
+    "Coordinates": [
+      -122.0195957,
+      47.3641562
+    ],
+    "Machine_ID": "Q00111",
+    "Retailer": "Fred Meyer",
+    "status": "INSTOCK",
+    "lastUpdated": "2026-05-13T00:32:09.482Z"
+  },
+  {
+    "location": {
+      "coordinates": [
+        -122.2275157042604,
+        47.3062886
+      ],
+      "type": "Point"
+    },
+    "id": "67e3618cbde12260e39a8bbf",
+    "Address": "101 Auburn Way S, Auburn, WA",
+    "Coordinates": [
+      -122.22751570426036,
+      47.3062886
+    ],
+    "Machine_ID": "Q00249",
+    "Retailer": "Safeway",
+    "status": null,
+    "lastUpdated": null
+  },
+  {
+    "location": {
+      "coordinates": [
+        -122.145109009997,
+        47.166101982429
+      ],
+      "type": "Point"
+    },
+    "id": "67e3618fbde12260e39a8bc2",
+    "Address": "21301 Hwy 410, Bonney Lake, WA",
+    "Coordinates": [
+      -122.145109009997,
+      47.166101982429
+    ],
+    "Machine_ID": "Q00874",
+    "Retailer": "Safeway",
+    "status": null,
+    "lastUpdated": null
+  },
+  {
+    "location": {
+      "coordinates": [
+        -122.2254639,
+        47.3157549
+      ],
+      "type": "Point"
+    },
+    "id": "67e36190bde12260e39a8bc3",
+    "Address": "801 Auburn Way N, Auburn, WA",
+    "Coordinates": [
+      -122.2254639,
+      47.3157549
+    ],
+    "Machine_ID": "Q00164",
+    "Retailer": "Fred Meyer",
+    "status": null,
+    "lastUpdated": null
+  }
+]

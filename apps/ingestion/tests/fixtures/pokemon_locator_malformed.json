@@ -1,0 +1,45 @@
+{
+  "_comment": "Hand-built degraded variants of the locator payload: rows that are missing ids or coordinates, have wrong types, or are not objects at all. Parsing these must drop the bad rows and keep the good one.",
+  "input": {"unit": "mi"},
+  "machines": [
+    {
+      "id": "recGOOD0000000001",
+      "name": "Q09999",
+      "lat": 47.29,
+      "lng": -122.1,
+      "retailer": "Safeway",
+      "street": "1 Test St",
+      "city": "Auburn",
+      "zipPostalCode": "98092",
+      "stateProvince": "WA",
+      "country": "US"
+    },
+    {
+      "name": "Q00000",
+      "lat": 47.29,
+      "lng": -122.1,
+      "retailer": "Missing id"
+    },
+    {
+      "id": "recNOCOORDS",
+      "name": "Q00001",
+      "retailer": "Missing coordinates",
+      "city": "Kent"
+    },
+    {
+      "id": "recBADCOORDS",
+      "name": "Q00002",
+      "lat": "not-a-number",
+      "lng": null,
+      "retailer": "Unparseable coordinates"
+    },
+    {
+      "id": "recNOFIELDS",
+      "lat": 47.3,
+      "lng": -122.2
+    },
+    "not-an-object",
+    null,
+    12345
+  ]
+}

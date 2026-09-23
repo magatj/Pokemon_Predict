@@ -1,0 +1,22 @@
+# Normalise to LF in the repository; Git may still check out CRLF on Windows.
+* text=auto eol=lf
+
+# Files a Linux CI runner executes or parses - these must stay LF regardless of
+# the developer's platform, or the shell steps break.
+*.sh      text eol=lf
+*.yml     text eol=lf
+*.yaml    text eol=lf
+*.py      text eol=lf
+*.tf      text eol=lf
+
+# Binary: never touch line endings, never try to diff as text.
+*.png     binary
+*.jpg     binary
+*.ico     binary
+*.woff    binary
+*.woff2   binary
+
+# Generated - collapse it in diffs and exclude it from language stats.
+package-lock.json  linguist-generated=true -diff
+data/**            linguist-generated=true
+apps/web/public/data/**  linguist-generated=true

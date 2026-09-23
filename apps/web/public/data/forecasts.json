@@ -1,0 +1,5570 @@
+{
+  "forecasts": [
+    {
+      "confidence": "LOW",
+      "explanation": {
+        "reasons": [
+          "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+          "Showing the pattern from 93 community report(s) within 250 miles.",
+          "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+        ],
+        "reportsUsed": 93,
+        "signals": {
+          "basis": "Network pattern",
+          "machineReports": "0",
+          "networkReports": "93",
+          "scope": "REGIONAL"
+        }
+      },
+      "features": {
+        "hourHitRate": {},
+        "interval": null,
+        "lastKnownStatus": null,
+        "lastObservationAt": null,
+        "machineId": "rec6hmX1D2NKNAa62",
+        "meanMatchConfidence": 0.0,
+        "meanSourceConfidence": 0.0,
+        "minutePattern": null,
+        "minutesSinceLastAvailable": null,
+        "minutesSinceLastNotAvailable": null,
+        "minutesSinceLastPositive": null,
+        "minutesSinceLastPurchase": null,
+        "minutesSinceSuspectedRestock": null,
+        "nearby": {
+          "activeByRadiusMiles": {
+            "10": 0,
+            "3": 0,
+            "5": 0
+          },
+          "activeClosest": 0,
+          "activeMachineIds": [],
+          "closestRadiusMiles": 3,
+          "score": 0.0,
+          "windowMinutes": 90
+        },
+        "negativeCount": 0,
+        "observationCount": 0,
+        "positiveCount": 0,
+        "purchaseCount": 0,
+        "totalWeight": 0.0,
+        "weekdayHitRate": {},
+        "weekdayHourHitRate": {}
+      },
+      "generatedAt": "2026-09-23T16:28:06Z",
+      "machineId": "rec6hmX1D2NKNAa62",
+      "minimumObservations": 8,
+      "networkPrior": {
+        "baseRate": 0.1894,
+        "bestHour": 16,
+        "bestHourRate": 0.4669,
+        "hourRate": {
+          "14": 0.25,
+          "15": 0.1117,
+          "16": 0.4669,
+          "18": 0.0909
+        },
+        "machineCount": 93,
+        "positiveCount": 18,
+        "regionalRadiusMiles": 250,
+        "sampleCount": 93,
+        "scope": "REGIONAL",
+        "weekdayRate": {
+          "0": 0.1667,
+          "1": 0.1585,
+          "2": 0.2923,
+          "3": 0.125,
+          "4": 0.1765,
+          "5": 0.0909,
+          "6": 0.2638
+        }
+      },
+      "next": {
+        "basis": "NETWORK",
+        "components": {
+          "network_rate": 0.4145
+        },
+        "explanation": {
+          "reasons": [
+            "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+            "Showing the pattern from 93 community report(s) within 250 miles.",
+            "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+          ],
+          "reportsUsed": 93,
+          "signals": {
+            "basis": "Network pattern",
+            "machineReports": "0",
+            "networkReports": "93",
+            "scope": "REGIONAL"
+          }
+        },
+        "horizonScale": 0.593,
+        "localTime": "16:00",
+        "minutesAhead": 391.9,
+        "probability": 0.2458,
+        "rawScore": 0.4145,
+        "sampleScale": 0.0,
+        "sourceScale": 0.0,
+        "windowEnd": "2026-09-24T00:00:00Z",
+        "windowStart": "2026-09-23T23:00:00Z"
+      },
+      "observationCount": 0,
+      "status": "NETWORK_PATTERN",
+      "windowMinutes": 5,
+      "windows": [
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.4145
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.593,
+          "localTime": "16:00",
+          "minutesAhead": 391.9,
+          "probability": 0.2458,
+          "rawScore": 0.4145,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T00:00:00Z",
+          "windowStart": "2026-09-23T23:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.9584,
+          "localTime": "10:00",
+          "minutesAhead": 31.9,
+          "probability": 0.2111,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T18:00:00Z",
+          "windowStart": "2026-09-23T17:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8847,
+          "localTime": "11:00",
+          "minutesAhead": 91.9,
+          "probability": 0.1949,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T19:00:00Z",
+          "windowStart": "2026-09-23T18:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2627
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6959,
+          "localTime": "14:00",
+          "minutesAhead": 271.9,
+          "probability": 0.1828,
+          "rawScore": 0.2627,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T22:00:00Z",
+          "windowStart": "2026-09-23T21:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8167,
+          "localTime": "12:00",
+          "minutesAhead": 151.9,
+          "probability": 0.1799,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T20:00:00Z",
+          "windowStart": "2026-09-23T19:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7539,
+          "localTime": "13:00",
+          "minutesAhead": 211.9,
+          "probability": 0.1661,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T21:00:00Z",
+          "windowStart": "2026-09-23T20:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5474,
+          "localTime": "17:00",
+          "minutesAhead": 451.9,
+          "probability": 0.1206,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T01:00:00Z",
+          "windowStart": "2026-09-24T00:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1659
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6424,
+          "localTime": "15:00",
+          "minutesAhead": 331.9,
+          "probability": 0.1066,
+          "rawScore": 0.1659,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T23:00:00Z",
+          "windowStart": "2026-09-23T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "confidence": "LOW",
+      "explanation": {
+        "reasons": [
+          "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+          "Showing the pattern from 93 community report(s) within 250 miles.",
+          "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+        ],
+        "reportsUsed": 93,
+        "signals": {
+          "basis": "Network pattern",
+          "machineReports": "1",
+          "networkReports": "93",
+          "scope": "REGIONAL"
+        }
+      },
+      "features": {
+        "hourHitRate": {
+          "17": 1.0
+        },
+        "interval": null,
+        "lastKnownStatus": {
+          "ageHours": 3088.1,
+          "availability": "AVAILABLE",
+          "evidenceClass": "COMMUNITY_TIMESTAMPED",
+          "observedAt": "2026-05-18T00:24:50Z",
+          "product": null,
+          "purchaseConfirmed": false,
+          "source": "PUBLIC_WEB",
+          "sourceUrl": "https://pokemonmap.com/"
+        },
+        "lastObservationAt": "2026-05-18T00:24:50Z",
+        "machineId": "recYObHvIXSety8F8",
+        "meanMatchConfidence": 1.0,
+        "meanSourceConfidence": 0.65,
+        "minutePattern": null,
+        "minutesSinceLastAvailable": 185283.3,
+        "minutesSinceLastNotAvailable": null,
+        "minutesSinceLastPositive": 185283.3,
+        "minutesSinceLastPurchase": null,
+        "minutesSinceSuspectedRestock": null,
+        "nearby": {
+          "activeByRadiusMiles": {
+            "10": 0,
+            "3": 0,
+            "5": 0
+          },
+          "activeClosest": 0,
+          "activeMachineIds": [],
+          "closestRadiusMiles": 3,
+          "score": 0.0,
+          "windowMinutes": 90
+        },
+        "negativeCount": 0,
+        "observationCount": 1,
+        "positiveCount": 1,
+        "purchaseCount": 0,
+        "totalWeight": 0.0,
+        "weekdayHitRate": {
+          "6": 1.0
+        },
+        "weekdayHourHitRate": {
+          "6:17": 1.0
+        }
+      },
+      "generatedAt": "2026-09-23T16:28:06Z",
+      "machineId": "recYObHvIXSety8F8",
+      "minimumObservations": 8,
+      "networkPrior": {
+        "baseRate": 0.1894,
+        "bestHour": 16,
+        "bestHourRate": 0.4669,
+        "hourRate": {
+          "14": 0.25,
+          "15": 0.1117,
+          "16": 0.4669,
+          "18": 0.0909
+        },
+        "machineCount": 93,
+        "positiveCount": 18,
+        "regionalRadiusMiles": 250,
+        "sampleCount": 93,
+        "scope": "REGIONAL",
+        "weekdayRate": {
+          "0": 0.1667,
+          "1": 0.1585,
+          "2": 0.2923,
+          "3": 0.125,
+          "4": 0.1765,
+          "5": 0.0909,
+          "6": 0.2638
+        }
+      },
+      "next": {
+        "basis": "NETWORK",
+        "components": {
+          "network_rate": 0.4145
+        },
+        "explanation": {
+          "reasons": [
+            "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+            "Showing the pattern from 93 community report(s) within 250 miles.",
+            "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+          ],
+          "reportsUsed": 93,
+          "signals": {
+            "basis": "Network pattern",
+            "machineReports": "1",
+            "networkReports": "93",
+            "scope": "REGIONAL"
+          }
+        },
+        "horizonScale": 0.593,
+        "localTime": "16:00",
+        "minutesAhead": 391.9,
+        "probability": 0.2458,
+        "rawScore": 0.4145,
+        "sampleScale": 0.0,
+        "sourceScale": 0.0,
+        "windowEnd": "2026-09-24T00:00:00Z",
+        "windowStart": "2026-09-23T23:00:00Z"
+      },
+      "observationCount": 1,
+      "status": "NETWORK_PATTERN",
+      "windowMinutes": 5,
+      "windows": [
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.4145
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.593,
+          "localTime": "16:00",
+          "minutesAhead": 391.9,
+          "probability": 0.2458,
+          "rawScore": 0.4145,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T00:00:00Z",
+          "windowStart": "2026-09-23T23:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.9584,
+          "localTime": "10:00",
+          "minutesAhead": 31.9,
+          "probability": 0.2111,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T18:00:00Z",
+          "windowStart": "2026-09-23T17:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8847,
+          "localTime": "11:00",
+          "minutesAhead": 91.9,
+          "probability": 0.1949,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T19:00:00Z",
+          "windowStart": "2026-09-23T18:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2627
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6959,
+          "localTime": "14:00",
+          "minutesAhead": 271.9,
+          "probability": 0.1828,
+          "rawScore": 0.2627,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T22:00:00Z",
+          "windowStart": "2026-09-23T21:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8167,
+          "localTime": "12:00",
+          "minutesAhead": 151.9,
+          "probability": 0.1799,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T20:00:00Z",
+          "windowStart": "2026-09-23T19:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7539,
+          "localTime": "13:00",
+          "minutesAhead": 211.9,
+          "probability": 0.1661,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T21:00:00Z",
+          "windowStart": "2026-09-23T20:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5474,
+          "localTime": "17:00",
+          "minutesAhead": 451.9,
+          "probability": 0.1206,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T01:00:00Z",
+          "windowStart": "2026-09-24T00:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1659
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6424,
+          "localTime": "15:00",
+          "minutesAhead": 331.9,
+          "probability": 0.1066,
+          "rawScore": 0.1659,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T23:00:00Z",
+          "windowStart": "2026-09-23T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "confidence": "LOW",
+      "explanation": {
+        "reasons": [
+          "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+          "Showing the pattern from 93 community report(s) within 250 miles.",
+          "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+        ],
+        "reportsUsed": 93,
+        "signals": {
+          "basis": "Network pattern",
+          "machineReports": "0",
+          "networkReports": "93",
+          "scope": "REGIONAL"
+        }
+      },
+      "features": {
+        "hourHitRate": {},
+        "interval": null,
+        "lastKnownStatus": null,
+        "lastObservationAt": null,
+        "machineId": "reczMH2OpSZ8uPBrp",
+        "meanMatchConfidence": 0.0,
+        "meanSourceConfidence": 0.0,
+        "minutePattern": null,
+        "minutesSinceLastAvailable": null,
+        "minutesSinceLastNotAvailable": null,
+        "minutesSinceLastPositive": null,
+        "minutesSinceLastPurchase": null,
+        "minutesSinceSuspectedRestock": null,
+        "nearby": {
+          "activeByRadiusMiles": {
+            "10": 0,
+            "3": 0,
+            "5": 0
+          },
+          "activeClosest": 0,
+          "activeMachineIds": [],
+          "closestRadiusMiles": 3,
+          "score": 0.0,
+          "windowMinutes": 90
+        },
+        "negativeCount": 0,
+        "observationCount": 0,
+        "positiveCount": 0,
+        "purchaseCount": 0,
+        "totalWeight": 0.0,
+        "weekdayHitRate": {},
+        "weekdayHourHitRate": {}
+      },
+      "generatedAt": "2026-09-23T16:28:06Z",
+      "machineId": "reczMH2OpSZ8uPBrp",
+      "minimumObservations": 8,
+      "networkPrior": {
+        "baseRate": 0.1894,
+        "bestHour": 16,
+        "bestHourRate": 0.4669,
+        "hourRate": {
+          "14": 0.25,
+          "15": 0.1117,
+          "16": 0.4669,
+          "18": 0.0909
+        },
+        "machineCount": 93,
+        "positiveCount": 18,
+        "regionalRadiusMiles": 250,
+        "sampleCount": 93,
+        "scope": "REGIONAL",
+        "weekdayRate": {
+          "0": 0.1667,
+          "1": 0.1585,
+          "2": 0.2923,
+          "3": 0.125,
+          "4": 0.1765,
+          "5": 0.0909,
+          "6": 0.2638
+        }
+      },
+      "next": {
+        "basis": "NETWORK",
+        "components": {
+          "network_rate": 0.4145
+        },
+        "explanation": {
+          "reasons": [
+            "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+            "Showing the pattern from 93 community report(s) within 250 miles.",
+            "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+          ],
+          "reportsUsed": 93,
+          "signals": {
+            "basis": "Network pattern",
+            "machineReports": "0",
+            "networkReports": "93",
+            "scope": "REGIONAL"
+          }
+        },
+        "horizonScale": 0.593,
+        "localTime": "16:00",
+        "minutesAhead": 391.9,
+        "probability": 0.2458,
+        "rawScore": 0.4145,
+        "sampleScale": 0.0,
+        "sourceScale": 0.0,
+        "windowEnd": "2026-09-24T00:00:00Z",
+        "windowStart": "2026-09-23T23:00:00Z"
+      },
+      "observationCount": 0,
+      "status": "NETWORK_PATTERN",
+      "windowMinutes": 5,
+      "windows": [
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.4145
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.593,
+          "localTime": "16:00",
+          "minutesAhead": 391.9,
+          "probability": 0.2458,
+          "rawScore": 0.4145,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T00:00:00Z",
+          "windowStart": "2026-09-23T23:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.9584,
+          "localTime": "10:00",
+          "minutesAhead": 31.9,
+          "probability": 0.2111,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T18:00:00Z",
+          "windowStart": "2026-09-23T17:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8847,
+          "localTime": "11:00",
+          "minutesAhead": 91.9,
+          "probability": 0.1949,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T19:00:00Z",
+          "windowStart": "2026-09-23T18:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2627
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6959,
+          "localTime": "14:00",
+          "minutesAhead": 271.9,
+          "probability": 0.1828,
+          "rawScore": 0.2627,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T22:00:00Z",
+          "windowStart": "2026-09-23T21:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8167,
+          "localTime": "12:00",
+          "minutesAhead": 151.9,
+          "probability": 0.1799,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T20:00:00Z",
+          "windowStart": "2026-09-23T19:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7539,
+          "localTime": "13:00",
+          "minutesAhead": 211.9,
+          "probability": 0.1661,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T21:00:00Z",
+          "windowStart": "2026-09-23T20:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5474,
+          "localTime": "17:00",
+          "minutesAhead": 451.9,
+          "probability": 0.1206,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T01:00:00Z",
+          "windowStart": "2026-09-24T00:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1659
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6424,
+          "localTime": "15:00",
+          "minutesAhead": 331.9,
+          "probability": 0.1066,
+          "rawScore": 0.1659,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T23:00:00Z",
+          "windowStart": "2026-09-23T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "confidence": "LOW",
+      "explanation": {
+        "reasons": [
+          "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+          "Showing the pattern from 93 community report(s) within 250 miles.",
+          "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+        ],
+        "reportsUsed": 93,
+        "signals": {
+          "basis": "Network pattern",
+          "machineReports": "1",
+          "networkReports": "93",
+          "scope": "REGIONAL"
+        }
+      },
+      "features": {
+        "hourHitRate": {
+          "16": 0.0
+        },
+        "interval": null,
+        "lastKnownStatus": {
+          "ageHours": 5511.9,
+          "availability": "NOT_AVAILABLE",
+          "evidenceClass": "COMMUNITY_TIMESTAMPED",
+          "observedAt": "2026-02-06T00:35:37Z",
+          "product": null,
+          "purchaseConfirmed": false,
+          "source": "PUBLIC_WEB",
+          "sourceUrl": "https://pokemonmap.com/"
+        },
+        "lastObservationAt": "2026-02-06T00:35:37Z",
+        "machineId": "recNV8fRPmce3gojW",
+        "meanMatchConfidence": 1.0,
+        "meanSourceConfidence": 0.65,
+        "minutePattern": null,
+        "minutesSinceLastAvailable": null,
+        "minutesSinceLastNotAvailable": 330712.5,
+        "minutesSinceLastPositive": null,
+        "minutesSinceLastPurchase": null,
+        "minutesSinceSuspectedRestock": null,
+        "nearby": {
+          "activeByRadiusMiles": {
+            "10": 0,
+            "3": 0,
+            "5": 0
+          },
+          "activeClosest": 0,
+          "activeMachineIds": [],
+          "closestRadiusMiles": 3,
+          "score": 0.0,
+          "windowMinutes": 90
+        },
+        "negativeCount": 1,
+        "observationCount": 1,
+        "positiveCount": 0,
+        "purchaseCount": 0,
+        "totalWeight": 0.0,
+        "weekdayHitRate": {
+          "3": 0.0
+        },
+        "weekdayHourHitRate": {
+          "3:16": 0.0
+        }
+      },
+      "generatedAt": "2026-09-23T16:28:06Z",
+      "machineId": "recNV8fRPmce3gojW",
+      "minimumObservations": 8,
+      "networkPrior": {
+        "baseRate": 0.1894,
+        "bestHour": 16,
+        "bestHourRate": 0.4669,
+        "hourRate": {
+          "14": 0.25,
+          "15": 0.1117,
+          "16": 0.4669,
+          "18": 0.0909
+        },
+        "machineCount": 93,
+        "positiveCount": 18,
+        "regionalRadiusMiles": 250,
+        "sampleCount": 93,
+        "scope": "REGIONAL",
+        "weekdayRate": {
+          "0": 0.1667,
+          "1": 0.1585,
+          "2": 0.2923,
+          "3": 0.125,
+          "4": 0.1765,
+          "5": 0.0909,
+          "6": 0.2638
+        }
+      },
+      "next": {
+        "basis": "NETWORK",
+        "components": {
+          "network_rate": 0.4145
+        },
+        "explanation": {
+          "reasons": [
+            "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+            "Showing the pattern from 93 community report(s) within 250 miles.",
+            "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+          ],
+          "reportsUsed": 93,
+          "signals": {
+            "basis": "Network pattern",
+            "machineReports": "1",
+            "networkReports": "93",
+            "scope": "REGIONAL"
+          }
+        },
+        "horizonScale": 0.593,
+        "localTime": "16:00",
+        "minutesAhead": 391.9,
+        "probability": 0.2458,
+        "rawScore": 0.4145,
+        "sampleScale": 0.0,
+        "sourceScale": 0.0,
+        "windowEnd": "2026-09-24T00:00:00Z",
+        "windowStart": "2026-09-23T23:00:00Z"
+      },
+      "observationCount": 1,
+      "status": "NETWORK_PATTERN",
+      "windowMinutes": 5,
+      "windows": [
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.4145
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.593,
+          "localTime": "16:00",
+          "minutesAhead": 391.9,
+          "probability": 0.2458,
+          "rawScore": 0.4145,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T00:00:00Z",
+          "windowStart": "2026-09-23T23:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.9584,
+          "localTime": "10:00",
+          "minutesAhead": 31.9,
+          "probability": 0.2111,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T18:00:00Z",
+          "windowStart": "2026-09-23T17:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8847,
+          "localTime": "11:00",
+          "minutesAhead": 91.9,
+          "probability": 0.1949,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T19:00:00Z",
+          "windowStart": "2026-09-23T18:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2627
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6959,
+          "localTime": "14:00",
+          "minutesAhead": 271.9,
+          "probability": 0.1828,
+          "rawScore": 0.2627,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T22:00:00Z",
+          "windowStart": "2026-09-23T21:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8167,
+          "localTime": "12:00",
+          "minutesAhead": 151.9,
+          "probability": 0.1799,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T20:00:00Z",
+          "windowStart": "2026-09-23T19:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7539,
+          "localTime": "13:00",
+          "minutesAhead": 211.9,
+          "probability": 0.1661,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T21:00:00Z",
+          "windowStart": "2026-09-23T20:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5474,
+          "localTime": "17:00",
+          "minutesAhead": 451.9,
+          "probability": 0.1206,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T01:00:00Z",
+          "windowStart": "2026-09-24T00:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1659
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6424,
+          "localTime": "15:00",
+          "minutesAhead": 331.9,
+          "probability": 0.1066,
+          "rawScore": 0.1659,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T23:00:00Z",
+          "windowStart": "2026-09-23T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "confidence": "LOW",
+      "explanation": {
+        "reasons": [
+          "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+          "Showing the pattern from 93 community report(s) within 250 miles.",
+          "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+        ],
+        "reportsUsed": 93,
+        "signals": {
+          "basis": "Network pattern",
+          "machineReports": "0",
+          "networkReports": "93",
+          "scope": "REGIONAL"
+        }
+      },
+      "features": {
+        "hourHitRate": {},
+        "interval": null,
+        "lastKnownStatus": null,
+        "lastObservationAt": null,
+        "machineId": "recSpV6YcTTtJTpa7",
+        "meanMatchConfidence": 0.0,
+        "meanSourceConfidence": 0.0,
+        "minutePattern": null,
+        "minutesSinceLastAvailable": null,
+        "minutesSinceLastNotAvailable": null,
+        "minutesSinceLastPositive": null,
+        "minutesSinceLastPurchase": null,
+        "minutesSinceSuspectedRestock": null,
+        "nearby": {
+          "activeByRadiusMiles": {
+            "10": 0,
+            "3": 0,
+            "5": 0
+          },
+          "activeClosest": 0,
+          "activeMachineIds": [],
+          "closestRadiusMiles": 3,
+          "score": 0.0,
+          "windowMinutes": 90
+        },
+        "negativeCount": 0,
+        "observationCount": 0,
+        "positiveCount": 0,
+        "purchaseCount": 0,
+        "totalWeight": 0.0,
+        "weekdayHitRate": {},
+        "weekdayHourHitRate": {}
+      },
+      "generatedAt": "2026-09-23T16:28:06Z",
+      "machineId": "recSpV6YcTTtJTpa7",
+      "minimumObservations": 8,
+      "networkPrior": {
+        "baseRate": 0.1894,
+        "bestHour": 16,
+        "bestHourRate": 0.4669,
+        "hourRate": {
+          "14": 0.25,
+          "15": 0.1117,
+          "16": 0.4669,
+          "18": 0.0909
+        },
+        "machineCount": 93,
+        "positiveCount": 18,
+        "regionalRadiusMiles": 250,
+        "sampleCount": 93,
+        "scope": "REGIONAL",
+        "weekdayRate": {
+          "0": 0.1667,
+          "1": 0.1585,
+          "2": 0.2923,
+          "3": 0.125,
+          "4": 0.1765,
+          "5": 0.0909,
+          "6": 0.2638
+        }
+      },
+      "next": {
+        "basis": "NETWORK",
+        "components": {
+          "network_rate": 0.4145
+        },
+        "explanation": {
+          "reasons": [
+            "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+            "Showing the pattern from 93 community report(s) within 250 miles.",
+            "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+          ],
+          "reportsUsed": 93,
+          "signals": {
+            "basis": "Network pattern",
+            "machineReports": "0",
+            "networkReports": "93",
+            "scope": "REGIONAL"
+          }
+        },
+        "horizonScale": 0.593,
+        "localTime": "16:00",
+        "minutesAhead": 391.9,
+        "probability": 0.2458,
+        "rawScore": 0.4145,
+        "sampleScale": 0.0,
+        "sourceScale": 0.0,
+        "windowEnd": "2026-09-24T00:00:00Z",
+        "windowStart": "2026-09-23T23:00:00Z"
+      },
+      "observationCount": 0,
+      "status": "NETWORK_PATTERN",
+      "windowMinutes": 5,
+      "windows": [
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.4145
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.593,
+          "localTime": "16:00",
+          "minutesAhead": 391.9,
+          "probability": 0.2458,
+          "rawScore": 0.4145,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T00:00:00Z",
+          "windowStart": "2026-09-23T23:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.9584,
+          "localTime": "10:00",
+          "minutesAhead": 31.9,
+          "probability": 0.2111,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T18:00:00Z",
+          "windowStart": "2026-09-23T17:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8847,
+          "localTime": "11:00",
+          "minutesAhead": 91.9,
+          "probability": 0.1949,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T19:00:00Z",
+          "windowStart": "2026-09-23T18:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2627
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6959,
+          "localTime": "14:00",
+          "minutesAhead": 271.9,
+          "probability": 0.1828,
+          "rawScore": 0.2627,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T22:00:00Z",
+          "windowStart": "2026-09-23T21:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8167,
+          "localTime": "12:00",
+          "minutesAhead": 151.9,
+          "probability": 0.1799,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T20:00:00Z",
+          "windowStart": "2026-09-23T19:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7539,
+          "localTime": "13:00",
+          "minutesAhead": 211.9,
+          "probability": 0.1661,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T21:00:00Z",
+          "windowStart": "2026-09-23T20:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5474,
+          "localTime": "17:00",
+          "minutesAhead": 451.9,
+          "probability": 0.1206,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T01:00:00Z",
+          "windowStart": "2026-09-24T00:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1659
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6424,
+          "localTime": "15:00",
+          "minutesAhead": 331.9,
+          "probability": 0.1066,
+          "rawScore": 0.1659,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T23:00:00Z",
+          "windowStart": "2026-09-23T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "confidence": "LOW",
+      "explanation": {
+        "reasons": [
+          "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+          "Showing the pattern from 93 community report(s) within 250 miles.",
+          "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+        ],
+        "reportsUsed": 93,
+        "signals": {
+          "basis": "Network pattern",
+          "machineReports": "0",
+          "networkReports": "93",
+          "scope": "REGIONAL"
+        }
+      },
+      "features": {
+        "hourHitRate": {},
+        "interval": null,
+        "lastKnownStatus": null,
+        "lastObservationAt": null,
+        "machineId": "recDRDzItBxXkjJTy",
+        "meanMatchConfidence": 0.0,
+        "meanSourceConfidence": 0.0,
+        "minutePattern": null,
+        "minutesSinceLastAvailable": null,
+        "minutesSinceLastNotAvailable": null,
+        "minutesSinceLastPositive": null,
+        "minutesSinceLastPurchase": null,
+        "minutesSinceSuspectedRestock": null,
+        "nearby": {
+          "activeByRadiusMiles": {
+            "10": 0,
+            "3": 0,
+            "5": 0
+          },
+          "activeClosest": 0,
+          "activeMachineIds": [],
+          "closestRadiusMiles": 3,
+          "score": 0.0,
+          "windowMinutes": 90
+        },
+        "negativeCount": 0,
+        "observationCount": 0,
+        "positiveCount": 0,
+        "purchaseCount": 0,
+        "totalWeight": 0.0,
+        "weekdayHitRate": {},
+        "weekdayHourHitRate": {}
+      },
+      "generatedAt": "2026-09-23T16:28:06Z",
+      "machineId": "recDRDzItBxXkjJTy",
+      "minimumObservations": 8,
+      "networkPrior": {
+        "baseRate": 0.1894,
+        "bestHour": 16,
+        "bestHourRate": 0.4669,
+        "hourRate": {
+          "14": 0.25,
+          "15": 0.1117,
+          "16": 0.4669,
+          "18": 0.0909
+        },
+        "machineCount": 93,
+        "positiveCount": 18,
+        "regionalRadiusMiles": 250,
+        "sampleCount": 93,
+        "scope": "REGIONAL",
+        "weekdayRate": {
+          "0": 0.1667,
+          "1": 0.1585,
+          "2": 0.2923,
+          "3": 0.125,
+          "4": 0.1765,
+          "5": 0.0909,
+          "6": 0.2638
+        }
+      },
+      "next": {
+        "basis": "NETWORK",
+        "components": {
+          "network_rate": 0.4145
+        },
+        "explanation": {
+          "reasons": [
+            "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+            "Showing the pattern from 93 community report(s) within 250 miles.",
+            "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+          ],
+          "reportsUsed": 93,
+          "signals": {
+            "basis": "Network pattern",
+            "machineReports": "0",
+            "networkReports": "93",
+            "scope": "REGIONAL"
+          }
+        },
+        "horizonScale": 0.593,
+        "localTime": "16:00",
+        "minutesAhead": 391.9,
+        "probability": 0.2458,
+        "rawScore": 0.4145,
+        "sampleScale": 0.0,
+        "sourceScale": 0.0,
+        "windowEnd": "2026-09-24T00:00:00Z",
+        "windowStart": "2026-09-23T23:00:00Z"
+      },
+      "observationCount": 0,
+      "status": "NETWORK_PATTERN",
+      "windowMinutes": 5,
+      "windows": [
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.4145
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.593,
+          "localTime": "16:00",
+          "minutesAhead": 391.9,
+          "probability": 0.2458,
+          "rawScore": 0.4145,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T00:00:00Z",
+          "windowStart": "2026-09-23T23:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.9584,
+          "localTime": "10:00",
+          "minutesAhead": 31.9,
+          "probability": 0.2111,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T18:00:00Z",
+          "windowStart": "2026-09-23T17:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8847,
+          "localTime": "11:00",
+          "minutesAhead": 91.9,
+          "probability": 0.1949,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T19:00:00Z",
+          "windowStart": "2026-09-23T18:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2627
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6959,
+          "localTime": "14:00",
+          "minutesAhead": 271.9,
+          "probability": 0.1828,
+          "rawScore": 0.2627,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T22:00:00Z",
+          "windowStart": "2026-09-23T21:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8167,
+          "localTime": "12:00",
+          "minutesAhead": 151.9,
+          "probability": 0.1799,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T20:00:00Z",
+          "windowStart": "2026-09-23T19:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7539,
+          "localTime": "13:00",
+          "minutesAhead": 211.9,
+          "probability": 0.1661,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T21:00:00Z",
+          "windowStart": "2026-09-23T20:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5474,
+          "localTime": "17:00",
+          "minutesAhead": 451.9,
+          "probability": 0.1206,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T01:00:00Z",
+          "windowStart": "2026-09-24T00:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1659
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6424,
+          "localTime": "15:00",
+          "minutesAhead": 331.9,
+          "probability": 0.1066,
+          "rawScore": 0.1659,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T23:00:00Z",
+          "windowStart": "2026-09-23T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "confidence": "LOW",
+      "explanation": {
+        "reasons": [
+          "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+          "Showing the pattern from 93 community report(s) within 250 miles.",
+          "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+        ],
+        "reportsUsed": 93,
+        "signals": {
+          "basis": "Network pattern",
+          "machineReports": "1",
+          "networkReports": "93",
+          "scope": "REGIONAL"
+        }
+      },
+      "features": {
+        "hourHitRate": {
+          "17": 1.0
+        },
+        "interval": null,
+        "lastKnownStatus": {
+          "ageHours": 3207.9,
+          "availability": "AVAILABLE",
+          "evidenceClass": "COMMUNITY_TIMESTAMPED",
+          "observedAt": "2026-05-13T00:32:09Z",
+          "product": null,
+          "purchaseConfirmed": false,
+          "source": "PUBLIC_WEB",
+          "sourceUrl": "https://pokemonmap.com/"
+        },
+        "lastObservationAt": "2026-05-13T00:32:09Z",
+        "machineId": "recVYWXIOZFAuR6qt",
+        "meanMatchConfidence": 1.0,
+        "meanSourceConfidence": 0.65,
+        "minutePattern": null,
+        "minutesSinceLastAvailable": 192476.0,
+        "minutesSinceLastNotAvailable": null,
+        "minutesSinceLastPositive": 192476.0,
+        "minutesSinceLastPurchase": null,
+        "minutesSinceSuspectedRestock": null,
+        "nearby": {
+          "activeByRadiusMiles": {
+            "10": 0,
+            "3": 0,
+            "5": 0
+          },
+          "activeClosest": 0,
+          "activeMachineIds": [],
+          "closestRadiusMiles": 3,
+          "score": 0.0,
+          "windowMinutes": 90
+        },
+        "negativeCount": 0,
+        "observationCount": 1,
+        "positiveCount": 1,
+        "purchaseCount": 0,
+        "totalWeight": 0.0,
+        "weekdayHitRate": {
+          "1": 1.0
+        },
+        "weekdayHourHitRate": {
+          "1:17": 1.0
+        }
+      },
+      "generatedAt": "2026-09-23T16:28:06Z",
+      "machineId": "recVYWXIOZFAuR6qt",
+      "minimumObservations": 8,
+      "networkPrior": {
+        "baseRate": 0.1894,
+        "bestHour": 16,
+        "bestHourRate": 0.4669,
+        "hourRate": {
+          "14": 0.25,
+          "15": 0.1117,
+          "16": 0.4669,
+          "18": 0.0909
+        },
+        "machineCount": 93,
+        "positiveCount": 18,
+        "regionalRadiusMiles": 250,
+        "sampleCount": 93,
+        "scope": "REGIONAL",
+        "weekdayRate": {
+          "0": 0.1667,
+          "1": 0.1585,
+          "2": 0.2923,
+          "3": 0.125,
+          "4": 0.1765,
+          "5": 0.0909,
+          "6": 0.2638
+        }
+      },
+      "next": {
+        "basis": "NETWORK",
+        "components": {
+          "network_rate": 0.4145
+        },
+        "explanation": {
+          "reasons": [
+            "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+            "Showing the pattern from 93 community report(s) within 250 miles.",
+            "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+          ],
+          "reportsUsed": 93,
+          "signals": {
+            "basis": "Network pattern",
+            "machineReports": "1",
+            "networkReports": "93",
+            "scope": "REGIONAL"
+          }
+        },
+        "horizonScale": 0.593,
+        "localTime": "16:00",
+        "minutesAhead": 391.9,
+        "probability": 0.2458,
+        "rawScore": 0.4145,
+        "sampleScale": 0.0,
+        "sourceScale": 0.0,
+        "windowEnd": "2026-09-24T00:00:00Z",
+        "windowStart": "2026-09-23T23:00:00Z"
+      },
+      "observationCount": 1,
+      "status": "NETWORK_PATTERN",
+      "windowMinutes": 5,
+      "windows": [
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.4145
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.593,
+          "localTime": "16:00",
+          "minutesAhead": 391.9,
+          "probability": 0.2458,
+          "rawScore": 0.4145,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T00:00:00Z",
+          "windowStart": "2026-09-23T23:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.9584,
+          "localTime": "10:00",
+          "minutesAhead": 31.9,
+          "probability": 0.2111,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T18:00:00Z",
+          "windowStart": "2026-09-23T17:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8847,
+          "localTime": "11:00",
+          "minutesAhead": 91.9,
+          "probability": 0.1949,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T19:00:00Z",
+          "windowStart": "2026-09-23T18:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2627
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6959,
+          "localTime": "14:00",
+          "minutesAhead": 271.9,
+          "probability": 0.1828,
+          "rawScore": 0.2627,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T22:00:00Z",
+          "windowStart": "2026-09-23T21:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8167,
+          "localTime": "12:00",
+          "minutesAhead": 151.9,
+          "probability": 0.1799,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T20:00:00Z",
+          "windowStart": "2026-09-23T19:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7539,
+          "localTime": "13:00",
+          "minutesAhead": 211.9,
+          "probability": 0.1661,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T21:00:00Z",
+          "windowStart": "2026-09-23T20:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5474,
+          "localTime": "17:00",
+          "minutesAhead": 451.9,
+          "probability": 0.1206,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T01:00:00Z",
+          "windowStart": "2026-09-24T00:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1659
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6424,
+          "localTime": "15:00",
+          "minutesAhead": 331.9,
+          "probability": 0.1066,
+          "rawScore": 0.1659,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T23:00:00Z",
+          "windowStart": "2026-09-23T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "confidence": "LOW",
+      "explanation": {
+        "reasons": [
+          "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+          "Showing the pattern from 93 community report(s) within 250 miles.",
+          "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+        ],
+        "reportsUsed": 93,
+        "signals": {
+          "basis": "Network pattern",
+          "machineReports": "0",
+          "networkReports": "93",
+          "scope": "REGIONAL"
+        }
+      },
+      "features": {
+        "hourHitRate": {},
+        "interval": null,
+        "lastKnownStatus": null,
+        "lastObservationAt": null,
+        "machineId": "rec5ierZUGzMxwT1i",
+        "meanMatchConfidence": 0.0,
+        "meanSourceConfidence": 0.0,
+        "minutePattern": null,
+        "minutesSinceLastAvailable": null,
+        "minutesSinceLastNotAvailable": null,
+        "minutesSinceLastPositive": null,
+        "minutesSinceLastPurchase": null,
+        "minutesSinceSuspectedRestock": null,
+        "nearby": {
+          "activeByRadiusMiles": {
+            "10": 0,
+            "3": 0,
+            "5": 0
+          },
+          "activeClosest": 0,
+          "activeMachineIds": [],
+          "closestRadiusMiles": 3,
+          "score": 0.0,
+          "windowMinutes": 90
+        },
+        "negativeCount": 0,
+        "observationCount": 0,
+        "positiveCount": 0,
+        "purchaseCount": 0,
+        "totalWeight": 0.0,
+        "weekdayHitRate": {},
+        "weekdayHourHitRate": {}
+      },
+      "generatedAt": "2026-09-23T16:28:06Z",
+      "machineId": "rec5ierZUGzMxwT1i",
+      "minimumObservations": 8,
+      "networkPrior": {
+        "baseRate": 0.1894,
+        "bestHour": 16,
+        "bestHourRate": 0.4669,
+        "hourRate": {
+          "14": 0.25,
+          "15": 0.1117,
+          "16": 0.4669,
+          "18": 0.0909
+        },
+        "machineCount": 93,
+        "positiveCount": 18,
+        "regionalRadiusMiles": 250,
+        "sampleCount": 93,
+        "scope": "REGIONAL",
+        "weekdayRate": {
+          "0": 0.1667,
+          "1": 0.1585,
+          "2": 0.2923,
+          "3": 0.125,
+          "4": 0.1765,
+          "5": 0.0909,
+          "6": 0.2638
+        }
+      },
+      "next": {
+        "basis": "NETWORK",
+        "components": {
+          "network_rate": 0.4145
+        },
+        "explanation": {
+          "reasons": [
+            "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+            "Showing the pattern from 93 community report(s) within 250 miles.",
+            "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+          ],
+          "reportsUsed": 93,
+          "signals": {
+            "basis": "Network pattern",
+            "machineReports": "0",
+            "networkReports": "93",
+            "scope": "REGIONAL"
+          }
+        },
+        "horizonScale": 0.593,
+        "localTime": "16:00",
+        "minutesAhead": 391.9,
+        "probability": 0.2458,
+        "rawScore": 0.4145,
+        "sampleScale": 0.0,
+        "sourceScale": 0.0,
+        "windowEnd": "2026-09-24T00:00:00Z",
+        "windowStart": "2026-09-23T23:00:00Z"
+      },
+      "observationCount": 0,
+      "status": "NETWORK_PATTERN",
+      "windowMinutes": 5,
+      "windows": [
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.4145
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.593,
+          "localTime": "16:00",
+          "minutesAhead": 391.9,
+          "probability": 0.2458,
+          "rawScore": 0.4145,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T00:00:00Z",
+          "windowStart": "2026-09-23T23:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.9584,
+          "localTime": "10:00",
+          "minutesAhead": 31.9,
+          "probability": 0.2111,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T18:00:00Z",
+          "windowStart": "2026-09-23T17:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8847,
+          "localTime": "11:00",
+          "minutesAhead": 91.9,
+          "probability": 0.1949,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T19:00:00Z",
+          "windowStart": "2026-09-23T18:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2627
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6959,
+          "localTime": "14:00",
+          "minutesAhead": 271.9,
+          "probability": 0.1828,
+          "rawScore": 0.2627,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T22:00:00Z",
+          "windowStart": "2026-09-23T21:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8167,
+          "localTime": "12:00",
+          "minutesAhead": 151.9,
+          "probability": 0.1799,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T20:00:00Z",
+          "windowStart": "2026-09-23T19:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7539,
+          "localTime": "13:00",
+          "minutesAhead": 211.9,
+          "probability": 0.1661,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T21:00:00Z",
+          "windowStart": "2026-09-23T20:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5474,
+          "localTime": "17:00",
+          "minutesAhead": 451.9,
+          "probability": 0.1206,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T01:00:00Z",
+          "windowStart": "2026-09-24T00:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1659
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6424,
+          "localTime": "15:00",
+          "minutesAhead": 331.9,
+          "probability": 0.1066,
+          "rawScore": 0.1659,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T23:00:00Z",
+          "windowStart": "2026-09-23T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "confidence": "LOW",
+      "explanation": {
+        "reasons": [
+          "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+          "Showing the pattern from 93 community report(s) within 250 miles.",
+          "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+        ],
+        "reportsUsed": 93,
+        "signals": {
+          "basis": "Network pattern",
+          "machineReports": "0",
+          "networkReports": "93",
+          "scope": "REGIONAL"
+        }
+      },
+      "features": {
+        "hourHitRate": {},
+        "interval": null,
+        "lastKnownStatus": null,
+        "lastObservationAt": null,
+        "machineId": "rec5Dr0p20HFkMQQW",
+        "meanMatchConfidence": 0.0,
+        "meanSourceConfidence": 0.0,
+        "minutePattern": null,
+        "minutesSinceLastAvailable": null,
+        "minutesSinceLastNotAvailable": null,
+        "minutesSinceLastPositive": null,
+        "minutesSinceLastPurchase": null,
+        "minutesSinceSuspectedRestock": null,
+        "nearby": {
+          "activeByRadiusMiles": {
+            "10": 0,
+            "3": 0,
+            "5": 0
+          },
+          "activeClosest": 0,
+          "activeMachineIds": [],
+          "closestRadiusMiles": 3,
+          "score": 0.0,
+          "windowMinutes": 90
+        },
+        "negativeCount": 0,
+        "observationCount": 0,
+        "positiveCount": 0,
+        "purchaseCount": 0,
+        "totalWeight": 0.0,
+        "weekdayHitRate": {},
+        "weekdayHourHitRate": {}
+      },
+      "generatedAt": "2026-09-23T16:28:06Z",
+      "machineId": "rec5Dr0p20HFkMQQW",
+      "minimumObservations": 8,
+      "networkPrior": {
+        "baseRate": 0.1894,
+        "bestHour": 16,
+        "bestHourRate": 0.4669,
+        "hourRate": {
+          "14": 0.25,
+          "15": 0.1117,
+          "16": 0.4669,
+          "18": 0.0909
+        },
+        "machineCount": 93,
+        "positiveCount": 18,
+        "regionalRadiusMiles": 250,
+        "sampleCount": 93,
+        "scope": "REGIONAL",
+        "weekdayRate": {
+          "0": 0.1667,
+          "1": 0.1585,
+          "2": 0.2923,
+          "3": 0.125,
+          "4": 0.1765,
+          "5": 0.0909,
+          "6": 0.2638
+        }
+      },
+      "next": {
+        "basis": "NETWORK",
+        "components": {
+          "network_rate": 0.4145
+        },
+        "explanation": {
+          "reasons": [
+            "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+            "Showing the pattern from 93 community report(s) within 250 miles.",
+            "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+          ],
+          "reportsUsed": 93,
+          "signals": {
+            "basis": "Network pattern",
+            "machineReports": "0",
+            "networkReports": "93",
+            "scope": "REGIONAL"
+          }
+        },
+        "horizonScale": 0.593,
+        "localTime": "16:00",
+        "minutesAhead": 391.9,
+        "probability": 0.2458,
+        "rawScore": 0.4145,
+        "sampleScale": 0.0,
+        "sourceScale": 0.0,
+        "windowEnd": "2026-09-24T00:00:00Z",
+        "windowStart": "2026-09-23T23:00:00Z"
+      },
+      "observationCount": 0,
+      "status": "NETWORK_PATTERN",
+      "windowMinutes": 5,
+      "windows": [
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.4145
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.593,
+          "localTime": "16:00",
+          "minutesAhead": 391.9,
+          "probability": 0.2458,
+          "rawScore": 0.4145,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T00:00:00Z",
+          "windowStart": "2026-09-23T23:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.9584,
+          "localTime": "10:00",
+          "minutesAhead": 31.9,
+          "probability": 0.2111,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T18:00:00Z",
+          "windowStart": "2026-09-23T17:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8847,
+          "localTime": "11:00",
+          "minutesAhead": 91.9,
+          "probability": 0.1949,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T19:00:00Z",
+          "windowStart": "2026-09-23T18:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2627
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6959,
+          "localTime": "14:00",
+          "minutesAhead": 271.9,
+          "probability": 0.1828,
+          "rawScore": 0.2627,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T22:00:00Z",
+          "windowStart": "2026-09-23T21:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8167,
+          "localTime": "12:00",
+          "minutesAhead": 151.9,
+          "probability": 0.1799,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T20:00:00Z",
+          "windowStart": "2026-09-23T19:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7539,
+          "localTime": "13:00",
+          "minutesAhead": 211.9,
+          "probability": 0.1661,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T21:00:00Z",
+          "windowStart": "2026-09-23T20:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5474,
+          "localTime": "17:00",
+          "minutesAhead": 451.9,
+          "probability": 0.1206,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T01:00:00Z",
+          "windowStart": "2026-09-24T00:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1659
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6424,
+          "localTime": "15:00",
+          "minutesAhead": 331.9,
+          "probability": 0.1066,
+          "rawScore": 0.1659,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T23:00:00Z",
+          "windowStart": "2026-09-23T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "confidence": "LOW",
+      "explanation": {
+        "reasons": [
+          "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+          "Showing the pattern from 93 community report(s) within 250 miles.",
+          "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+        ],
+        "reportsUsed": 93,
+        "signals": {
+          "basis": "Network pattern",
+          "machineReports": "0",
+          "networkReports": "93",
+          "scope": "REGIONAL"
+        }
+      },
+      "features": {
+        "hourHitRate": {},
+        "interval": null,
+        "lastKnownStatus": null,
+        "lastObservationAt": null,
+        "machineId": "recsdam4nxLQLFEze",
+        "meanMatchConfidence": 0.0,
+        "meanSourceConfidence": 0.0,
+        "minutePattern": null,
+        "minutesSinceLastAvailable": null,
+        "minutesSinceLastNotAvailable": null,
+        "minutesSinceLastPositive": null,
+        "minutesSinceLastPurchase": null,
+        "minutesSinceSuspectedRestock": null,
+        "nearby": {
+          "activeByRadiusMiles": {
+            "10": 0,
+            "3": 0,
+            "5": 0
+          },
+          "activeClosest": 0,
+          "activeMachineIds": [],
+          "closestRadiusMiles": 3,
+          "score": 0.0,
+          "windowMinutes": 90
+        },
+        "negativeCount": 0,
+        "observationCount": 0,
+        "positiveCount": 0,
+        "purchaseCount": 0,
+        "totalWeight": 0.0,
+        "weekdayHitRate": {},
+        "weekdayHourHitRate": {}
+      },
+      "generatedAt": "2026-09-23T16:28:06Z",
+      "machineId": "recsdam4nxLQLFEze",
+      "minimumObservations": 8,
+      "networkPrior": {
+        "baseRate": 0.1894,
+        "bestHour": 16,
+        "bestHourRate": 0.4669,
+        "hourRate": {
+          "14": 0.25,
+          "15": 0.1117,
+          "16": 0.4669,
+          "18": 0.0909
+        },
+        "machineCount": 93,
+        "positiveCount": 18,
+        "regionalRadiusMiles": 250,
+        "sampleCount": 93,
+        "scope": "REGIONAL",
+        "weekdayRate": {
+          "0": 0.1667,
+          "1": 0.1585,
+          "2": 0.2923,
+          "3": 0.125,
+          "4": 0.1765,
+          "5": 0.0909,
+          "6": 0.2638
+        }
+      },
+      "next": {
+        "basis": "NETWORK",
+        "components": {
+          "network_rate": 0.4145
+        },
+        "explanation": {
+          "reasons": [
+            "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+            "Showing the pattern from 93 community report(s) within 250 miles.",
+            "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+          ],
+          "reportsUsed": 93,
+          "signals": {
+            "basis": "Network pattern",
+            "machineReports": "0",
+            "networkReports": "93",
+            "scope": "REGIONAL"
+          }
+        },
+        "horizonScale": 0.593,
+        "localTime": "16:00",
+        "minutesAhead": 391.9,
+        "probability": 0.2458,
+        "rawScore": 0.4145,
+        "sampleScale": 0.0,
+        "sourceScale": 0.0,
+        "windowEnd": "2026-09-24T00:00:00Z",
+        "windowStart": "2026-09-23T23:00:00Z"
+      },
+      "observationCount": 0,
+      "status": "NETWORK_PATTERN",
+      "windowMinutes": 5,
+      "windows": [
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.4145
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.593,
+          "localTime": "16:00",
+          "minutesAhead": 391.9,
+          "probability": 0.2458,
+          "rawScore": 0.4145,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T00:00:00Z",
+          "windowStart": "2026-09-23T23:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.9584,
+          "localTime": "10:00",
+          "minutesAhead": 31.9,
+          "probability": 0.2111,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T18:00:00Z",
+          "windowStart": "2026-09-23T17:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8847,
+          "localTime": "11:00",
+          "minutesAhead": 91.9,
+          "probability": 0.1949,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T19:00:00Z",
+          "windowStart": "2026-09-23T18:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2627
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6959,
+          "localTime": "14:00",
+          "minutesAhead": 271.9,
+          "probability": 0.1828,
+          "rawScore": 0.2627,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T22:00:00Z",
+          "windowStart": "2026-09-23T21:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8167,
+          "localTime": "12:00",
+          "minutesAhead": 151.9,
+          "probability": 0.1799,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T20:00:00Z",
+          "windowStart": "2026-09-23T19:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7539,
+          "localTime": "13:00",
+          "minutesAhead": 211.9,
+          "probability": 0.1661,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T21:00:00Z",
+          "windowStart": "2026-09-23T20:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5474,
+          "localTime": "17:00",
+          "minutesAhead": 451.9,
+          "probability": 0.1206,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T01:00:00Z",
+          "windowStart": "2026-09-24T00:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1659
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6424,
+          "localTime": "15:00",
+          "minutesAhead": 331.9,
+          "probability": 0.1066,
+          "rawScore": 0.1659,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T23:00:00Z",
+          "windowStart": "2026-09-23T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "confidence": "LOW",
+      "explanation": {
+        "reasons": [
+          "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+          "Showing the pattern from 93 community report(s) within 250 miles.",
+          "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+        ],
+        "reportsUsed": 93,
+        "signals": {
+          "basis": "Network pattern",
+          "machineReports": "0",
+          "networkReports": "93",
+          "scope": "REGIONAL"
+        }
+      },
+      "features": {
+        "hourHitRate": {},
+        "interval": null,
+        "lastKnownStatus": null,
+        "lastObservationAt": null,
+        "machineId": "recTc5NuQKDA66RV9",
+        "meanMatchConfidence": 0.0,
+        "meanSourceConfidence": 0.0,
+        "minutePattern": null,
+        "minutesSinceLastAvailable": null,
+        "minutesSinceLastNotAvailable": null,
+        "minutesSinceLastPositive": null,
+        "minutesSinceLastPurchase": null,
+        "minutesSinceSuspectedRestock": null,
+        "nearby": {
+          "activeByRadiusMiles": {
+            "10": 0,
+            "3": 0,
+            "5": 0
+          },
+          "activeClosest": 0,
+          "activeMachineIds": [],
+          "closestRadiusMiles": 3,
+          "score": 0.0,
+          "windowMinutes": 90
+        },
+        "negativeCount": 0,
+        "observationCount": 0,
+        "positiveCount": 0,
+        "purchaseCount": 0,
+        "totalWeight": 0.0,
+        "weekdayHitRate": {},
+        "weekdayHourHitRate": {}
+      },
+      "generatedAt": "2026-09-23T16:28:06Z",
+      "machineId": "recTc5NuQKDA66RV9",
+      "minimumObservations": 8,
+      "networkPrior": {
+        "baseRate": 0.1894,
+        "bestHour": 16,
+        "bestHourRate": 0.4669,
+        "hourRate": {
+          "14": 0.25,
+          "15": 0.1117,
+          "16": 0.4669,
+          "18": 0.0909
+        },
+        "machineCount": 93,
+        "positiveCount": 18,
+        "regionalRadiusMiles": 250,
+        "sampleCount": 93,
+        "scope": "REGIONAL",
+        "weekdayRate": {
+          "0": 0.1667,
+          "1": 0.1585,
+          "2": 0.2923,
+          "3": 0.125,
+          "4": 0.1765,
+          "5": 0.0909,
+          "6": 0.2638
+        }
+      },
+      "next": {
+        "basis": "NETWORK",
+        "components": {
+          "network_rate": 0.4145
+        },
+        "explanation": {
+          "reasons": [
+            "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+            "Showing the pattern from 93 community report(s) within 250 miles.",
+            "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+          ],
+          "reportsUsed": 93,
+          "signals": {
+            "basis": "Network pattern",
+            "machineReports": "0",
+            "networkReports": "93",
+            "scope": "REGIONAL"
+          }
+        },
+        "horizonScale": 0.593,
+        "localTime": "16:00",
+        "minutesAhead": 391.9,
+        "probability": 0.2458,
+        "rawScore": 0.4145,
+        "sampleScale": 0.0,
+        "sourceScale": 0.0,
+        "windowEnd": "2026-09-24T00:00:00Z",
+        "windowStart": "2026-09-23T23:00:00Z"
+      },
+      "observationCount": 0,
+      "status": "NETWORK_PATTERN",
+      "windowMinutes": 5,
+      "windows": [
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.4145
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.593,
+          "localTime": "16:00",
+          "minutesAhead": 391.9,
+          "probability": 0.2458,
+          "rawScore": 0.4145,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T00:00:00Z",
+          "windowStart": "2026-09-23T23:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.9584,
+          "localTime": "10:00",
+          "minutesAhead": 31.9,
+          "probability": 0.2111,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T18:00:00Z",
+          "windowStart": "2026-09-23T17:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8847,
+          "localTime": "11:00",
+          "minutesAhead": 91.9,
+          "probability": 0.1949,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T19:00:00Z",
+          "windowStart": "2026-09-23T18:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2627
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6959,
+          "localTime": "14:00",
+          "minutesAhead": 271.9,
+          "probability": 0.1828,
+          "rawScore": 0.2627,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T22:00:00Z",
+          "windowStart": "2026-09-23T21:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8167,
+          "localTime": "12:00",
+          "minutesAhead": 151.9,
+          "probability": 0.1799,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T20:00:00Z",
+          "windowStart": "2026-09-23T19:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7539,
+          "localTime": "13:00",
+          "minutesAhead": 211.9,
+          "probability": 0.1661,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T21:00:00Z",
+          "windowStart": "2026-09-23T20:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5474,
+          "localTime": "17:00",
+          "minutesAhead": 451.9,
+          "probability": 0.1206,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T01:00:00Z",
+          "windowStart": "2026-09-24T00:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1659
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6424,
+          "localTime": "15:00",
+          "minutesAhead": 331.9,
+          "probability": 0.1066,
+          "rawScore": 0.1659,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T23:00:00Z",
+          "windowStart": "2026-09-23T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "confidence": "LOW",
+      "explanation": {
+        "reasons": [
+          "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+          "Showing the pattern from 93 community report(s) within 250 miles.",
+          "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+        ],
+        "reportsUsed": 93,
+        "signals": {
+          "basis": "Network pattern",
+          "machineReports": "0",
+          "networkReports": "93",
+          "scope": "REGIONAL"
+        }
+      },
+      "features": {
+        "hourHitRate": {},
+        "interval": null,
+        "lastKnownStatus": null,
+        "lastObservationAt": null,
+        "machineId": "recdDsMc0U3XlHmdj",
+        "meanMatchConfidence": 0.0,
+        "meanSourceConfidence": 0.0,
+        "minutePattern": null,
+        "minutesSinceLastAvailable": null,
+        "minutesSinceLastNotAvailable": null,
+        "minutesSinceLastPositive": null,
+        "minutesSinceLastPurchase": null,
+        "minutesSinceSuspectedRestock": null,
+        "nearby": {
+          "activeByRadiusMiles": {
+            "10": 0,
+            "3": 0,
+            "5": 0
+          },
+          "activeClosest": 0,
+          "activeMachineIds": [],
+          "closestRadiusMiles": 3,
+          "score": 0.0,
+          "windowMinutes": 90
+        },
+        "negativeCount": 0,
+        "observationCount": 0,
+        "positiveCount": 0,
+        "purchaseCount": 0,
+        "totalWeight": 0.0,
+        "weekdayHitRate": {},
+        "weekdayHourHitRate": {}
+      },
+      "generatedAt": "2026-09-23T16:28:06Z",
+      "machineId": "recdDsMc0U3XlHmdj",
+      "minimumObservations": 8,
+      "networkPrior": {
+        "baseRate": 0.1894,
+        "bestHour": 16,
+        "bestHourRate": 0.4669,
+        "hourRate": {
+          "14": 0.25,
+          "15": 0.1117,
+          "16": 0.4669,
+          "18": 0.0909
+        },
+        "machineCount": 93,
+        "positiveCount": 18,
+        "regionalRadiusMiles": 250,
+        "sampleCount": 93,
+        "scope": "REGIONAL",
+        "weekdayRate": {
+          "0": 0.1667,
+          "1": 0.1585,
+          "2": 0.2923,
+          "3": 0.125,
+          "4": 0.1765,
+          "5": 0.0909,
+          "6": 0.2638
+        }
+      },
+      "next": {
+        "basis": "NETWORK",
+        "components": {
+          "network_rate": 0.4145
+        },
+        "explanation": {
+          "reasons": [
+            "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+            "Showing the pattern from 93 community report(s) within 250 miles.",
+            "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+          ],
+          "reportsUsed": 93,
+          "signals": {
+            "basis": "Network pattern",
+            "machineReports": "0",
+            "networkReports": "93",
+            "scope": "REGIONAL"
+          }
+        },
+        "horizonScale": 0.593,
+        "localTime": "16:00",
+        "minutesAhead": 391.9,
+        "probability": 0.2458,
+        "rawScore": 0.4145,
+        "sampleScale": 0.0,
+        "sourceScale": 0.0,
+        "windowEnd": "2026-09-24T00:00:00Z",
+        "windowStart": "2026-09-23T23:00:00Z"
+      },
+      "observationCount": 0,
+      "status": "NETWORK_PATTERN",
+      "windowMinutes": 5,
+      "windows": [
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.4145
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.593,
+          "localTime": "16:00",
+          "minutesAhead": 391.9,
+          "probability": 0.2458,
+          "rawScore": 0.4145,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T00:00:00Z",
+          "windowStart": "2026-09-23T23:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.9584,
+          "localTime": "10:00",
+          "minutesAhead": 31.9,
+          "probability": 0.2111,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T18:00:00Z",
+          "windowStart": "2026-09-23T17:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8847,
+          "localTime": "11:00",
+          "minutesAhead": 91.9,
+          "probability": 0.1949,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T19:00:00Z",
+          "windowStart": "2026-09-23T18:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2627
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6959,
+          "localTime": "14:00",
+          "minutesAhead": 271.9,
+          "probability": 0.1828,
+          "rawScore": 0.2627,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T22:00:00Z",
+          "windowStart": "2026-09-23T21:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8167,
+          "localTime": "12:00",
+          "minutesAhead": 151.9,
+          "probability": 0.1799,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T20:00:00Z",
+          "windowStart": "2026-09-23T19:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7539,
+          "localTime": "13:00",
+          "minutesAhead": 211.9,
+          "probability": 0.1661,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T21:00:00Z",
+          "windowStart": "2026-09-23T20:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5474,
+          "localTime": "17:00",
+          "minutesAhead": 451.9,
+          "probability": 0.1206,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T01:00:00Z",
+          "windowStart": "2026-09-24T00:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1659
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6424,
+          "localTime": "15:00",
+          "minutesAhead": 331.9,
+          "probability": 0.1066,
+          "rawScore": 0.1659,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T23:00:00Z",
+          "windowStart": "2026-09-23T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "confidence": "LOW",
+      "explanation": {
+        "reasons": [
+          "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+          "Showing the pattern from 93 community report(s) within 250 miles.",
+          "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+        ],
+        "reportsUsed": 93,
+        "signals": {
+          "basis": "Network pattern",
+          "machineReports": "0",
+          "networkReports": "93",
+          "scope": "REGIONAL"
+        }
+      },
+      "features": {
+        "hourHitRate": {},
+        "interval": null,
+        "lastKnownStatus": null,
+        "lastObservationAt": null,
+        "machineId": "recURNyhKwDrZsDGG",
+        "meanMatchConfidence": 0.0,
+        "meanSourceConfidence": 0.0,
+        "minutePattern": null,
+        "minutesSinceLastAvailable": null,
+        "minutesSinceLastNotAvailable": null,
+        "minutesSinceLastPositive": null,
+        "minutesSinceLastPurchase": null,
+        "minutesSinceSuspectedRestock": null,
+        "nearby": {
+          "activeByRadiusMiles": {
+            "10": 0,
+            "3": 0,
+            "5": 0
+          },
+          "activeClosest": 0,
+          "activeMachineIds": [],
+          "closestRadiusMiles": 3,
+          "score": 0.0,
+          "windowMinutes": 90
+        },
+        "negativeCount": 0,
+        "observationCount": 0,
+        "positiveCount": 0,
+        "purchaseCount": 0,
+        "totalWeight": 0.0,
+        "weekdayHitRate": {},
+        "weekdayHourHitRate": {}
+      },
+      "generatedAt": "2026-09-23T16:28:06Z",
+      "machineId": "recURNyhKwDrZsDGG",
+      "minimumObservations": 8,
+      "networkPrior": {
+        "baseRate": 0.1894,
+        "bestHour": 16,
+        "bestHourRate": 0.4669,
+        "hourRate": {
+          "14": 0.25,
+          "15": 0.1117,
+          "16": 0.4669,
+          "18": 0.0909
+        },
+        "machineCount": 93,
+        "positiveCount": 18,
+        "regionalRadiusMiles": 250,
+        "sampleCount": 93,
+        "scope": "REGIONAL",
+        "weekdayRate": {
+          "0": 0.1667,
+          "1": 0.1585,
+          "2": 0.2923,
+          "3": 0.125,
+          "4": 0.1765,
+          "5": 0.0909,
+          "6": 0.2638
+        }
+      },
+      "next": {
+        "basis": "NETWORK",
+        "components": {
+          "network_rate": 0.4145
+        },
+        "explanation": {
+          "reasons": [
+            "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+            "Showing the pattern from 93 community report(s) within 250 miles.",
+            "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+          ],
+          "reportsUsed": 93,
+          "signals": {
+            "basis": "Network pattern",
+            "machineReports": "0",
+            "networkReports": "93",
+            "scope": "REGIONAL"
+          }
+        },
+        "horizonScale": 0.593,
+        "localTime": "16:00",
+        "minutesAhead": 391.9,
+        "probability": 0.2458,
+        "rawScore": 0.4145,
+        "sampleScale": 0.0,
+        "sourceScale": 0.0,
+        "windowEnd": "2026-09-24T00:00:00Z",
+        "windowStart": "2026-09-23T23:00:00Z"
+      },
+      "observationCount": 0,
+      "status": "NETWORK_PATTERN",
+      "windowMinutes": 5,
+      "windows": [
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.4145
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.593,
+          "localTime": "16:00",
+          "minutesAhead": 391.9,
+          "probability": 0.2458,
+          "rawScore": 0.4145,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T00:00:00Z",
+          "windowStart": "2026-09-23T23:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.9584,
+          "localTime": "10:00",
+          "minutesAhead": 31.9,
+          "probability": 0.2111,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T18:00:00Z",
+          "windowStart": "2026-09-23T17:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8847,
+          "localTime": "11:00",
+          "minutesAhead": 91.9,
+          "probability": 0.1949,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T19:00:00Z",
+          "windowStart": "2026-09-23T18:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2627
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6959,
+          "localTime": "14:00",
+          "minutesAhead": 271.9,
+          "probability": 0.1828,
+          "rawScore": 0.2627,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T22:00:00Z",
+          "windowStart": "2026-09-23T21:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8167,
+          "localTime": "12:00",
+          "minutesAhead": 151.9,
+          "probability": 0.1799,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T20:00:00Z",
+          "windowStart": "2026-09-23T19:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7539,
+          "localTime": "13:00",
+          "minutesAhead": 211.9,
+          "probability": 0.1661,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T21:00:00Z",
+          "windowStart": "2026-09-23T20:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5474,
+          "localTime": "17:00",
+          "minutesAhead": 451.9,
+          "probability": 0.1206,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T01:00:00Z",
+          "windowStart": "2026-09-24T00:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1659
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6424,
+          "localTime": "15:00",
+          "minutesAhead": 331.9,
+          "probability": 0.1066,
+          "rawScore": 0.1659,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T23:00:00Z",
+          "windowStart": "2026-09-23T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "confidence": "LOW",
+      "explanation": {
+        "reasons": [
+          "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+          "Showing the pattern from 93 community report(s) within 250 miles.",
+          "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+        ],
+        "reportsUsed": 93,
+        "signals": {
+          "basis": "Network pattern",
+          "machineReports": "0",
+          "networkReports": "93",
+          "scope": "REGIONAL"
+        }
+      },
+      "features": {
+        "hourHitRate": {},
+        "interval": null,
+        "lastKnownStatus": null,
+        "lastObservationAt": null,
+        "machineId": "rec1u8cRmzJiJsdeS",
+        "meanMatchConfidence": 0.0,
+        "meanSourceConfidence": 0.0,
+        "minutePattern": null,
+        "minutesSinceLastAvailable": null,
+        "minutesSinceLastNotAvailable": null,
+        "minutesSinceLastPositive": null,
+        "minutesSinceLastPurchase": null,
+        "minutesSinceSuspectedRestock": null,
+        "nearby": {
+          "activeByRadiusMiles": {
+            "10": 0,
+            "3": 0,
+            "5": 0
+          },
+          "activeClosest": 0,
+          "activeMachineIds": [],
+          "closestRadiusMiles": 3,
+          "score": 0.0,
+          "windowMinutes": 90
+        },
+        "negativeCount": 0,
+        "observationCount": 0,
+        "positiveCount": 0,
+        "purchaseCount": 0,
+        "totalWeight": 0.0,
+        "weekdayHitRate": {},
+        "weekdayHourHitRate": {}
+      },
+      "generatedAt": "2026-09-23T16:28:06Z",
+      "machineId": "rec1u8cRmzJiJsdeS",
+      "minimumObservations": 8,
+      "networkPrior": {
+        "baseRate": 0.1894,
+        "bestHour": 16,
+        "bestHourRate": 0.4669,
+        "hourRate": {
+          "14": 0.25,
+          "15": 0.1117,
+          "16": 0.4669,
+          "18": 0.0909
+        },
+        "machineCount": 93,
+        "positiveCount": 18,
+        "regionalRadiusMiles": 250,
+        "sampleCount": 93,
+        "scope": "REGIONAL",
+        "weekdayRate": {
+          "0": 0.1667,
+          "1": 0.1585,
+          "2": 0.2923,
+          "3": 0.125,
+          "4": 0.1765,
+          "5": 0.0909,
+          "6": 0.2638
+        }
+      },
+      "next": {
+        "basis": "NETWORK",
+        "components": {
+          "network_rate": 0.4145
+        },
+        "explanation": {
+          "reasons": [
+            "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+            "Showing the pattern from 93 community report(s) within 250 miles.",
+            "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+          ],
+          "reportsUsed": 93,
+          "signals": {
+            "basis": "Network pattern",
+            "machineReports": "0",
+            "networkReports": "93",
+            "scope": "REGIONAL"
+          }
+        },
+        "horizonScale": 0.593,
+        "localTime": "16:00",
+        "minutesAhead": 391.9,
+        "probability": 0.2458,
+        "rawScore": 0.4145,
+        "sampleScale": 0.0,
+        "sourceScale": 0.0,
+        "windowEnd": "2026-09-24T00:00:00Z",
+        "windowStart": "2026-09-23T23:00:00Z"
+      },
+      "observationCount": 0,
+      "status": "NETWORK_PATTERN",
+      "windowMinutes": 5,
+      "windows": [
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.4145
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.593,
+          "localTime": "16:00",
+          "minutesAhead": 391.9,
+          "probability": 0.2458,
+          "rawScore": 0.4145,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T00:00:00Z",
+          "windowStart": "2026-09-23T23:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.9584,
+          "localTime": "10:00",
+          "minutesAhead": 31.9,
+          "probability": 0.2111,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T18:00:00Z",
+          "windowStart": "2026-09-23T17:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8847,
+          "localTime": "11:00",
+          "minutesAhead": 91.9,
+          "probability": 0.1949,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T19:00:00Z",
+          "windowStart": "2026-09-23T18:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2627
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6959,
+          "localTime": "14:00",
+          "minutesAhead": 271.9,
+          "probability": 0.1828,
+          "rawScore": 0.2627,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T22:00:00Z",
+          "windowStart": "2026-09-23T21:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8167,
+          "localTime": "12:00",
+          "minutesAhead": 151.9,
+          "probability": 0.1799,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T20:00:00Z",
+          "windowStart": "2026-09-23T19:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7539,
+          "localTime": "13:00",
+          "minutesAhead": 211.9,
+          "probability": 0.1661,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T21:00:00Z",
+          "windowStart": "2026-09-23T20:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5474,
+          "localTime": "17:00",
+          "minutesAhead": 451.9,
+          "probability": 0.1206,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T01:00:00Z",
+          "windowStart": "2026-09-24T00:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1659
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6424,
+          "localTime": "15:00",
+          "minutesAhead": 331.9,
+          "probability": 0.1066,
+          "rawScore": 0.1659,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T23:00:00Z",
+          "windowStart": "2026-09-23T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "confidence": "LOW",
+      "explanation": {
+        "reasons": [
+          "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+          "Showing the pattern from 93 community report(s) within 250 miles.",
+          "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+        ],
+        "reportsUsed": 93,
+        "signals": {
+          "basis": "Network pattern",
+          "machineReports": "0",
+          "networkReports": "93",
+          "scope": "REGIONAL"
+        }
+      },
+      "features": {
+        "hourHitRate": {},
+        "interval": null,
+        "lastKnownStatus": null,
+        "lastObservationAt": null,
+        "machineId": "recbcwbwRADJNCFrJ",
+        "meanMatchConfidence": 0.0,
+        "meanSourceConfidence": 0.0,
+        "minutePattern": null,
+        "minutesSinceLastAvailable": null,
+        "minutesSinceLastNotAvailable": null,
+        "minutesSinceLastPositive": null,
+        "minutesSinceLastPurchase": null,
+        "minutesSinceSuspectedRestock": null,
+        "nearby": {
+          "activeByRadiusMiles": {
+            "10": 0,
+            "3": 0,
+            "5": 0
+          },
+          "activeClosest": 0,
+          "activeMachineIds": [],
+          "closestRadiusMiles": 3,
+          "score": 0.0,
+          "windowMinutes": 90
+        },
+        "negativeCount": 0,
+        "observationCount": 0,
+        "positiveCount": 0,
+        "purchaseCount": 0,
+        "totalWeight": 0.0,
+        "weekdayHitRate": {},
+        "weekdayHourHitRate": {}
+      },
+      "generatedAt": "2026-09-23T16:28:06Z",
+      "machineId": "recbcwbwRADJNCFrJ",
+      "minimumObservations": 8,
+      "networkPrior": {
+        "baseRate": 0.1894,
+        "bestHour": 16,
+        "bestHourRate": 0.4669,
+        "hourRate": {
+          "14": 0.25,
+          "15": 0.1117,
+          "16": 0.4669,
+          "18": 0.0909
+        },
+        "machineCount": 93,
+        "positiveCount": 18,
+        "regionalRadiusMiles": 250,
+        "sampleCount": 93,
+        "scope": "REGIONAL",
+        "weekdayRate": {
+          "0": 0.1667,
+          "1": 0.1585,
+          "2": 0.2923,
+          "3": 0.125,
+          "4": 0.1765,
+          "5": 0.0909,
+          "6": 0.2638
+        }
+      },
+      "next": {
+        "basis": "NETWORK",
+        "components": {
+          "network_rate": 0.4145
+        },
+        "explanation": {
+          "reasons": [
+            "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+            "Showing the pattern from 93 community report(s) within 250 miles.",
+            "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+          ],
+          "reportsUsed": 93,
+          "signals": {
+            "basis": "Network pattern",
+            "machineReports": "0",
+            "networkReports": "93",
+            "scope": "REGIONAL"
+          }
+        },
+        "horizonScale": 0.593,
+        "localTime": "16:00",
+        "minutesAhead": 391.9,
+        "probability": 0.2458,
+        "rawScore": 0.4145,
+        "sampleScale": 0.0,
+        "sourceScale": 0.0,
+        "windowEnd": "2026-09-24T00:00:00Z",
+        "windowStart": "2026-09-23T23:00:00Z"
+      },
+      "observationCount": 0,
+      "status": "NETWORK_PATTERN",
+      "windowMinutes": 5,
+      "windows": [
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.4145
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.593,
+          "localTime": "16:00",
+          "minutesAhead": 391.9,
+          "probability": 0.2458,
+          "rawScore": 0.4145,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T00:00:00Z",
+          "windowStart": "2026-09-23T23:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.9584,
+          "localTime": "10:00",
+          "minutesAhead": 31.9,
+          "probability": 0.2111,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T18:00:00Z",
+          "windowStart": "2026-09-23T17:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8847,
+          "localTime": "11:00",
+          "minutesAhead": 91.9,
+          "probability": 0.1949,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T19:00:00Z",
+          "windowStart": "2026-09-23T18:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2627
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6959,
+          "localTime": "14:00",
+          "minutesAhead": 271.9,
+          "probability": 0.1828,
+          "rawScore": 0.2627,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T22:00:00Z",
+          "windowStart": "2026-09-23T21:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8167,
+          "localTime": "12:00",
+          "minutesAhead": 151.9,
+          "probability": 0.1799,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T20:00:00Z",
+          "windowStart": "2026-09-23T19:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7539,
+          "localTime": "13:00",
+          "minutesAhead": 211.9,
+          "probability": 0.1661,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T21:00:00Z",
+          "windowStart": "2026-09-23T20:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5474,
+          "localTime": "17:00",
+          "minutesAhead": 451.9,
+          "probability": 0.1206,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T01:00:00Z",
+          "windowStart": "2026-09-24T00:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1659
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6424,
+          "localTime": "15:00",
+          "minutesAhead": 331.9,
+          "probability": 0.1066,
+          "rawScore": 0.1659,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T23:00:00Z",
+          "windowStart": "2026-09-23T22:00:00Z"
+        }
+      ]
+    },
+    {
+      "confidence": "LOW",
+      "explanation": {
+        "reasons": [
+          "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+          "Showing the pattern from 93 community report(s) within 250 miles.",
+          "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+        ],
+        "reportsUsed": 93,
+        "signals": {
+          "basis": "Network pattern",
+          "machineReports": "0",
+          "networkReports": "93",
+          "scope": "REGIONAL"
+        }
+      },
+      "features": {
+        "hourHitRate": {},
+        "interval": null,
+        "lastKnownStatus": null,
+        "lastObservationAt": null,
+        "machineId": "rec9EIDVfntkPNLoJ",
+        "meanMatchConfidence": 0.0,
+        "meanSourceConfidence": 0.0,
+        "minutePattern": null,
+        "minutesSinceLastAvailable": null,
+        "minutesSinceLastNotAvailable": null,
+        "minutesSinceLastPositive": null,
+        "minutesSinceLastPurchase": null,
+        "minutesSinceSuspectedRestock": null,
+        "nearby": {
+          "activeByRadiusMiles": {
+            "10": 0,
+            "3": 0,
+            "5": 0
+          },
+          "activeClosest": 0,
+          "activeMachineIds": [],
+          "closestRadiusMiles": 3,
+          "score": 0.0,
+          "windowMinutes": 90
+        },
+        "negativeCount": 0,
+        "observationCount": 0,
+        "positiveCount": 0,
+        "purchaseCount": 0,
+        "totalWeight": 0.0,
+        "weekdayHitRate": {},
+        "weekdayHourHitRate": {}
+      },
+      "generatedAt": "2026-09-23T16:28:06Z",
+      "machineId": "rec9EIDVfntkPNLoJ",
+      "minimumObservations": 8,
+      "networkPrior": {
+        "baseRate": 0.1894,
+        "bestHour": 16,
+        "bestHourRate": 0.4669,
+        "hourRate": {
+          "14": 0.25,
+          "15": 0.1117,
+          "16": 0.4669,
+          "18": 0.0909
+        },
+        "machineCount": 93,
+        "positiveCount": 18,
+        "regionalRadiusMiles": 250,
+        "sampleCount": 93,
+        "scope": "REGIONAL",
+        "weekdayRate": {
+          "0": 0.1667,
+          "1": 0.1585,
+          "2": 0.2923,
+          "3": 0.125,
+          "4": 0.1765,
+          "5": 0.0909,
+          "6": 0.2638
+        }
+      },
+      "next": {
+        "basis": "NETWORK",
+        "components": {
+          "network_rate": 0.4145
+        },
+        "explanation": {
+          "reasons": [
+            "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+            "Showing the pattern from 93 community report(s) within 250 miles.",
+            "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+          ],
+          "reportsUsed": 93,
+          "signals": {
+            "basis": "Network pattern",
+            "machineReports": "0",
+            "networkReports": "93",
+            "scope": "REGIONAL"
+          }
+        },
+        "horizonScale": 0.593,
+        "localTime": "16:00",
+        "minutesAhead": 391.9,
+        "probability": 0.2458,
+        "rawScore": 0.4145,
+        "sampleScale": 0.0,
+        "sourceScale": 0.0,
+        "windowEnd": "2026-09-24T00:00:00Z",
+        "windowStart": "2026-09-23T23:00:00Z"
+      },
+      "observationCount": 0,
+      "status": "NETWORK_PATTERN",
+      "windowMinutes": 5,
+      "windows": [
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.4145
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.593,
+          "localTime": "16:00",
+          "minutesAhead": 391.9,
+          "probability": 0.2458,
+          "rawScore": 0.4145,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T00:00:00Z",
+          "windowStart": "2026-09-23T23:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.9584,
+          "localTime": "10:00",
+          "minutesAhead": 31.9,
+          "probability": 0.2111,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T18:00:00Z",
+          "windowStart": "2026-09-23T17:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8847,
+          "localTime": "11:00",
+          "minutesAhead": 91.9,
+          "probability": 0.1949,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T19:00:00Z",
+          "windowStart": "2026-09-23T18:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2627
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6959,
+          "localTime": "14:00",
+          "minutesAhead": 271.9,
+          "probability": 0.1828,
+          "rawScore": 0.2627,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T22:00:00Z",
+          "windowStart": "2026-09-23T21:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.8167,
+          "localTime": "12:00",
+          "minutesAhead": 151.9,
+          "probability": 0.1799,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T20:00:00Z",
+          "windowStart": "2026-09-23T19:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7539,
+          "localTime": "13:00",
+          "minutesAhead": 211.9,
+          "probability": 0.1661,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T21:00:00Z",
+          "windowStart": "2026-09-23T20:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.2203
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5474,
+          "localTime": "17:00",
+          "minutesAhead": 451.9,
+          "probability": 0.1206,
+          "rawScore": 0.2203,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-24T01:00:00Z",
+          "windowStart": "2026-09-24T00:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1659
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 93 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (47% of reports in that hour)."
+            ],
+            "reportsUsed": 93,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "93",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.6424,
+          "localTime": "15:00",
+          "minutesAhead": 331.9,
+          "probability": 0.1066,
+          "rawScore": 0.1659,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-09-23T23:00:00Z",
+          "windowStart": "2026-09-23T22:00:00Z"
+        }
+      ]
+    }
+  ],
+  "generatedAt": "2026-09-23T16:28:06Z"
+}

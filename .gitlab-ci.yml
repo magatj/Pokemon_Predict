@@ -1,0 +1,238 @@
+# Pokemon Vending Forecast - GitLab CI/CD
+#
+# On a merge request or a push, only validate/test/build run.
+# The ingest and forecast stages run on a *scheduled* pipeline, which then
+# commits the refreshed data back to the repository and redeploys Pages.
+#
+# See README "GitLab scheduled pipeline setup".
+
+stages:
+  - validate
+  - test
+  - ingest
+  - forecast
+  - build
+  - deploy
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+  npm_config_cache: "$CI_PROJECT_DIR/.cache/npm"
+  PYTHONPATH: "$CI_PROJECT_DIR/apps/ingestion"
+  # Vite needs the project path as its base for GitLab project Pages.
+  VITE_BASE_PATH: "/$CI_PROJECT_NAME/"
+  GIT_DEPTH: "20"
+
+default:
+  interruptible: true
+
+# Shared cache so unchanged dependencies are not re-downloaded every run.
+.python:
+  image: python:3.12-slim
+  before_script:
+    - python -m pip install --upgrade pip --quiet
+    - pip install --quiet -r apps/ingestion/requirements-dev.txt
+  cache:
+    key:
+      files:
+        - apps/ingestion/requirements-dev.txt
+    paths:
+      - .cache/pip
+
+.node:
+  image: node:22-alpine
+  before_script:
+    - npm ci --no-audit --fund=false
+  cache:
+    key:
+      files:
+        - package-lock.json
+    paths:
+      - .cache/npm
+
+# ---------------------------------------------------------------- validate
+
+lint:python:
+  extends: .python
+  stage: validate
+  script:
+    - ruff check .
+
+lint:web:
+  extends: .node
+  stage: validate
+  script:
+    - npm run lint
+
+config:validate:
+  extends: .python
+  stage: validate
+  script:
+    # Fails fast if scoring weights do not sum to 1.0, a weight is out of
+    # range, or either YAML file is malformed.
+    - python -c "from pokevend.config import load_config; c = load_config(); print('config OK:', c.forecast.zip_code, c.forecast.radius_miles)"
+
+terraform:fmt:
+  stage: validate
+  image:
+    name: hashicorp/terraform:1.9
+    entrypoint: [""]
+  script:
+    - terraform fmt -check -recursive infrastructure/terraform
+  rules:
+    # Infrastructure is not touched by data refreshes, so skip it on schedules.
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+      when: never
+    - changes:
+        - infrastructure/terraform/**/*
+
+# -------------------------------------------------------------------- test
+
+test:python:
+  extends: .python
+  stage: test
+  script:
+    - pytest --junitxml=report.xml
+  artifacts:
+    when: always
+    expire_in: 1 week
+    reports:
+      junit: report.xml
+
+test:web:
+  extends: .node
+  stage: test
+  script:
+    - npm run test
+
+# ------------------------------------------------------------------ ingest
+# Scheduled pipelines only. A manual run is available for one-off refreshes.
+
+.scheduled:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      when: manual
+      allow_failure: true
+
+refresh-machines:
+  extends:
+    - .python
+    - .scheduled
+  stage: ingest
+  # The HTTP cache carries ETag/Last-Modified state between runs so unchanged
+  # pages come back as 304 instead of being downloaded again.
+  cache:
+    - key:
+        files:
+          - apps/ingestion/requirements-dev.txt
+      paths:
+        - .cache/pip
+    - key: "http-cache"
+      paths:
+        - .cache/http
+  script:
+    - python -m pokevend.jobs.refresh_machines --log-level INFO
+  artifacts:
+    paths:
+      - data/
+    expire_in: 1 day
+
+collect-public-observations:
+  extends:
+    - .python
+    - .scheduled
+  stage: ingest
+  needs: ["refresh-machines"]
+  cache:
+    - key:
+        files:
+          - apps/ingestion/requirements-dev.txt
+      paths:
+        - .cache/pip
+    - key: "http-cache"
+      paths:
+        - .cache/http
+  script:
+    # Community sources without credentials log SOURCE_SKIPPED and the job
+    # still succeeds - a disabled source is not a pipeline failure.
+    - python -m pokevend.jobs.collect_observations --log-level INFO
+  artifacts:
+    paths:
+      - data/
+    expire_in: 1 day
+
+# ---------------------------------------------------------------- forecast
+
+generate-forecast:
+  extends:
+    - .python
+    - .scheduled
+  stage: forecast
+  needs: ["collect-public-observations"]
+  script:
+    - python -m pokevend.jobs.build_forecasts --log-level INFO
+  artifacts:
+    paths:
+      - data/
+      - apps/web/public/data/
+    expire_in: 1 week
+
+# Persist the observation history back into the repository so the next
+# scheduled run builds on it. Requires a project access token with
+# write_repository exposed as $GITLAB_PUSH_TOKEN. Without the token the job
+# is skipped and the history survives only as pipeline artifacts.
+persist-data:
+  extends: .python
+  stage: forecast
+  needs: ["generate-forecast"]
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule" && $GITLAB_PUSH_TOKEN
+  script:
+    - git config user.email "ci@$CI_SERVER_HOST"
+    - git config user.name "Pokevend ingestion"
+    - git remote set-url origin "https://oauth2:${GITLAB_PUSH_TOKEN}@${CI_SERVER_HOST}/${CI_PROJECT_PATH}.git"
+    - git fetch origin "$CI_DEFAULT_BRANCH"
+    - git checkout "$CI_DEFAULT_BRANCH"
+    - git add data/
+    - |
+      if git diff --cached --quiet; then
+        echo "no data changes to persist"
+      else
+        git commit -m "chore(data): scheduled ingestion refresh [skip ci]"
+        git push origin "$CI_DEFAULT_BRANCH"
+      fi
+
+# ------------------------------------------------------------------- build
+
+build-web:
+  extends: .node
+  stage: build
+  script:
+    # Regenerate the published bundle from whatever data is in the repo, so a
+    # non-scheduled pipeline still deploys the latest committed forecasts.
+    - npm run build
+  artifacts:
+    paths:
+      - apps/web/dist
+    expire_in: 1 week
+
+# ------------------------------------------------------------------ deploy
+
+pages:
+  stage: deploy
+  image: alpine:3.20
+  needs:
+    - job: build-web
+      artifacts: true
+  script:
+    - rm -rf public
+    - mv apps/web/dist public
+    # GitLab Pages serves static files only, so client-side routes need a
+    # fallback. Copying index.html to 404.html makes deep links resolve.
+    - cp public/index.html public/404.html
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_PIPELINE_SOURCE == "schedule"

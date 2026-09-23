@@ -1,0 +1,75 @@
+# Source registry. Disabling a source here removes it from every job.
+# See README "How to disable a source" and "How to add another source".
+
+defaults:
+  timeout_seconds: 20
+  max_retries: 3
+  rate_limit_seconds: 1.5
+  user_agent: "pokemon-vending-forecast/0.1 (+https://gitlab.com/; contact: repo owner)"
+  respect_robots: true
+
+sources:
+  pokemon_locator:
+    enabled: true
+    authority: OFFICIAL
+    # Public, unauthenticated JSON API used by the official locator web app.
+    base_url: "https://api.vending.prod.pokemon.com"
+    machines_path: "/v1/machines"
+    # The API returns at most `result_cap` machines per bounding box, so the
+    # search area is tiled into a grid and results are merged + de-duplicated.
+    result_cap: 20
+    tile_grid: 4
+    rate_limit_seconds: 1.0
+
+  retailer_pages:
+    enabled: true
+    authority: VERIFICATION
+    # robots.txt on local.safeway.com allows everything except /locator.
+    retailers:
+      Safeway:
+        base_url: "https://local.safeway.com"
+        enabled: true
+      Fred Meyer:
+        base_url: "https://www.fredmeyer.com"
+        # Disabled: store pages are behind bot protection; see SOURCE_SKIPPED.
+        enabled: false
+    rate_limit_seconds: 3.0
+
+  pokemonmap:
+    enabled: true
+    authority: COMMUNITY
+    # PokeVend Tracker: community-contributed machine status, keyed by the same
+    # Q##### machine ids the official locator uses, so attribution is exact.
+    # The site publishes no robots.txt and states no restriction on automated
+    # access. Kept to one polite request per run.
+    #
+    # It exposes only each machine's CURRENT status plus lastUpdated - there is
+    # no history endpoint - so the observation history is built up by polling.
+    base_url: "https://pokemonmap.com"
+    machines_path: "/api/machines"
+    rate_limit_seconds: 2.0
+    # A single regional query (one request) covers both jobs: the machines in
+    # the search radius, and the wider sample that feeds the network prior.
+    # Raise this to widen the prior; 300 miles is ~370 machines / ~106 KB.
+    network_radius_miles: 300
+
+  reddit:
+    enabled: true
+    authority: COMMUNITY
+    # www.reddit.com/robots.txt is "Disallow: /" and unauthenticated JSON
+    # returns 403. HTML scraping is therefore NOT permitted. This adapter only
+    # runs against the official OAuth API. Without credentials in the
+    # environment it logs SOURCE_SKIPPED and contributes nothing.
+    oauth_token_url: "https://www.reddit.com/api/v1/access_token"
+    api_base_url: "https://oauth.reddit.com"
+    client_id_env: "REDDIT_CLIENT_ID"
+    client_secret_env: "REDDIT_CLIENT_SECRET"
+    subreddits: ["PokeInvesting", "PokemonTCG", "SeattleWA"]
+    queries: ["pokemon vending machine restock", "pokemon vending auburn kent covington"]
+    rate_limit_seconds: 2.0
+
+  third_party_directories:
+    enabled: false
+    authority: SUPPLEMENTAL
+    # Left off by default: aggregator sites re-publish scraped data of unknown
+    # provenance and would only ever be supplemental evidence.

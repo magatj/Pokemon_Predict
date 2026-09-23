@@ -1,0 +1,116 @@
+# Pokemon Vending Forecast - forecasting configuration.
+# Every number the forecast engine uses lives here. No magic numbers in code.
+
+location:
+  zip_code: "98092"
+  radius_miles: 10.0
+  # All time-of-day features and displayed windows use this zone.
+  timezone: "America/Los_Angeles"
+  # Fallback centroid used when the ZIP geocoder is unavailable (offline / CI).
+  # Verified against api.zippopotam.us for 98092 (Auburn, WA).
+  fallback_centroid:
+    latitude: 47.2884
+    longitude: -122.098
+
+forecast:
+  # Size of a single predicted availability window.
+  window_minutes: 5
+  supported_window_minutes: [5, 10, 15, 30]
+
+  # How far ahead to project candidate windows.
+  horizon_hours: 12
+  # Confidence in a window falls off the further ahead it is: a window 6 hours
+  # out rests on the same pattern but far more can change before it arrives.
+  # score is multiplied by exp(-horizon_decay_per_hour * hours_ahead).
+  horizon_decay_per_hour: 0.08
+  # How many ranked windows to keep per machine.
+  max_windows_per_machine: 8
+
+  # A machine below `minimum_observations` reports INSUFFICIENT_DATA and is
+  # never given a probability. This is deliberate - see README.
+  minimum_observations: 8
+  high_confidence_observations: 30
+
+  # Minute-of-hour clustering tolerance (see minute_pattern.py).
+  minute_tolerance: 3
+  minute_pattern_min_samples: 4
+
+  # Recurring interval detection (see interval.py).
+  interval_candidates_minutes: [30, 60, 90, 120]
+  interval_tolerance_minutes: 4
+  interval_min_samples: 4
+  interval_min_support: 0.5
+
+  # Exponential recency decay: weight = exp(-lambda * age_hours)
+  # 0.0058 /hour puts the half-life at ~5 days.
+  recency_lambda_per_hour: 0.0058
+  recency_reference_hours: 72
+
+  # Nearby-machine contextual signal (secondary only).
+  nearby_radii_miles: [3, 5, 10]
+  nearby_window_minutes: 90
+
+# Network-level fallback.
+#
+# Most machines will never have enough reports of their own to forecast from.
+# Rather than showing nothing, the engine backs off to the empirical pattern
+# across every machine reported in the surrounding region - standard
+# shrinkage toward a population prior.
+#
+# This is always labelled as a network pattern, never as machine-specific, and
+# its probability is capped well below what real machine history can earn.
+network_prior:
+  enabled: true
+  # Prefer reports within this distance of the search centroid; fall back to
+  # everything available when the regional sample is too small.
+  regional_radius_miles: 250
+  min_regional_reports: 40
+  # Below this many reports overall, no prior is offered at all.
+  min_reports: 25
+  # An hour of day needs this many reports before its rate is trusted.
+  min_hour_samples: 8
+  # A network pattern can never be presented above this probability.
+  max_probability: 0.35
+  # Blend weight between hour-of-day and weekday rates.
+  hour_weight: 0.7
+  weekday_weight: 0.3
+
+# Explainable weighted scoring. Must sum to 1.0 (validated at load time).
+scoring_weights:
+  minute_pattern: 0.30
+  interval: 0.20
+  historical_hit_rate: 0.20
+  recency: 0.15
+  weekday_hour: 0.10
+  nearby_activity: 0.05
+
+# Confidence multipliers applied after scoring.
+confidence:
+  # Score is scaled by min(1, observations / full_confidence_observations).
+  full_confidence_observations: 30
+  # Floor so a well-supported pattern is not crushed by a small sample.
+  sample_scale_floor: 0.35
+  # Banding for the displayed confidence label.
+  bands:
+    high: 0.70
+    medium: 0.40
+
+# Observation weights by evidence class (section 11 of the spec).
+observation_weights:
+  PURCHASE_CONFIRMED: 1.00
+  USER_REPORT_WITH_PHOTO: 0.95
+  USER_AVAILABLE: 0.85
+  USER_NOT_AVAILABLE: 0.75
+  COMMUNITY_TIMESTAMPED: 0.65
+  COMMUNITY_GENERAL: 0.40
+  THIRD_PARTY_INFERRED: 0.25
+
+# Machine matching thresholds for free-text community reports.
+matching:
+  # Below this, a report is kept but NOT attributed to a specific machine.
+  min_machine_match_confidence: 0.70
+  retailer_weight: 0.35
+  city_weight: 0.35
+  zip_weight: 0.20
+  alias_weight: 0.40
+  machine_id_weight: 1.00
