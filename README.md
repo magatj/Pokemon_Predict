@@ -534,11 +534,19 @@ repository lives on.
 | `ingest.yml` | every 30 min, manual | refresh machines, collect observations, build forecasts, commit the data back, then deploy |
 | `pages.yml` | push to `main`, manual, or called by `ingest.yml` | build and publish to GitHub Pages |
 
-One-time setup:
+Setup:
 
-1. **Settings → Pages → Source: GitHub Actions.**
-2. **Settings → Actions → General → Workflow permissions: Read and write**, so
-   the scheduled job can commit refreshed data.
+1. **Workflow permissions must be "Read and write"** (Settings → Actions →
+   General) or the scheduled job cannot commit refreshed data. A job cannot
+   grant itself more than the repository default, so declaring
+   `permissions: contents: write` in the workflow is not sufficient on its own.
+2. **GitHub Pages needs to be available for the repository.** On a free plan
+   that means the repository must be **public** — Pages for a private repo
+   requires a paid plan. `pages.yml` passes `enablement: true`, so Pages turns
+   itself on as soon as it is available; no Settings visit is required. Until
+   then the workflow fails at the configure step with "Get Pages site failed".
+   The GitLab Pages pipeline has no such restriction and works on private
+   projects.
 3. Optionally add `REDDIT_CLIENT_ID` and `REDDIT_CLIENT_SECRET` as repository
    secrets to enable the Reddit source. Without them it reports
    `SOURCE_SKIPPED` and contributes nothing.

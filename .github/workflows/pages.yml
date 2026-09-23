@@ -1,6 +1,10 @@
 # Build the dashboard and publish it to GitHub Pages.
 #
-# One-time setup: Settings -> Pages -> Source: "GitHub Actions".
+# Requires GitHub Pages to be available for the repository. On a free plan that
+# means the repository must be PUBLIC - private-repo Pages needs a paid plan.
+# `enablement: true` turns Pages on automatically as soon as it is available, so
+# no manual Settings step is needed; until then this workflow fails at the
+# configure step with "Get Pages site failed".
 #
 # The site is served from https://<owner>.github.io/<repo>/, so Vite needs that
 # project path as its base; VITE_BASE_PATH is set from the repository name.
@@ -53,6 +57,9 @@ jobs:
         run: cp apps/web/dist/index.html apps/web/dist/404.html
 
       - uses: actions/configure-pages@v5
+        with:
+          # Turn Pages on by itself rather than requiring a Settings visit.
+          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
