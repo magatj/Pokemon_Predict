@@ -39,6 +39,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Build the branch tip, not the SHA that started the run.
+          #
+          # When ingest.yml calls this workflow it has just pushed a data
+          # commit, but a reusable workflow inherits the caller's triggering
+          # SHA - which is main as it was *before* ingestion. Checking out that
+          # SHA republishes the previous data, leaving the site permanently one
+          # cycle behind while still reporting a successful deploy.
+          ref: ${{ github.ref_name }}
 
       - uses: actions/setup-node@v4
         with:
