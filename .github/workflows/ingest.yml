@@ -58,7 +58,7 @@ jobs:
       # Carries ETag / Last-Modified state between runs so unchanged pages come
       # back as 304 instead of being downloaded again.
       - name: Restore HTTP cache
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: .cache/http
           key: http-cache-${{ github.run_id }}
