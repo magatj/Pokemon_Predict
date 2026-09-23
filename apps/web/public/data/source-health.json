@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-23T20:39:59Z",
+  "generatedAt": "2026-09-23T22:28:43Z",
   "sources": [
     {
       "authority": "OFFICIAL",
-      "checked_at": "2026-09-23T20:39:00Z",
+      "checked_at": "2026-09-23T22:27:47Z",
       "details": {},
-      "last_success_at": "2026-09-23T20:39:00Z",
+      "last_success_at": "2026-09-23T22:27:47Z",
       "message": "23 machines discovered across 16 tiles",
       "name": "pokemon_locator",
       "reason": null,
@@ -14,9 +14,9 @@
     },
     {
       "authority": "COMMUNITY",
-      "checked_at": "2026-09-23T20:39:55Z",
+      "checked_at": "2026-09-23T22:28:42Z",
       "details": {},
-      "last_success_at": "2026-09-23T20:39:55Z",
+      "last_success_at": "2026-09-23T22:28:42Z",
       "message": "373 record(s) fetched, 95 usable observation(s)",
       "name": "pokemonmap",
       "reason": null,
@@ -25,7 +25,7 @@
     },
     {
       "authority": "COMMUNITY",
-      "checked_at": "2026-09-23T20:39:58Z",
+      "checked_at": "2026-09-23T22:28:42Z",
       "details": {},
       "last_success_at": null,
       "message": "NO_CREDENTIALS: set REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET to enable the reddit source",
@@ -36,7 +36,7 @@
     },
     {
       "authority": "VERIFICATION",
-      "checked_at": "2026-09-23T20:39:55Z",
+      "checked_at": "2026-09-23T22:28:41Z",
       "details": {},
       "last_success_at": null,
       "message": "Fred Meyer disabled in sources.yaml",
@@ -47,9 +47,9 @@
     },
     {
       "authority": "VERIFICATION",
-      "checked_at": "2026-09-23T20:39:55Z",
+      "checked_at": "2026-09-23T22:28:41Z",
       "details": {},
-      "last_success_at": "2026-09-23T20:39:55Z",
+      "last_success_at": "2026-09-23T22:28:41Z",
       "message": "store pages permitted; verified 9 machine(s)",
       "name": "retailer_pages:safeway",
       "reason": null,
