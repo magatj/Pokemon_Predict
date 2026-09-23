@@ -199,7 +199,7 @@ is **not** used here.
 
 ### Refresh cadence
 
-The scheduled pipeline runs every 30 minutes by default. Machine discovery is
+The scheduled pipeline runs every 3 hours by default. Machine discovery is
 cheap and re-run each time; retailer verification is bounded by a 3-second
 per-request rate limit and conditional caching, so an unchanged store page costs
 one 304.
@@ -497,8 +497,9 @@ bundle every 5 minutes.
 
 ### GitLab scheduled pipeline setup
 
-1. **CI/CD → Schedules → New schedule**, cron `*/30 * * * *` (any interval; keep
-   it aligned with `forecast.window_minutes`).
+1. **CI/CD → Schedules → New schedule**, cron `0 */3 * * *`. GitLab schedules
+   live in the project settings, not in `.gitlab-ci.yml`, so changing the file
+   does not change an existing schedule.
 2. Target the default branch. Ingestion jobs only run when
    `$CI_PIPELINE_SOURCE == "schedule"`, so pushes and MRs stay fast.
 3. To persist observation history across runs, create a project access token
@@ -531,7 +532,7 @@ repository lives on.
 | Workflow | Trigger | Does |
 |---|---|---|
 | `ci.yml` | push, PR | ruff, config validation, pytest, eslint, vitest, build, `terraform fmt` |
-| `ingest.yml` | every 30 min, manual | refresh machines, collect observations, build forecasts, commit the data back, then deploy |
+| `ingest.yml` | every 3 hours, manual | refresh machines, collect observations, build forecasts, commit the data back, then deploy |
 | `pages.yml` | push to `main`, manual, or called by `ingest.yml` | build and publish to GitHub Pages |
 
 Setup:
@@ -562,8 +563,18 @@ Two details worth knowing:
 
 **The schedule is the point.** The community status API exposes only each
 machine's current state, so a single run yields at most one observation per
-machine. History accumulates because the job runs every 30 minutes and
+machine. History accumulates because the job runs on a schedule and
 de-duplication keeps an unchanged status from being counted twice.
+
+**Changing the cadence** means editing one line - the `cron` in
+`.github/workflows/ingest.yml`. Polling frequency decides how many distinct
+events are captured, since the community API exposes only a machine's current
+status and a change superseded before the next poll is never seen. It does not
+affect timestamp accuracy: each observation carries the source's own
+`lastUpdated`. At the observed update rate - 620 reports with a median age of
+227 days, only 2 inside a week - events are far rarer than the polling
+interval, so 3 hours loses essentially nothing while making far fewer requests
+of a volunteer-run service.
 
 ---
 

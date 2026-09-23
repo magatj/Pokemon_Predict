@@ -17,9 +17,21 @@ name: Ingest
 
 on:
   schedule:
-    # Every 30 minutes. GitHub may delay scheduled runs under load, which is
-    # fine here: de-duplication means a late or repeated run costs nothing.
-    - cron: "*/30 * * * *"
+    # Every 3 hours, on the hour (UTC).
+    #
+    # Polling frequency sets how many distinct events are captured, because the
+    # community API exposes only each machine's *current* status: a change that
+    # is superseded before the next poll is never seen. The observed update rate
+    # makes that a non-issue - across 620 reports the median was 227 days old
+    # and only 2 landed within a week - so events are far rarer than 3 hours
+    # apart. An observation still carries the source's own `lastUpdated`, so
+    # polling less often costs coverage, never timestamp accuracy.
+    #
+    # GitHub may delay scheduled runs under load, which is fine here:
+    # de-duplication means a late or repeated run costs nothing. Note that
+    # GitHub disables scheduled workflows after 60 days without repository
+    # activity - a commit or a manual run re-enables them.
+    - cron: "0 */3 * * *"
   workflow_dispatch:
     inputs:
       verify_retailers:

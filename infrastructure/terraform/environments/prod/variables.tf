@@ -19,7 +19,7 @@ variable "region" {
 variable "ingest_schedule" {
   description = "EventBridge schedule for the ingestion functions."
   type        = string
-  default     = "rate(30 minutes)"
+  default     = "rate(3 hours)"
 }
 
 variable "domain_name" {
