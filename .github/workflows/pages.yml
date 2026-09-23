@@ -49,7 +49,7 @@ jobs:
           # cycle behind while still reporting a successful deploy.
           ref: ${{ github.ref_name }}
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: "22"
           cache: npm
