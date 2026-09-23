@@ -24,7 +24,7 @@ export function LocationCard({ machine }: Props) {
   const hours = orderedHours(machine.store_hours);
 
   return (
-    <section className="panel">
+    <section className="panel" id="location">
       <header className="panel__head">
         <span className="panel__icon" aria-hidden="true">
           {icons.pin}

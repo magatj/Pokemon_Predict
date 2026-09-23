@@ -4,13 +4,15 @@ import { Link } from "react-router-dom";
 import { Disclaimer } from "../components/Disclaimer";
 import { MachineCard } from "../components/MachineCard";
 import { StatCard } from "../components/StatCard";
+import { TrackerMascot } from "../components/TrackerMascot";
 import { icons } from "../components/icons";
 import { useDashboardData } from "../hooks/useDashboardData";
 import { locationConfig } from "../lib/config";
 import { type SortKey, sortMachines, sortOptions } from "../lib/data";
 import { formatRelative } from "../lib/format";
 
-export function Dashboard() {
+export function Dashboard({ view = "dashboard" }: { view?: "dashboard" | "machines" }) {
+  const isMachineDirectory = view === "machines";
   const { data, loading, error, reload } = useDashboardData();
   const [sortKey, setSortKey] = useState<SortKey>("probability");
 
@@ -31,19 +33,27 @@ export function Dashboard() {
   return (
     <>
       <header className="page-head">
+        <TrackerMascot />
         <div className="page-head__row">
           <span className="page-head__pin" aria-hidden="true">
             {icons.pin}
           </span>
           <div>
-            <h1 className="page-head__title">Machines near {zipCode}</h1>
+            <h1 className="page-head__title">
+              {isMachineDirectory ? "Machines" : `Machines near ${zipCode}`}
+            </h1>
             <p className="page-head__sub">
-              When is a machine near you most likely to dispense a product?
+              {isMachineDirectory
+                ? `Browse machines near ${zipCode}. Select one for forecasts, reports, and directions.`
+                : "When is a machine near you most likely to dispense a product?"}
             </p>
             <p className="page-head__meta">
               Within {radiusMiles} miles
               <span className="page-head__dot">·</span>
               Updated {data ? formatRelative(data.generatedAt) : "—"}
+              {!isMachineDirectory && (
+                <Link className="button button--small" to="/machines">Browse machines →</Link>
+              )}
             </p>
           </div>
         </div>
@@ -81,7 +91,7 @@ export function Dashboard() {
 
       {data && (
         <>
-          <div className="stat-row">
+          {!isMachineDirectory && <div className="stat-row">
             <StatCard
               icon={icons.pin}
               title="Machines in range"
@@ -119,9 +129,9 @@ export function Dashboard() {
                 </>
               }
             />
-          </div>
+          </div>}
 
-          <section>
+          <section id="machines">
             <div className="section-head">
               <h2 className="section-title">
                 All machines

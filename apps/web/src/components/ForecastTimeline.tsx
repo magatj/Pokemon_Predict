@@ -11,7 +11,7 @@ import {
   YAxis,
 } from "recharts";
 
-import { componentLabel, formatPercent, formatWindow, signalLabel } from "../lib/format";
+import { componentLabel, formatClock, formatPercent, formatWindow, signalLabel } from "../lib/format";
 import type { ForecastWindow } from "../lib/types";
 
 interface Props {
@@ -65,19 +65,25 @@ function SelectedLabel({ x, y, width, value, index, selected }: DirectLabelProps
  * is never presented without its reasoning.
  */
 export function ForecastTimeline({ windows }: Props) {
-  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [selectedWindowStart, setSelectedWindowStart] = useState<string | null>(null);
 
   if (windows.length === 0) {
     return <p className="empty-note">No scored windows in the forecast horizon.</p>;
   }
 
-  const rows: ChartRow[] = windows.map((window, index) => ({
-    label: formatWindow(window),
+  // The input is ranked by score. A timeline reads chronologically, while the
+  // highest-ranked window remains selected until the viewer chooses another.
+  const orderedWindows = [...windows].sort((a, b) => a.windowStart.localeCompare(b.windowStart));
+  const selectedIndex = Math.max(0, orderedWindows.findIndex(
+    (window) => window.windowStart === (selectedWindowStart ?? windows[0]?.windowStart),
+  ));
+  const rows: ChartRow[] = orderedWindows.map((window, index) => ({
+    label: formatClock(window.windowStart),
     probability: Math.round(window.probability * 100),
     index,
   }));
 
-  const selected = windows[Math.min(selectedIndex, windows.length - 1)];
+  const selected = orderedWindows[selectedIndex];
 
   // Bars encode magnitude by length, so the baseline stays at zero - but a
   // fixed 0-100 ceiling squashes a forecast that never exceeds 25%. The top
@@ -94,8 +100,8 @@ export function ForecastTimeline({ windows }: Props) {
 
   return (
     <div className="timeline">
-      <div className="timeline__chart">
-        <ResponsiveContainer width="100%" height={260}>
+      <div className="timeline__chart" role="img" aria-label="Forecast scores by time. Choose a window below to explore its evidence.">
+        <ResponsiveContainer width="100%" height={220}>
           <BarChart
             data={rows}
             margin={{ top: 22, right: 8, bottom: 8, left: 8 }}
@@ -105,10 +111,9 @@ export function ForecastTimeline({ windows }: Props) {
             <XAxis
               dataKey="label"
               tick={{ fontSize: 12, fill: "var(--text-muted)" }}
-              interval={0}
-              angle={-25}
-              textAnchor="end"
-              height={64}
+              interval="preserveStartEnd"
+              minTickGap={12}
+              height={32}
               axisLine={{ stroke: "var(--border)" }}
               tickLine={false}
             />
@@ -136,7 +141,7 @@ export function ForecastTimeline({ windows }: Props) {
             <Bar
               dataKey="probability"
               radius={[4, 4, 0, 0]}
-              onClick={(_entry: unknown, index: number) => setSelectedIndex(index)}
+              onClick={(_entry: unknown, index: number) => setSelectedWindowStart(orderedWindows[index]?.windowStart ?? null)}
               cursor="pointer"
               isAnimationActive={false}
             >
@@ -157,14 +162,13 @@ export function ForecastTimeline({ windows }: Props) {
         </ResponsiveContainer>
       </div>
 
-      <div className="timeline__list" role="list">
-        {windows.map((window, index) => (
+      <div className="timeline__list" role="group" aria-label="Choose a forecast window">
+        {orderedWindows.map((window, index) => (
           <button
             key={window.windowStart}
             type="button"
-            role="listitem"
             className={`timeline__item ${index === selectedIndex ? "timeline__item--active" : ""}`}
-            onClick={() => setSelectedIndex(index)}
+            onClick={() => setSelectedWindowStart(window.windowStart)}
             aria-pressed={index === selectedIndex}
           >
             <span>{formatWindow(window)}</span>
@@ -173,7 +177,12 @@ export function ForecastTimeline({ windows }: Props) {
         ))}
       </div>
 
-      {selected && <WindowBreakdown window={selected} />}
+      {selected && (
+        <details className="timeline__details">
+          <summary>Why this window? <span>{formatWindow(selected)} · {formatPercent(selected.probability)}</span></summary>
+          <WindowBreakdown window={selected} />
+        </details>
+      )}
     </div>
   );
 }

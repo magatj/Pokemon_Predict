@@ -1,7 +1,7 @@
-import { NavLink, type NavLinkRenderProps } from "react-router-dom";
+import { Link, NavLink, useMatch, type NavLinkRenderProps } from "react-router-dom";
 
-import { PokeballMark } from "./PokeballMark";
 import { ThemeToggle } from "./ThemeToggle";
+import { icons } from "./icons";
 
 /**
  * Sidebar shell around every page.
@@ -53,6 +53,9 @@ function navClass({ isActive }: NavLinkRenderProps): string {
 }
 
 export function AppShell({ children }: { children: React.ReactNode }) {
+  const machineDetailPage = useMatch("/machine/:machineId");
+  const machinesTab = useMatch("/machines");
+  const machinePage = machineDetailPage || machinesTab;
   return (
     <div className="shell">
       <a className="skip-link" href="#main">
@@ -60,16 +63,14 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       </a>
 
       <aside className="sidebar">
-        <div className="brand">
-          <PokeballMark className="brand__mark" />
-          <div className="brand__text">
-            <span className="brand__name">Vending</span>
-            <span className="brand__name brand__name--accent">Forecast</span>
-          </div>
-        </div>
+        <Link className="brand" to="/" aria-label="Pokémon Vending Tracker home">
+          <span className="brand__pokemon">Pokémon</span>
+          <span className="brand__subtitle">Vending Tracker</span>
+          <span className="brand__community">COMMUNITY POWERED</span>
+        </Link>
 
         <nav className="nav" aria-label="Primary">
-          {NAV.map((item) => (
+          {NAV.slice(0, 1).map((item) => (
             <NavLink key={item.to} to={item.to} end={item.to === "/"} className={navClass}>
               <svg
                 className="nav__icon"
@@ -86,15 +87,43 @@ export function AppShell({ children }: { children: React.ReactNode }) {
               <span>{item.label}</span>
             </NavLink>
           ))}
+          <NavLink
+            className={({ isActive }) => `nav__item ${isActive || machinePage ? "nav__item--active" : ""}`}
+            to="/machines"
+          >
+            <span className="nav__icon" aria-hidden="true">{icons.pin}</span>
+            <span>Machines</span>
+          </NavLink>
+          {machinePage && (
+            <>
+              <a className="nav__item" href="#location">
+                <span className="nav__icon" aria-hidden="true">{icons.pin}</span>
+                <span>Location</span>
+              </a>
+              <a className="nav__item" href="#reports">
+                <span className="nav__icon" aria-hidden="true">{icons.doc}</span>
+                <span>Reports</span>
+              </a>
+            </>
+          )}
+          {NAV.slice(1).map((item) => (
+            <NavLink key={item.to} to={item.to} className={navClass}>
+              <svg className="nav__icon" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" strokeWidth="1.7" strokeLinecap="round"
+                strokeLinejoin="round" aria-hidden="true">{item.icon}</svg>
+              <span>{item.label}</span>
+            </NavLink>
+          ))}
         </nav>
 
         <div className="sidebar__foot">
-          <ThemeToggle />
           <p className="sidebar__tagline">
-            Community data.
+            Stronger together
             <br />
-            Better odds for everyone.
+            for the hunt!
           </p>
+          <span className="decorative-pokeball" aria-hidden="true" />
+          <ThemeToggle />
           <p className="sidebar__version">v0.1.0 · MVP</p>
         </div>
       </aside>

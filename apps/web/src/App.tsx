@@ -11,6 +11,8 @@ export function App() {
     <AppShell>
       <Routes>
         <Route path="/" element={<Dashboard />} />
+        <Route path="/machines" element={<MachineDetail />} />
+        <Route path="/machines/list" element={<Dashboard view="machines" />} />
         <Route path="/machine/:machineId" element={<MachineDetail />} />
         <Route path="/sources" element={<Sources />} />
         <Route path="/about" element={<About />} />

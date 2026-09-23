@@ -29,7 +29,7 @@ export function ProgressRing({ value, label, muted = false, size = 132 }: Props)
           cy={size / 2}
           r={radius}
           fill="none"
-          stroke="var(--ring-track)"
+          stroke={muted ? "var(--accent-soft)" : "var(--ring-track)"}
           strokeWidth={stroke}
         />
         <circle
@@ -45,7 +45,7 @@ export function ProgressRing({ value, label, muted = false, size = 132 }: Props)
           transform={`rotate(-90 ${size / 2} ${size / 2})`}
         />
       </svg>
-      <div className="ring__value">
+      <div className="ring__value" style={{ height: size }}>
         <span className={`ring__number ${muted ? "ring__number--muted" : ""}`}>{percent}</span>
         <span className="ring__unit">%</span>
       </div>

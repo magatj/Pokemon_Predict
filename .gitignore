@@ -6,6 +6,7 @@ __pycache__/
 node_modules/
 apps/web/dist/
 .cache/http/
+.cache/ui-review/
 
 # The GitLab Pages artifact directory at the repo root. Note the leading slash:
 # apps/web/public/data/ IS committed - it is the published data bundle.

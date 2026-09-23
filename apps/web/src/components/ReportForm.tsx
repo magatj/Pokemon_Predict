@@ -2,6 +2,7 @@ import { type FormEvent, useMemo, useState } from "react";
 
 import { createSubmissionService, type SubmissionResult } from "../lib/observations";
 import type { Product } from "../lib/types";
+import { icons } from "./icons";
 
 const PRODUCTS: { value: Product; label: string }[] = [
   { value: "BOOSTER_BUNDLE", label: "Booster Bundle" },
@@ -54,8 +55,11 @@ export function ReportForm({ machineId, onSubmitted }: Props) {
   }
 
   return (
-    <section className="card report">
-      <h3 className="report__title">Report what you see</h3>
+    <section className="card report" id="report">
+      <header className="panel__head">
+        <span className="panel__icon" aria-hidden="true">{icons.pencil}</span>
+        <h2 className="report__title">Submit an observation</h2>
+      </header>
       <p className="report__hint">
         Your reports are what make the forecast work. The time is recorded automatically.
       </p>
@@ -66,22 +70,22 @@ export function ReportForm({ machineId, onSubmitted }: Props) {
           <div className="report__choices">
             <button
               type="button"
-              className={`choice ${availability === "AVAILABLE" ? "choice--selected" : ""}`}
+              className={`choice choice--available ${availability === "AVAILABLE" ? "choice--selected" : ""}`}
               onClick={() => setAvailability("AVAILABLE")}
               aria-pressed={availability === "AVAILABLE"}
             >
-              Available now
+              <span className="choice__symbol" aria-hidden="true">✓</span> Available now
             </button>
             <button
               type="button"
-              className={`choice ${availability === "NOT_AVAILABLE" ? "choice--selected" : ""}`}
+              className={`choice choice--unavailable ${availability === "NOT_AVAILABLE" ? "choice--selected" : ""}`}
               onClick={() => {
                 setAvailability("NOT_AVAILABLE");
                 setPurchased(null);
               }}
               aria-pressed={availability === "NOT_AVAILABLE"}
             >
-              Not available
+              <span className="choice__symbol" aria-hidden="true">−</span> Not available
             </button>
           </div>
         </fieldset>

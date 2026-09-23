@@ -30,7 +30,7 @@ export function RecentReports({ observations, limit = 8 }: Props) {
   const rows = observations.slice(0, limit);
 
   return (
-    <section className="panel">
+    <section className="panel" id="reports">
       <header className="panel__head">
         <span className="panel__icon" aria-hidden="true">
           {icons.doc}

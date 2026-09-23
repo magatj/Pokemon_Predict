@@ -1,13 +1,15 @@
 import { Suspense, lazy } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom";
 
 import { Disclaimer } from "../components/Disclaimer";
 import { LastKnownStatus } from "../components/LastKnownStatus";
 import { LocationCard } from "../components/LocationCard";
+import { MachinePhoto } from "../components/MachinePhoto";
 import { ProgressRing } from "../components/ProgressRing";
 import { RecentReports } from "../components/RecentReports";
 import { ReportForm } from "../components/ReportForm";
 import { StatCard } from "../components/StatCard";
+import { TrackerMascot } from "../components/TrackerMascot";
 import { icons } from "../components/icons";
 import { useDashboardData } from "../hooks/useDashboardData";
 import { observationsForMachine } from "../lib/data";
@@ -31,33 +33,69 @@ const ForecastTimeline = lazy(() =>
 
 export function MachineDetail() {
   const { machineId } = useParams<{ machineId: string }>();
-  const { data, loading, reload } = useDashboardData();
+  const [searchParams] = useSearchParams();
+  const navigate = useNavigate();
+  const { data, loading, error, reload } = useDashboardData();
 
-  const entry = data?.machines.find((candidate) => candidate.machine.id === machineId);
+  const selectedId = machineId ?? searchParams.get("machine");
+  const entry = selectedId
+    ? data?.machines.find((candidate) => candidate.machine.id === selectedId)
+    : data?.machines[0];
 
   if (loading && !data) {
     return <p className="empty-note">Loading machine…</p>;
   }
 
+  if (error && !data) {
+    return (
+      <div className="banner banner--error" role="alert">
+        <p>Could not load machine data: {error}</p>
+        <button className="button" type="button" onClick={reload}>Retry</button>
+      </div>
+    );
+  }
+
   if (!entry) {
     return (
       <>
-        <Link className="back-link" to="/">
+        <Link className="back-link" to="/machines/list">
           ← All machines
         </Link>
         <p className="empty-note">
-          No machine with id <code>{machineId}</code> is in the current search area.
+          {selectedId
+            ? <>No machine with id <code>{selectedId}</code> is in the current search area.</>
+            : "No machines are in the current search area."}
         </p>
       </>
     );
   }
 
   return (
-    <MachineDetailView
-      entry={entry}
-      observations={observationsForMachine(data?.observations ?? [], entry.machine.id)}
-      onReported={reload}
-    />
+    <>
+      <div className="machine-picker">
+        <label htmlFor="selected-machine">
+          <span>Select a machine</span>
+          <select
+            id="selected-machine"
+            value={entry.machine.id}
+            onChange={(event) => navigate(`/machines?machine=${encodeURIComponent(event.target.value)}`)}
+          >
+            {data?.machines.map(({ machine }) => (
+              <option key={machine.id} value={machine.id}>
+                {machine.retailer} · {machine.city} · {machine.address}
+              </option>
+            ))}
+          </select>
+        </label>
+        <Link className="back-link" to="/machines/list">View all machines →</Link>
+      </div>
+      <MachineDetailView
+        key={entry.machine.id}
+        entry={entry}
+        observations={observationsForMachine(data?.observations ?? [], entry.machine.id)}
+        onReported={reload}
+      />
+    </>
   );
 }
 
@@ -80,9 +118,7 @@ function MachineDetailView({
   return (
     <>
       <header className="page-head">
-        <Link className="back-link" to="/">
-          ← All machines
-        </Link>
+        <TrackerMascot />
 
         <div className="page-head__row">
           <span className="page-head__pin" aria-hidden="true">
@@ -108,6 +144,7 @@ function MachineDetailView({
       </header>
 
       {/* -- headline forecast -------------------------------------------- */}
+      <div className="forecast-feature">
       <section className="hero-card">
         <div className="hero-card__main">
           <header className="panel__head">
@@ -182,8 +219,9 @@ function MachineDetailView({
           {next && (
             <ProgressRing
               value={next.probability}
-              label={isNetwork ? "Network-wide" : "Probability"}
+              label={isNetwork ? "Network-wide score" : "Forecast score"}
               muted={isNetwork}
+              size={144}
             />
           )}
           {isNetwork && forecast?.networkPrior && (
@@ -194,6 +232,8 @@ function MachineDetailView({
           )}
         </div>
       </section>
+      <MachinePhoto />
+      </div>
 
       {/* -- stat row ------------------------------------------------------ */}
       <div className="stat-row">
@@ -247,14 +287,14 @@ function MachineDetailView({
       </div>
 
       {/* -- timeline + reporting ------------------------------------------ */}
-      <div className="split">
+      <div className="split split--forecast">
         <section className="panel">
           <header className="panel__head">
             <span className="panel__icon" aria-hidden="true">
               {icons.pulse}
             </span>
             <h2 className="panel__title">
-              {isNetwork ? "Best hours across the region" : "Probability timeline"}
+              {isNetwork ? "Best hours across the region" : "Availability timeline"}
             </h2>
             {isNetwork && <span className="panel__meta">not this machine</span>}
           </header>
@@ -272,7 +312,7 @@ function MachineDetailView({
       </div>
 
       {/* -- evidence ------------------------------------------------------ */}
-      <div className="split">
+      <div className="split split--evidence">
         <RecentReports observations={observations} />
         <LocationCard machine={raw} />
       </div>
