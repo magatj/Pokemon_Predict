@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T03:49:30Z",
+  "generatedAt": "2026-09-25T11:20:53Z",
   "machines": [
     {
       "address": "17023 SE 272nd St",
@@ -10,11 +10,11 @@
         "safeway covington"
       ],
       "city": "Covington",
-      "discovered_at": "2026-09-25T03:48:36Z",
+      "discovered_at": "2026-09-25T11:19:58Z",
       "distance_miles": 4.776666121519523,
       "id": "rec6hmX1D2NKNAa62",
       "kiosk_listed": true,
-      "last_verified_at": "2026-09-25T03:48:39Z",
+      "last_verified_at": "2026-09-25T11:20:02Z",
       "latitude": 47.3565839,
       "longitude": -122.1148451,
       "name": "Q01401",
@@ -74,7 +74,7 @@
           "retailer": "Safeway",
           "source": "retailer_pages",
           "url": "https://local.safeway.com/safeway/wa/covington/17023-se-272nd.html",
-          "verified_at": "2026-09-25T03:48:39Z"
+          "verified_at": "2026-09-25T11:20:02Z"
         }
       ],
       "zip": "98042"
@@ -88,11 +88,11 @@
         "safeway kent"
       ],
       "city": "Kent",
-      "discovered_at": "2026-09-25T03:48:36Z",
+      "discovered_at": "2026-09-25T11:19:58Z",
       "distance_miles": 5.712502695715907,
       "id": "recYObHvIXSety8F8",
       "kiosk_listed": true,
-      "last_verified_at": "2026-09-25T03:48:46Z",
+      "last_verified_at": "2026-09-25T11:20:08Z",
       "latitude": 47.3566693,
       "longitude": -122.1667983,
       "name": "Q01094",
@@ -152,7 +152,7 @@
           "retailer": "Safeway",
           "source": "retailer_pages",
           "url": "https://local.safeway.com/safeway/wa/kent/13101-se-kent-kangley-rd.html",
-          "verified_at": "2026-09-25T03:48:46Z"
+          "verified_at": "2026-09-25T11:20:08Z"
         }
       ],
       "zip": "98030"
@@ -166,11 +166,11 @@
         "safeway auburn"
       ],
       "city": "Auburn",
-      "discovered_at": "2026-09-25T03:48:36Z",
+      "discovered_at": "2026-09-25T11:19:58Z",
       "distance_miles": 6.128208546592609,
       "id": "reczMH2OpSZ8uPBrp",
       "kiosk_listed": true,
-      "last_verified_at": "2026-09-25T03:48:52Z",
+      "last_verified_at": "2026-09-25T11:20:14Z",
       "latitude": 47.3060085,
       "longitude": -122.226177,
       "name": "Q00249",
@@ -230,7 +230,7 @@
           "retailer": "Safeway",
           "source": "retailer_pages",
           "url": "https://local.safeway.com/safeway/wa/auburn/101-auburn-way-s.html",
-          "verified_at": "2026-09-25T03:48:52Z"
+          "verified_at": "2026-09-25T11:20:14Z"
         }
       ],
       "zip": "98002"
@@ -244,11 +244,11 @@
         "safeway auburn"
       ],
       "city": "Auburn",
-      "discovered_at": "2026-09-25T03:48:36Z",
+      "discovered_at": "2026-09-25T11:19:58Z",
       "distance_miles": 6.137793315768445,
       "id": "recNV8fRPmce3gojW",
       "kiosk_listed": true,
-      "last_verified_at": "2026-09-25T03:48:57Z",
+      "last_verified_at": "2026-09-25T11:20:20Z",
       "latitude": 47.2728184,
       "longitude": -122.2269136,
       "name": "Q00804",
@@ -308,7 +308,7 @@
           "retailer": "Safeway",
           "source": "retailer_pages",
           "url": "https://local.safeway.com/safeway/wa/auburn/4010-a-st.html",
-          "verified_at": "2026-09-25T03:48:57Z"
+          "verified_at": "2026-09-25T11:20:20Z"
         }
       ],
       "zip": "98002"
@@ -322,11 +322,11 @@
         "safeway maple valley"
       ],
       "city": "Maple Valley",
-      "discovered_at": "2026-09-25T03:48:36Z",
+      "discovered_at": "2026-09-25T11:19:58Z",
       "distance_miles": 6.211844321968934,
       "id": "recSpV6YcTTtJTpa7",
       "kiosk_listed": true,
-      "last_verified_at": "2026-09-25T03:49:03Z",
+      "last_verified_at": "2026-09-25T11:20:26Z",
       "latitude": 47.3603731,
       "longitude": -122.0185167,
       "name": "Q00869",
@@ -386,7 +386,7 @@
           "retailer": "Safeway",
           "source": "retailer_pages",
           "url": "https://local.safeway.com/safeway/wa/maple-valley/26916-maple-valley-rd.html",
-          "verified_at": "2026-09-25T03:49:03Z"
+          "verified_at": "2026-09-25T11:20:26Z"
         }
       ],
       "zip": "98038"
@@ -400,11 +400,11 @@
         "q00164"
       ],
       "city": "Auburn",
-      "discovered_at": "2026-09-25T03:48:36Z",
+      "discovered_at": "2026-09-25T11:19:58Z",
       "distance_miles": 6.314885262974266,
       "id": "recDRDzItBxXkjJTy",
       "kiosk_listed": null,
-      "last_verified_at": "2026-09-25T03:48:36Z",
+      "last_verified_at": "2026-09-25T11:19:58Z",
       "latitude": 47.3156721,
       "longitude": -122.2266363,
       "name": "Q00164",
@@ -426,11 +426,11 @@
         "q00111"
       ],
       "city": "Maple Valley",
-      "discovered_at": "2026-09-25T03:48:36Z",
+      "discovered_at": "2026-09-25T11:19:58Z",
       "distance_miles": 6.397498667086564,
       "id": "recVYWXIOZFAuR6qt",
       "kiosk_listed": null,
-      "last_verified_at": "2026-09-25T03:48:36Z",
+      "last_verified_at": "2026-09-25T11:19:58Z",
       "latitude": 47.3638798,
       "longitude": -122.0188805,
       "name": "Q00111",
@@ -452,11 +452,11 @@
         "qfc kent"
       ],
       "city": "Kent",
-      "discovered_at": "2026-09-25T03:48:36Z",
+      "discovered_at": "2026-09-25T11:19:58Z",
       "distance_miles": 7.506918488755051,
       "id": "rec5ierZUGzMxwT1i",
       "kiosk_listed": null,
-      "last_verified_at": "2026-09-25T03:48:36Z",
+      "last_verified_at": "2026-09-25T11:19:58Z",
       "latitude": 47.3875703,
       "longitude": -122.1634928,
       "name": "Q00219",
@@ -478,11 +478,11 @@
         "winco foods sumner"
       ],
       "city": "Sumner",
-      "discovered_at": "2026-09-25T03:48:36Z",
+      "discovered_at": "2026-09-25T11:19:58Z",
       "distance_miles": 8.139617473982497,
       "id": "rec5Dr0p20HFkMQQW",
       "kiosk_listed": null,
-      "last_verified_at": "2026-09-25T03:48:36Z",
+      "last_verified_at": "2026-09-25T11:19:58Z",
       "latitude": 47.1959088,
       "longitude": -122.2054725,
       "name": "Q00727",
@@ -504,11 +504,11 @@
         "safeway enumclaw"
       ],
       "city": "Enumclaw",
-      "discovered_at": "2026-09-25T03:48:36Z",
+      "discovered_at": "2026-09-25T11:19:58Z",
       "distance_miles": 8.339030208024083,
       "id": "recsdam4nxLQLFEze",
       "kiosk_listed": true,
-      "last_verified_at": "2026-09-25T03:49:09Z",
+      "last_verified_at": "2026-09-25T11:20:32Z",
       "latitude": 47.1981755,
       "longitude": -121.9799197,
       "name": "Q00239",
@@ -568,7 +568,7 @@
           "retailer": "Safeway",
           "source": "retailer_pages",
           "url": "https://local.safeway.com/safeway/wa/enumclaw/152-roosevelt-ave-e.html",
-          "verified_at": "2026-09-25T03:49:09Z"
+          "verified_at": "2026-09-25T11:20:32Z"
         }
       ],
       "zip": "98022"
@@ -582,11 +582,11 @@
         "sumner fred meyer"
       ],
       "city": "Sumner",
-      "discovered_at": "2026-09-25T03:48:36Z",
+      "discovered_at": "2026-09-25T11:19:58Z",
       "distance_miles": 8.45907069842754,
       "id": "recTc5NuQKDA66RV9",
       "kiosk_listed": null,
-      "last_verified_at": "2026-09-25T03:48:36Z",
+      "last_verified_at": "2026-09-25T11:19:58Z",
       "latitude": 47.2036999,
       "longitude": -122.2282226,
       "name": "Q00136",
@@ -608,11 +608,11 @@
         "safeway bonney lake"
       ],
       "city": "Bonney Lake",
-      "discovered_at": "2026-09-25T03:48:36Z",
+      "discovered_at": "2026-09-25T11:19:58Z",
       "distance_miles": 8.700368143877999,
       "id": "recdDsMc0U3XlHmdj",
       "kiosk_listed": true,
-      "last_verified_at": "2026-09-25T03:49:16Z",
+      "last_verified_at": "2026-09-25T11:20:38Z",
       "latitude": 47.1668837,
       "longitude": -122.146619,
       "name": "Q00874",
@@ -672,7 +672,7 @@
           "retailer": "Safeway",
           "source": "retailer_pages",
           "url": "https://local.safeway.com/safeway/wa/bonney-lake/21301-hwy-410.html",
-          "verified_at": "2026-09-25T03:49:16Z"
+          "verified_at": "2026-09-25T11:20:38Z"
         }
       ],
       "zip": "98391"
@@ -686,11 +686,11 @@
         "q00143"
       ],
       "city": "Bonney Lake",
-      "discovered_at": "2026-09-25T03:48:36Z",
+      "discovered_at": "2026-09-25T11:19:58Z",
       "distance_miles": 8.773234876569767,
       "id": "recURNyhKwDrZsDGG",
       "kiosk_listed": null,
-      "last_verified_at": "2026-09-25T03:48:36Z",
+      "last_verified_at": "2026-09-25T11:19:58Z",
       "latitude": 47.166565,
       "longitude": -122.1506684,
       "name": "Q00143",
@@ -712,11 +712,11 @@
         "safeway kent"
       ],
       "city": "Kent",
-      "discovered_at": "2026-09-25T03:48:36Z",
+      "discovered_at": "2026-09-25T11:19:58Z",
       "distance_miles": 9.413958280220262,
       "id": "rec1u8cRmzJiJsdeS",
       "kiosk_listed": true,
-      "last_verified_at": "2026-09-25T03:49:21Z",
+      "last_verified_at": "2026-09-25T11:20:44Z",
       "latitude": 47.3805498,
       "longitude": -122.2460874,
       "name": "Q00241",
@@ -776,7 +776,7 @@
           "retailer": "Safeway",
           "source": "retailer_pages",
           "url": "https://local.safeway.com/safeway/wa/kent/210-washington-ave-s.html",
-          "verified_at": "2026-09-25T03:49:21Z"
+          "verified_at": "2026-09-25T11:20:44Z"
         }
       ],
       "zip": "98032"
@@ -790,11 +790,11 @@
         "safeway milton"
       ],
       "city": "Milton",
-      "discovered_at": "2026-09-25T03:48:36Z",
+      "discovered_at": "2026-09-25T11:19:58Z",
       "distance_miles": 9.6113429613032,
       "id": "recbcwbwRADJNCFrJ",
       "kiosk_listed": null,
-      "last_verified_at": "2026-09-25T03:48:36Z",
+      "last_verified_at": "2026-09-25T11:19:58Z",
       "latitude": 47.2498457,
       "longitude": -122.2949728,
       "name": "Q01958",
@@ -816,11 +816,11 @@
         "safeway kent"
       ],
       "city": "Kent",
-      "discovered_at": "2026-09-25T03:48:36Z",
+      "discovered_at": "2026-09-25T11:19:58Z",
       "distance_miles": 9.87647919080025,
       "id": "rec9EIDVfntkPNLoJ",
       "kiosk_listed": true,
-      "last_verified_at": "2026-09-25T03:49:30Z",
+      "last_verified_at": "2026-09-25T11:20:53Z",
       "latitude": 47.4151463,
       "longitude": -122.1955554,
       "name": "Q01137",
@@ -880,7 +880,7 @@
           "retailer": "Safeway",
           "source": "retailer_pages",
           "url": "https://local.safeway.com/safeway/wa/kent/20830-108th-ave-se.html",
-          "verified_at": "2026-09-25T03:49:30Z"
+          "verified_at": "2026-09-25T11:20:53Z"
         }
       ],
       "zip": "98031"
