@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-09-26T10:57:26Z",
+  "checkedAt": "2026-09-26T15:57:16Z",
   "sources": [
     {
       "authority": "OFFICIAL",
-      "checked_at": "2026-09-26T10:56:31Z",
+      "checked_at": "2026-09-26T15:56:15Z",
       "details": {},
-      "last_success_at": "2026-09-26T10:56:31Z",
+      "last_success_at": "2026-09-26T15:56:15Z",
       "message": "23 machines discovered across 16 tiles",
       "name": "pokemon_locator",
       "reason": null,
@@ -14,18 +14,18 @@
     },
     {
       "authority": "COMMUNITY",
-      "checked_at": "2026-09-26T10:57:24Z",
+      "checked_at": "2026-09-26T15:57:13Z",
       "details": {},
-      "last_success_at": "2026-09-26T10:57:24Z",
-      "message": "373 record(s) fetched, 95 usable observation(s)",
+      "last_success_at": "2026-09-26T15:57:13Z",
+      "message": "373 record(s) fetched, 96 usable observation(s)",
       "name": "pokemonmap",
       "reason": null,
-      "records": 95,
+      "records": 96,
       "status": "HEALTHY"
     },
     {
       "authority": "COMMUNITY",
-      "checked_at": "2026-09-26T10:57:26Z",
+      "checked_at": "2026-09-26T15:57:16Z",
       "details": {},
       "last_success_at": null,
       "message": "NO_CREDENTIALS: set REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET to enable the reddit source",
@@ -36,7 +36,7 @@
     },
     {
       "authority": "VERIFICATION",
-      "checked_at": "2026-09-26T10:57:23Z",
+      "checked_at": "2026-09-26T15:57:13Z",
       "details": {},
       "last_success_at": null,
       "message": "Fred Meyer disabled in sources.yaml",
@@ -47,13 +47,13 @@
     },
     {
       "authority": "VERIFICATION",
-      "checked_at": "2026-09-26T10:57:23Z",
+      "checked_at": "2026-09-26T15:57:13Z",
       "details": {},
-      "last_success_at": "2026-09-26T10:57:23Z",
-      "message": "store pages permitted; verified 8 machine(s)",
+      "last_success_at": "2026-09-26T15:57:13Z",
+      "message": "store pages permitted; verified 10 machine(s)",
       "name": "retailer_pages:safeway",
       "reason": null,
-      "records": 8,
+      "records": 10,
       "status": "HEALTHY"
     }
   ]

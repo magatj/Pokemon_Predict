@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T10:57:26Z",
+  "generatedAt": "2026-09-26T15:57:16Z",
   "observations": [
     {
       "availability": "NOT_AVAILABLE",
@@ -1518,6 +1518,22 @@
       "product": null,
       "purchaseConfirmed": false,
       "retailer": "QFC",
+      "source": "PUBLIC_WEB",
+      "sourceUrl": "https://pokemonmap.com/"
+    },
+    {
+      "availability": "NOT_AVAILABLE",
+      "confidence": 0.65,
+      "evidenceClass": "COMMUNITY_TIMESTAMPED",
+      "id": "84f3f6443d3df4f35172aa0ae0db8054",
+      "locationText": "138 W Ellendale Ave, Dallas, OR",
+      "machineId": null,
+      "machineMatchConfidence": 0.175,
+      "observedAt": "2026-09-26T15:00:55Z",
+      "postedAt": "2026-09-26T15:00:55Z",
+      "product": null,
+      "purchaseConfirmed": false,
+      "retailer": "Safeway",
       "source": "PUBLIC_WEB",
       "sourceUrl": "https://pokemonmap.com/"
     }
