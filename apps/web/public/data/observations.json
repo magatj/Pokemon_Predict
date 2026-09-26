@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T15:57:16Z",
+  "generatedAt": "2026-09-26T20:44:56Z",
   "observations": [
     {
       "availability": "NOT_AVAILABLE",
@@ -1531,6 +1531,22 @@
       "machineMatchConfidence": 0.175,
       "observedAt": "2026-09-26T15:00:55Z",
       "postedAt": "2026-09-26T15:00:55Z",
+      "product": null,
+      "purchaseConfirmed": false,
+      "retailer": "Safeway",
+      "source": "PUBLIC_WEB",
+      "sourceUrl": "https://pokemonmap.com/"
+    },
+    {
+      "availability": "NOT_AVAILABLE",
+      "confidence": 0.65,
+      "evidenceClass": "COMMUNITY_TIMESTAMPED",
+      "id": "666b27252366bd4d408b0bce0e3d198e",
+      "locationText": "2836 Pacific Ave, Forest Grove, OR",
+      "machineId": null,
+      "machineMatchConfidence": 0.175,
+      "observedAt": "2026-09-26T19:13:46Z",
+      "postedAt": "2026-09-26T19:13:46Z",
       "product": null,
       "purchaseConfirmed": false,
       "retailer": "Safeway",
