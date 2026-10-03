@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T15:51:31Z",
+  "generatedAt": "2026-10-03T20:41:48Z",
   "observations": [
     {
       "availability": "NOT_AVAILABLE",
@@ -1550,6 +1550,22 @@
       "product": null,
       "purchaseConfirmed": false,
       "retailer": "Safeway",
+      "source": "PUBLIC_WEB",
+      "sourceUrl": "https://pokemonmap.com/"
+    },
+    {
+      "availability": "NOT_AVAILABLE",
+      "confidence": 0.65,
+      "evidenceClass": "COMMUNITY_TIMESTAMPED",
+      "id": "59f52f76f3efc196ab9e21a56b60c8d5",
+      "locationText": "4615 196th St SW, Lynnwood, WA",
+      "machineId": null,
+      "machineMatchConfidence": 0.175,
+      "observedAt": "2026-10-03T20:22:53Z",
+      "postedAt": "2026-10-03T20:22:53Z",
+      "product": null,
+      "purchaseConfirmed": false,
+      "retailer": "Fred Meyer",
       "source": "PUBLIC_WEB",
       "sourceUrl": "https://pokemonmap.com/"
     }
