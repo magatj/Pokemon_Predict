@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T18:33:52Z",
+  "generatedAt": "2026-10-08T00:45:29Z",
   "observations": [
     {
       "availability": "NOT_AVAILABLE",
@@ -1566,6 +1566,22 @@
       "product": null,
       "purchaseConfirmed": false,
       "retailer": "Fred Meyer",
+      "source": "PUBLIC_WEB",
+      "sourceUrl": "https://pokemonmap.com/"
+    },
+    {
+      "availability": "NOT_AVAILABLE",
+      "confidence": 0.65,
+      "evidenceClass": "COMMUNITY_TIMESTAMPED",
+      "id": "2789a8aa380f769952351fa461e3faaa",
+      "locationText": "3380 Lancaster Dr NE, Salem, OR",
+      "machineId": null,
+      "machineMatchConfidence": 0.175,
+      "observedAt": "2026-10-07T20:50:49Z",
+      "postedAt": "2026-10-07T20:50:49Z",
+      "product": null,
+      "purchaseConfirmed": false,
+      "retailer": "Safeway",
       "source": "PUBLIC_WEB",
       "sourceUrl": "https://pokemonmap.com/"
     }
