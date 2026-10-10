@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T18:04:24Z",
+  "generatedAt": "2026-10-10T00:31:51Z",
   "observations": [
     {
       "availability": "NOT_AVAILABLE",
@@ -1582,6 +1582,22 @@
       "product": null,
       "purchaseConfirmed": false,
       "retailer": "Safeway",
+      "source": "PUBLIC_WEB",
+      "sourceUrl": "https://pokemonmap.com/"
+    },
+    {
+      "availability": "NOT_AVAILABLE",
+      "confidence": 0.65,
+      "evidenceClass": "COMMUNITY_TIMESTAMPED",
+      "id": "fb368740648343e6c0db8d0522dc0dca",
+      "locationText": "14700 SE McLoughlin Blvd, Oak Grove, OR",
+      "machineId": null,
+      "machineMatchConfidence": 0.175,
+      "observedAt": "2026-10-09T18:05:18Z",
+      "postedAt": "2026-10-09T18:05:18Z",
+      "product": null,
+      "purchaseConfirmed": false,
+      "retailer": "Fred Meyer",
       "source": "PUBLIC_WEB",
       "sourceUrl": "https://pokemonmap.com/"
     }
