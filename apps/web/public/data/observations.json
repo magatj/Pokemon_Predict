@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T16:28:07Z",
+  "generatedAt": "2026-10-15T21:01:24Z",
   "observations": [
     {
       "availability": "NOT_AVAILABLE",
@@ -1614,6 +1614,22 @@
       "product": null,
       "purchaseConfirmed": false,
       "retailer": "WinCo Foods",
+      "source": "PUBLIC_WEB",
+      "sourceUrl": "https://pokemonmap.com/"
+    },
+    {
+      "availability": "NOT_AVAILABLE",
+      "confidence": 0.65,
+      "evidenceClass": "COMMUNITY_TIMESTAMPED",
+      "id": "5ff811b84f7081c704ce0121c0c032d6",
+      "locationText": "13101 SE Kent Kangley Rd, Kent, WA",
+      "machineId": "recYObHvIXSety8F8",
+      "machineMatchConfidence": 1.0,
+      "observedAt": "2026-10-15T20:44:29Z",
+      "postedAt": "2026-10-15T20:44:29Z",
+      "product": null,
+      "purchaseConfirmed": false,
+      "retailer": "Safeway",
       "source": "PUBLIC_WEB",
       "sourceUrl": "https://pokemonmap.com/"
     }
