@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T16:13:34Z",
+  "generatedAt": "2026-10-16T20:36:54Z",
   "observations": [
     {
       "availability": "NOT_AVAILABLE",
@@ -1627,6 +1627,22 @@
       "machineMatchConfidence": 1.0,
       "observedAt": "2026-10-15T20:44:29Z",
       "postedAt": "2026-10-15T20:44:29Z",
+      "product": null,
+      "purchaseConfirmed": false,
+      "retailer": "Safeway",
+      "source": "PUBLIC_WEB",
+      "sourceUrl": "https://pokemonmap.com/"
+    },
+    {
+      "availability": "NOT_AVAILABLE",
+      "confidence": 0.65,
+      "evidenceClass": "COMMUNITY_TIMESTAMPED",
+      "id": "d7f79b5682afe5a150ccca7f6bfdb37c",
+      "locationText": "14840 SE Webster Rd, Milwaukie, OR",
+      "machineId": null,
+      "machineMatchConfidence": 0.175,
+      "observedAt": "2026-10-16T19:06:33Z",
+      "postedAt": "2026-10-16T19:06:33Z",
       "product": null,
       "purchaseConfirmed": false,
       "retailer": "Safeway",
