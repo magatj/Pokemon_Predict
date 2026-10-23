@@ -50,16 +50,16 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-10-23T03:42:27Z",
+      "generatedAt": "2026-10-23T11:09:25Z",
       "machineId": "rec6hmX1D2NKNAa62",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1534,
+        "baseRate": 0.1546,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
-          "11": 0.0615,
-          "12": 0.0588,
+          "11": 0.0629,
+          "12": 0.0605,
           "14": 0.25,
           "15": 0.125,
           "16": 0.4615,
@@ -73,17 +73,17 @@
         "weekdayRate": {
           "0": 0.1667,
           "1": 0.1818,
-          "2": 0.2442,
-          "3": 0.086,
-          "4": 0.1058,
-          "5": 0.0696,
+          "2": 0.2457,
+          "3": 0.0872,
+          "4": 0.1076,
+          "5": 0.0699,
           "6": 0.2778
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.1332
+          "network_rate": 0.3553
         },
         "explanation": {
           "reasons": [
@@ -99,15 +99,15 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.9769,
-        "localTime": "21:00",
-        "minutesAhead": 17.5,
-        "probability": 0.1301,
-        "rawScore": 0.1332,
+        "horizonScale": 0.3877,
+        "localTime": "16:00",
+        "minutesAhead": 710.6,
+        "probability": 0.1378,
+        "rawScore": 0.3553,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-10-23T05:00:00Z",
-        "windowStart": "2026-10-23T04:00:00Z"
+        "windowEnd": "2026-10-24T00:00:00Z",
+        "windowStart": "2026-10-23T23:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
@@ -116,7 +116,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.3553
           },
           "explanation": {
             "reasons": [
@@ -132,20 +132,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9769,
-          "localTime": "21:00",
-          "minutesAhead": 17.5,
-          "probability": 0.1301,
-          "rawScore": 0.1332,
+          "horizonScale": 0.3877,
+          "localTime": "16:00",
+          "minutesAhead": 710.6,
+          "probability": 0.1378,
+          "rawScore": 0.3553,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T05:00:00Z",
-          "windowStart": "2026-10-23T04:00:00Z"
+          "windowEnd": "2026-10-24T00:00:00Z",
+          "windowStart": "2026-10-23T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -161,20 +161,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9018,
-          "localTime": "22:00",
-          "minutesAhead": 77.5,
-          "probability": 0.1201,
-          "rawScore": 0.1332,
+          "horizonScale": 0.9348,
+          "localTime": "05:00",
+          "minutesAhead": 50.6,
+          "probability": 0.1313,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T06:00:00Z",
-          "windowStart": "2026-10-23T05:00:00Z"
+          "windowEnd": "2026-10-23T13:00:00Z",
+          "windowStart": "2026-10-23T12:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -190,20 +190,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.8325,
-          "localTime": "23:00",
-          "minutesAhead": 137.5,
-          "probability": 0.1109,
-          "rawScore": 0.1332,
+          "horizonScale": 0.8629,
+          "localTime": "06:00",
+          "minutesAhead": 110.6,
+          "probability": 0.1212,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T07:00:00Z",
-          "windowStart": "2026-10-23T06:00:00Z"
+          "windowEnd": "2026-10-23T14:00:00Z",
+          "windowStart": "2026-10-23T13:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -219,20 +219,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "00:00",
-          "minutesAhead": 197.5,
-          "probability": 0.1069,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7966,
+          "localTime": "07:00",
+          "minutesAhead": 170.6,
+          "probability": 0.1119,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T08:00:00Z",
-          "windowStart": "2026-10-23T07:00:00Z"
+          "windowEnd": "2026-10-23T15:00:00Z",
+          "windowStart": "2026-10-23T14:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -248,20 +248,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7094,
-          "localTime": "01:00",
-          "minutesAhead": 257.5,
-          "probability": 0.0987,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7353,
+          "localTime": "08:00",
+          "minutesAhead": 230.6,
+          "probability": 0.1033,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T09:00:00Z",
-          "windowStart": "2026-10-23T08:00:00Z"
+          "windowEnd": "2026-10-23T16:00:00Z",
+          "windowStart": "2026-10-23T15:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -277,20 +277,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6548,
-          "localTime": "02:00",
-          "minutesAhead": 317.5,
-          "probability": 0.0911,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6788,
+          "localTime": "09:00",
+          "minutesAhead": 290.6,
+          "probability": 0.0954,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T10:00:00Z",
-          "windowStart": "2026-10-23T09:00:00Z"
+          "windowEnd": "2026-10-23T17:00:00Z",
+          "windowStart": "2026-10-23T16:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.2073
           },
           "explanation": {
             "reasons": [
@@ -306,20 +306,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6045,
-          "localTime": "03:00",
-          "minutesAhead": 377.5,
-          "probability": 0.0841,
-          "rawScore": 0.1391,
+          "horizonScale": 0.455,
+          "localTime": "14:00",
+          "minutesAhead": 590.6,
+          "probability": 0.0943,
+          "rawScore": 0.2073,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T11:00:00Z",
-          "windowStart": "2026-10-23T10:00:00Z"
+          "windowEnd": "2026-10-23T22:00:00Z",
+          "windowStart": "2026-10-23T21:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -335,15 +335,15 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.558,
-          "localTime": "04:00",
-          "minutesAhead": 437.5,
-          "probability": 0.0776,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6266,
+          "localTime": "10:00",
+          "minutesAhead": 350.6,
+          "probability": 0.088,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T12:00:00Z",
-          "windowStart": "2026-10-23T11:00:00Z"
+          "windowEnd": "2026-10-23T18:00:00Z",
+          "windowStart": "2026-10-23T17:00:00Z"
         }
       ]
     },
@@ -370,7 +370,7 @@
         },
         "interval": null,
         "lastKnownStatus": {
-          "ageHours": 175.0,
+          "ageHours": 182.4,
           "availability": "NOT_AVAILABLE",
           "evidenceClass": "COMMUNITY_TIMESTAMPED",
           "observedAt": "2026-10-15T20:44:29Z",
@@ -384,9 +384,9 @@
         "meanMatchConfidence": 1.0,
         "meanSourceConfidence": 0.65,
         "minutePattern": null,
-        "minutesSinceLastAvailable": 227717.6,
-        "minutesSinceLastNotAvailable": 10498.0,
-        "minutesSinceLastPositive": 227717.6,
+        "minutesSinceLastAvailable": 228164.6,
+        "minutesSinceLastNotAvailable": 10944.9,
+        "minutesSinceLastPositive": 228164.6,
         "minutesSinceLastPurchase": null,
         "minutesSinceSuspectedRestock": null,
         "nearby": {
@@ -405,7 +405,7 @@
         "observationCount": 2,
         "positiveCount": 1,
         "purchaseCount": 0,
-        "totalWeight": 0.2356,
+        "totalWeight": 0.2256,
         "weekdayHitRate": {
           "3": 0.0,
           "6": 1.0
@@ -415,16 +415,16 @@
           "6:17": 1.0
         }
       },
-      "generatedAt": "2026-10-23T03:42:27Z",
+      "generatedAt": "2026-10-23T11:09:25Z",
       "machineId": "recYObHvIXSety8F8",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1534,
+        "baseRate": 0.1546,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
-          "11": 0.0615,
-          "12": 0.0588,
+          "11": 0.0629,
+          "12": 0.0605,
           "14": 0.25,
           "15": 0.125,
           "16": 0.4615,
@@ -438,17 +438,17 @@
         "weekdayRate": {
           "0": 0.1667,
           "1": 0.1818,
-          "2": 0.2442,
-          "3": 0.086,
-          "4": 0.1058,
-          "5": 0.0696,
+          "2": 0.2457,
+          "3": 0.0872,
+          "4": 0.1076,
+          "5": 0.0699,
           "6": 0.2778
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.1332
+          "network_rate": 0.3553
         },
         "explanation": {
           "reasons": [
@@ -464,15 +464,15 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.9769,
-        "localTime": "21:00",
-        "minutesAhead": 17.5,
-        "probability": 0.1301,
-        "rawScore": 0.1332,
+        "horizonScale": 0.3877,
+        "localTime": "16:00",
+        "minutesAhead": 710.6,
+        "probability": 0.1378,
+        "rawScore": 0.3553,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-10-23T05:00:00Z",
-        "windowStart": "2026-10-23T04:00:00Z"
+        "windowEnd": "2026-10-24T00:00:00Z",
+        "windowStart": "2026-10-23T23:00:00Z"
       },
       "observationCount": 2,
       "status": "NETWORK_PATTERN",
@@ -481,7 +481,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.3553
           },
           "explanation": {
             "reasons": [
@@ -497,20 +497,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9769,
-          "localTime": "21:00",
-          "minutesAhead": 17.5,
-          "probability": 0.1301,
-          "rawScore": 0.1332,
+          "horizonScale": 0.3877,
+          "localTime": "16:00",
+          "minutesAhead": 710.6,
+          "probability": 0.1378,
+          "rawScore": 0.3553,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T05:00:00Z",
-          "windowStart": "2026-10-23T04:00:00Z"
+          "windowEnd": "2026-10-24T00:00:00Z",
+          "windowStart": "2026-10-23T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -526,20 +526,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9018,
-          "localTime": "22:00",
-          "minutesAhead": 77.5,
-          "probability": 0.1201,
-          "rawScore": 0.1332,
+          "horizonScale": 0.9348,
+          "localTime": "05:00",
+          "minutesAhead": 50.6,
+          "probability": 0.1313,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T06:00:00Z",
-          "windowStart": "2026-10-23T05:00:00Z"
+          "windowEnd": "2026-10-23T13:00:00Z",
+          "windowStart": "2026-10-23T12:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -555,20 +555,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.8325,
-          "localTime": "23:00",
-          "minutesAhead": 137.5,
-          "probability": 0.1109,
-          "rawScore": 0.1332,
+          "horizonScale": 0.8629,
+          "localTime": "06:00",
+          "minutesAhead": 110.6,
+          "probability": 0.1212,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T07:00:00Z",
-          "windowStart": "2026-10-23T06:00:00Z"
+          "windowEnd": "2026-10-23T14:00:00Z",
+          "windowStart": "2026-10-23T13:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -584,20 +584,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "00:00",
-          "minutesAhead": 197.5,
-          "probability": 0.1069,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7966,
+          "localTime": "07:00",
+          "minutesAhead": 170.6,
+          "probability": 0.1119,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T08:00:00Z",
-          "windowStart": "2026-10-23T07:00:00Z"
+          "windowEnd": "2026-10-23T15:00:00Z",
+          "windowStart": "2026-10-23T14:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -613,20 +613,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7094,
-          "localTime": "01:00",
-          "minutesAhead": 257.5,
-          "probability": 0.0987,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7353,
+          "localTime": "08:00",
+          "minutesAhead": 230.6,
+          "probability": 0.1033,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T09:00:00Z",
-          "windowStart": "2026-10-23T08:00:00Z"
+          "windowEnd": "2026-10-23T16:00:00Z",
+          "windowStart": "2026-10-23T15:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -642,20 +642,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6548,
-          "localTime": "02:00",
-          "minutesAhead": 317.5,
-          "probability": 0.0911,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6788,
+          "localTime": "09:00",
+          "minutesAhead": 290.6,
+          "probability": 0.0954,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T10:00:00Z",
-          "windowStart": "2026-10-23T09:00:00Z"
+          "windowEnd": "2026-10-23T17:00:00Z",
+          "windowStart": "2026-10-23T16:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.2073
           },
           "explanation": {
             "reasons": [
@@ -671,20 +671,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6045,
-          "localTime": "03:00",
-          "minutesAhead": 377.5,
-          "probability": 0.0841,
-          "rawScore": 0.1391,
+          "horizonScale": 0.455,
+          "localTime": "14:00",
+          "minutesAhead": 590.6,
+          "probability": 0.0943,
+          "rawScore": 0.2073,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T11:00:00Z",
-          "windowStart": "2026-10-23T10:00:00Z"
+          "windowEnd": "2026-10-23T22:00:00Z",
+          "windowStart": "2026-10-23T21:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -700,15 +700,15 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.558,
-          "localTime": "04:00",
-          "minutesAhead": 437.5,
-          "probability": 0.0776,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6266,
+          "localTime": "10:00",
+          "minutesAhead": 350.6,
+          "probability": 0.088,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T12:00:00Z",
-          "windowStart": "2026-10-23T11:00:00Z"
+          "windowEnd": "2026-10-23T18:00:00Z",
+          "windowStart": "2026-10-23T17:00:00Z"
         }
       ]
     },
@@ -762,16 +762,16 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-10-23T03:42:27Z",
+      "generatedAt": "2026-10-23T11:09:25Z",
       "machineId": "reczMH2OpSZ8uPBrp",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1534,
+        "baseRate": 0.1546,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
-          "11": 0.0615,
-          "12": 0.0588,
+          "11": 0.0629,
+          "12": 0.0605,
           "14": 0.25,
           "15": 0.125,
           "16": 0.4615,
@@ -785,17 +785,17 @@
         "weekdayRate": {
           "0": 0.1667,
           "1": 0.1818,
-          "2": 0.2442,
-          "3": 0.086,
-          "4": 0.1058,
-          "5": 0.0696,
+          "2": 0.2457,
+          "3": 0.0872,
+          "4": 0.1076,
+          "5": 0.0699,
           "6": 0.2778
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.1332
+          "network_rate": 0.3553
         },
         "explanation": {
           "reasons": [
@@ -811,15 +811,15 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.9769,
-        "localTime": "21:00",
-        "minutesAhead": 17.5,
-        "probability": 0.1301,
-        "rawScore": 0.1332,
+        "horizonScale": 0.3877,
+        "localTime": "16:00",
+        "minutesAhead": 710.6,
+        "probability": 0.1378,
+        "rawScore": 0.3553,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-10-23T05:00:00Z",
-        "windowStart": "2026-10-23T04:00:00Z"
+        "windowEnd": "2026-10-24T00:00:00Z",
+        "windowStart": "2026-10-23T23:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
@@ -828,7 +828,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.3553
           },
           "explanation": {
             "reasons": [
@@ -844,20 +844,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9769,
-          "localTime": "21:00",
-          "minutesAhead": 17.5,
-          "probability": 0.1301,
-          "rawScore": 0.1332,
+          "horizonScale": 0.3877,
+          "localTime": "16:00",
+          "minutesAhead": 710.6,
+          "probability": 0.1378,
+          "rawScore": 0.3553,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T05:00:00Z",
-          "windowStart": "2026-10-23T04:00:00Z"
+          "windowEnd": "2026-10-24T00:00:00Z",
+          "windowStart": "2026-10-23T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -873,20 +873,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9018,
-          "localTime": "22:00",
-          "minutesAhead": 77.5,
-          "probability": 0.1201,
-          "rawScore": 0.1332,
+          "horizonScale": 0.9348,
+          "localTime": "05:00",
+          "minutesAhead": 50.6,
+          "probability": 0.1313,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T06:00:00Z",
-          "windowStart": "2026-10-23T05:00:00Z"
+          "windowEnd": "2026-10-23T13:00:00Z",
+          "windowStart": "2026-10-23T12:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -902,20 +902,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.8325,
-          "localTime": "23:00",
-          "minutesAhead": 137.5,
-          "probability": 0.1109,
-          "rawScore": 0.1332,
+          "horizonScale": 0.8629,
+          "localTime": "06:00",
+          "minutesAhead": 110.6,
+          "probability": 0.1212,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T07:00:00Z",
-          "windowStart": "2026-10-23T06:00:00Z"
+          "windowEnd": "2026-10-23T14:00:00Z",
+          "windowStart": "2026-10-23T13:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -931,20 +931,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "00:00",
-          "minutesAhead": 197.5,
-          "probability": 0.1069,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7966,
+          "localTime": "07:00",
+          "minutesAhead": 170.6,
+          "probability": 0.1119,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T08:00:00Z",
-          "windowStart": "2026-10-23T07:00:00Z"
+          "windowEnd": "2026-10-23T15:00:00Z",
+          "windowStart": "2026-10-23T14:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -960,20 +960,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7094,
-          "localTime": "01:00",
-          "minutesAhead": 257.5,
-          "probability": 0.0987,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7353,
+          "localTime": "08:00",
+          "minutesAhead": 230.6,
+          "probability": 0.1033,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T09:00:00Z",
-          "windowStart": "2026-10-23T08:00:00Z"
+          "windowEnd": "2026-10-23T16:00:00Z",
+          "windowStart": "2026-10-23T15:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -989,20 +989,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6548,
-          "localTime": "02:00",
-          "minutesAhead": 317.5,
-          "probability": 0.0911,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6788,
+          "localTime": "09:00",
+          "minutesAhead": 290.6,
+          "probability": 0.0954,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T10:00:00Z",
-          "windowStart": "2026-10-23T09:00:00Z"
+          "windowEnd": "2026-10-23T17:00:00Z",
+          "windowStart": "2026-10-23T16:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.2073
           },
           "explanation": {
             "reasons": [
@@ -1018,20 +1018,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6045,
-          "localTime": "03:00",
-          "minutesAhead": 377.5,
-          "probability": 0.0841,
-          "rawScore": 0.1391,
+          "horizonScale": 0.455,
+          "localTime": "14:00",
+          "minutesAhead": 590.6,
+          "probability": 0.0943,
+          "rawScore": 0.2073,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T11:00:00Z",
-          "windowStart": "2026-10-23T10:00:00Z"
+          "windowEnd": "2026-10-23T22:00:00Z",
+          "windowStart": "2026-10-23T21:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -1047,15 +1047,15 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.558,
-          "localTime": "04:00",
-          "minutesAhead": 437.5,
-          "probability": 0.0776,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6266,
+          "localTime": "10:00",
+          "minutesAhead": 350.6,
+          "probability": 0.088,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T12:00:00Z",
-          "windowStart": "2026-10-23T11:00:00Z"
+          "windowEnd": "2026-10-23T18:00:00Z",
+          "windowStart": "2026-10-23T17:00:00Z"
         }
       ]
     },
@@ -1081,7 +1081,7 @@
         },
         "interval": null,
         "lastKnownStatus": {
-          "ageHours": 6219.1,
+          "ageHours": 6226.6,
           "availability": "NOT_AVAILABLE",
           "evidenceClass": "COMMUNITY_TIMESTAMPED",
           "observedAt": "2026-02-06T00:35:37Z",
@@ -1096,7 +1096,7 @@
         "meanSourceConfidence": 0.65,
         "minutePattern": null,
         "minutesSinceLastAvailable": null,
-        "minutesSinceLastNotAvailable": 373146.8,
+        "minutesSinceLastNotAvailable": 373593.8,
         "minutesSinceLastPositive": null,
         "minutesSinceLastPurchase": null,
         "minutesSinceSuspectedRestock": null,
@@ -1124,16 +1124,16 @@
           "3:16": 0.0
         }
       },
-      "generatedAt": "2026-10-23T03:42:27Z",
+      "generatedAt": "2026-10-23T11:09:25Z",
       "machineId": "recNV8fRPmce3gojW",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1534,
+        "baseRate": 0.1546,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
-          "11": 0.0615,
-          "12": 0.0588,
+          "11": 0.0629,
+          "12": 0.0605,
           "14": 0.25,
           "15": 0.125,
           "16": 0.4615,
@@ -1147,17 +1147,17 @@
         "weekdayRate": {
           "0": 0.1667,
           "1": 0.1818,
-          "2": 0.2442,
-          "3": 0.086,
-          "4": 0.1058,
-          "5": 0.0696,
+          "2": 0.2457,
+          "3": 0.0872,
+          "4": 0.1076,
+          "5": 0.0699,
           "6": 0.2778
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.1332
+          "network_rate": 0.3553
         },
         "explanation": {
           "reasons": [
@@ -1173,15 +1173,15 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.9769,
-        "localTime": "21:00",
-        "minutesAhead": 17.5,
-        "probability": 0.1301,
-        "rawScore": 0.1332,
+        "horizonScale": 0.3877,
+        "localTime": "16:00",
+        "minutesAhead": 710.6,
+        "probability": 0.1378,
+        "rawScore": 0.3553,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-10-23T05:00:00Z",
-        "windowStart": "2026-10-23T04:00:00Z"
+        "windowEnd": "2026-10-24T00:00:00Z",
+        "windowStart": "2026-10-23T23:00:00Z"
       },
       "observationCount": 1,
       "status": "NETWORK_PATTERN",
@@ -1190,7 +1190,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.3553
           },
           "explanation": {
             "reasons": [
@@ -1206,20 +1206,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9769,
-          "localTime": "21:00",
-          "minutesAhead": 17.5,
-          "probability": 0.1301,
-          "rawScore": 0.1332,
+          "horizonScale": 0.3877,
+          "localTime": "16:00",
+          "minutesAhead": 710.6,
+          "probability": 0.1378,
+          "rawScore": 0.3553,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T05:00:00Z",
-          "windowStart": "2026-10-23T04:00:00Z"
+          "windowEnd": "2026-10-24T00:00:00Z",
+          "windowStart": "2026-10-23T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -1235,20 +1235,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9018,
-          "localTime": "22:00",
-          "minutesAhead": 77.5,
-          "probability": 0.1201,
-          "rawScore": 0.1332,
+          "horizonScale": 0.9348,
+          "localTime": "05:00",
+          "minutesAhead": 50.6,
+          "probability": 0.1313,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T06:00:00Z",
-          "windowStart": "2026-10-23T05:00:00Z"
+          "windowEnd": "2026-10-23T13:00:00Z",
+          "windowStart": "2026-10-23T12:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -1264,20 +1264,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.8325,
-          "localTime": "23:00",
-          "minutesAhead": 137.5,
-          "probability": 0.1109,
-          "rawScore": 0.1332,
+          "horizonScale": 0.8629,
+          "localTime": "06:00",
+          "minutesAhead": 110.6,
+          "probability": 0.1212,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T07:00:00Z",
-          "windowStart": "2026-10-23T06:00:00Z"
+          "windowEnd": "2026-10-23T14:00:00Z",
+          "windowStart": "2026-10-23T13:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -1293,20 +1293,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "00:00",
-          "minutesAhead": 197.5,
-          "probability": 0.1069,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7966,
+          "localTime": "07:00",
+          "minutesAhead": 170.6,
+          "probability": 0.1119,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T08:00:00Z",
-          "windowStart": "2026-10-23T07:00:00Z"
+          "windowEnd": "2026-10-23T15:00:00Z",
+          "windowStart": "2026-10-23T14:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -1322,20 +1322,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7094,
-          "localTime": "01:00",
-          "minutesAhead": 257.5,
-          "probability": 0.0987,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7353,
+          "localTime": "08:00",
+          "minutesAhead": 230.6,
+          "probability": 0.1033,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T09:00:00Z",
-          "windowStart": "2026-10-23T08:00:00Z"
+          "windowEnd": "2026-10-23T16:00:00Z",
+          "windowStart": "2026-10-23T15:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -1351,20 +1351,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6548,
-          "localTime": "02:00",
-          "minutesAhead": 317.5,
-          "probability": 0.0911,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6788,
+          "localTime": "09:00",
+          "minutesAhead": 290.6,
+          "probability": 0.0954,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T10:00:00Z",
-          "windowStart": "2026-10-23T09:00:00Z"
+          "windowEnd": "2026-10-23T17:00:00Z",
+          "windowStart": "2026-10-23T16:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.2073
           },
           "explanation": {
             "reasons": [
@@ -1380,20 +1380,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6045,
-          "localTime": "03:00",
-          "minutesAhead": 377.5,
-          "probability": 0.0841,
-          "rawScore": 0.1391,
+          "horizonScale": 0.455,
+          "localTime": "14:00",
+          "minutesAhead": 590.6,
+          "probability": 0.0943,
+          "rawScore": 0.2073,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T11:00:00Z",
-          "windowStart": "2026-10-23T10:00:00Z"
+          "windowEnd": "2026-10-23T22:00:00Z",
+          "windowStart": "2026-10-23T21:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -1409,15 +1409,15 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.558,
-          "localTime": "04:00",
-          "minutesAhead": 437.5,
-          "probability": 0.0776,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6266,
+          "localTime": "10:00",
+          "minutesAhead": 350.6,
+          "probability": 0.088,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T12:00:00Z",
-          "windowStart": "2026-10-23T11:00:00Z"
+          "windowEnd": "2026-10-23T18:00:00Z",
+          "windowStart": "2026-10-23T17:00:00Z"
         }
       ]
     },
@@ -1471,16 +1471,16 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-10-23T03:42:27Z",
+      "generatedAt": "2026-10-23T11:09:25Z",
       "machineId": "recSpV6YcTTtJTpa7",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1534,
+        "baseRate": 0.1546,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
-          "11": 0.0615,
-          "12": 0.0588,
+          "11": 0.0629,
+          "12": 0.0605,
           "14": 0.25,
           "15": 0.125,
           "16": 0.4615,
@@ -1494,17 +1494,17 @@
         "weekdayRate": {
           "0": 0.1667,
           "1": 0.1818,
-          "2": 0.2442,
-          "3": 0.086,
-          "4": 0.1058,
-          "5": 0.0696,
+          "2": 0.2457,
+          "3": 0.0872,
+          "4": 0.1076,
+          "5": 0.0699,
           "6": 0.2778
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.1332
+          "network_rate": 0.3553
         },
         "explanation": {
           "reasons": [
@@ -1520,15 +1520,15 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.9769,
-        "localTime": "21:00",
-        "minutesAhead": 17.5,
-        "probability": 0.1301,
-        "rawScore": 0.1332,
+        "horizonScale": 0.3877,
+        "localTime": "16:00",
+        "minutesAhead": 710.6,
+        "probability": 0.1378,
+        "rawScore": 0.3553,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-10-23T05:00:00Z",
-        "windowStart": "2026-10-23T04:00:00Z"
+        "windowEnd": "2026-10-24T00:00:00Z",
+        "windowStart": "2026-10-23T23:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
@@ -1537,7 +1537,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.3553
           },
           "explanation": {
             "reasons": [
@@ -1553,20 +1553,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9769,
-          "localTime": "21:00",
-          "minutesAhead": 17.5,
-          "probability": 0.1301,
-          "rawScore": 0.1332,
+          "horizonScale": 0.3877,
+          "localTime": "16:00",
+          "minutesAhead": 710.6,
+          "probability": 0.1378,
+          "rawScore": 0.3553,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T05:00:00Z",
-          "windowStart": "2026-10-23T04:00:00Z"
+          "windowEnd": "2026-10-24T00:00:00Z",
+          "windowStart": "2026-10-23T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -1582,20 +1582,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9018,
-          "localTime": "22:00",
-          "minutesAhead": 77.5,
-          "probability": 0.1201,
-          "rawScore": 0.1332,
+          "horizonScale": 0.9348,
+          "localTime": "05:00",
+          "minutesAhead": 50.6,
+          "probability": 0.1313,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T06:00:00Z",
-          "windowStart": "2026-10-23T05:00:00Z"
+          "windowEnd": "2026-10-23T13:00:00Z",
+          "windowStart": "2026-10-23T12:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -1611,20 +1611,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.8325,
-          "localTime": "23:00",
-          "minutesAhead": 137.5,
-          "probability": 0.1109,
-          "rawScore": 0.1332,
+          "horizonScale": 0.8629,
+          "localTime": "06:00",
+          "minutesAhead": 110.6,
+          "probability": 0.1212,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T07:00:00Z",
-          "windowStart": "2026-10-23T06:00:00Z"
+          "windowEnd": "2026-10-23T14:00:00Z",
+          "windowStart": "2026-10-23T13:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -1640,20 +1640,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "00:00",
-          "minutesAhead": 197.5,
-          "probability": 0.1069,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7966,
+          "localTime": "07:00",
+          "minutesAhead": 170.6,
+          "probability": 0.1119,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T08:00:00Z",
-          "windowStart": "2026-10-23T07:00:00Z"
+          "windowEnd": "2026-10-23T15:00:00Z",
+          "windowStart": "2026-10-23T14:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -1669,20 +1669,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7094,
-          "localTime": "01:00",
-          "minutesAhead": 257.5,
-          "probability": 0.0987,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7353,
+          "localTime": "08:00",
+          "minutesAhead": 230.6,
+          "probability": 0.1033,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T09:00:00Z",
-          "windowStart": "2026-10-23T08:00:00Z"
+          "windowEnd": "2026-10-23T16:00:00Z",
+          "windowStart": "2026-10-23T15:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -1698,20 +1698,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6548,
-          "localTime": "02:00",
-          "minutesAhead": 317.5,
-          "probability": 0.0911,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6788,
+          "localTime": "09:00",
+          "minutesAhead": 290.6,
+          "probability": 0.0954,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T10:00:00Z",
-          "windowStart": "2026-10-23T09:00:00Z"
+          "windowEnd": "2026-10-23T17:00:00Z",
+          "windowStart": "2026-10-23T16:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.2073
           },
           "explanation": {
             "reasons": [
@@ -1727,20 +1727,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6045,
-          "localTime": "03:00",
-          "minutesAhead": 377.5,
-          "probability": 0.0841,
-          "rawScore": 0.1391,
+          "horizonScale": 0.455,
+          "localTime": "14:00",
+          "minutesAhead": 590.6,
+          "probability": 0.0943,
+          "rawScore": 0.2073,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T11:00:00Z",
-          "windowStart": "2026-10-23T10:00:00Z"
+          "windowEnd": "2026-10-23T22:00:00Z",
+          "windowStart": "2026-10-23T21:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -1756,15 +1756,15 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.558,
-          "localTime": "04:00",
-          "minutesAhead": 437.5,
-          "probability": 0.0776,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6266,
+          "localTime": "10:00",
+          "minutesAhead": 350.6,
+          "probability": 0.088,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T12:00:00Z",
-          "windowStart": "2026-10-23T11:00:00Z"
+          "windowEnd": "2026-10-23T18:00:00Z",
+          "windowStart": "2026-10-23T17:00:00Z"
         }
       ]
     },
@@ -1818,16 +1818,16 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-10-23T03:42:27Z",
+      "generatedAt": "2026-10-23T11:09:25Z",
       "machineId": "recDRDzItBxXkjJTy",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1534,
+        "baseRate": 0.1546,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
-          "11": 0.0615,
-          "12": 0.0588,
+          "11": 0.0629,
+          "12": 0.0605,
           "14": 0.25,
           "15": 0.125,
           "16": 0.4615,
@@ -1841,17 +1841,17 @@
         "weekdayRate": {
           "0": 0.1667,
           "1": 0.1818,
-          "2": 0.2442,
-          "3": 0.086,
-          "4": 0.1058,
-          "5": 0.0696,
+          "2": 0.2457,
+          "3": 0.0872,
+          "4": 0.1076,
+          "5": 0.0699,
           "6": 0.2778
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.1332
+          "network_rate": 0.3553
         },
         "explanation": {
           "reasons": [
@@ -1867,15 +1867,15 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.9769,
-        "localTime": "21:00",
-        "minutesAhead": 17.5,
-        "probability": 0.1301,
-        "rawScore": 0.1332,
+        "horizonScale": 0.3877,
+        "localTime": "16:00",
+        "minutesAhead": 710.6,
+        "probability": 0.1378,
+        "rawScore": 0.3553,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-10-23T05:00:00Z",
-        "windowStart": "2026-10-23T04:00:00Z"
+        "windowEnd": "2026-10-24T00:00:00Z",
+        "windowStart": "2026-10-23T23:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
@@ -1884,7 +1884,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.3553
           },
           "explanation": {
             "reasons": [
@@ -1900,20 +1900,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9769,
-          "localTime": "21:00",
-          "minutesAhead": 17.5,
-          "probability": 0.1301,
-          "rawScore": 0.1332,
+          "horizonScale": 0.3877,
+          "localTime": "16:00",
+          "minutesAhead": 710.6,
+          "probability": 0.1378,
+          "rawScore": 0.3553,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T05:00:00Z",
-          "windowStart": "2026-10-23T04:00:00Z"
+          "windowEnd": "2026-10-24T00:00:00Z",
+          "windowStart": "2026-10-23T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -1929,20 +1929,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9018,
-          "localTime": "22:00",
-          "minutesAhead": 77.5,
-          "probability": 0.1201,
-          "rawScore": 0.1332,
+          "horizonScale": 0.9348,
+          "localTime": "05:00",
+          "minutesAhead": 50.6,
+          "probability": 0.1313,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T06:00:00Z",
-          "windowStart": "2026-10-23T05:00:00Z"
+          "windowEnd": "2026-10-23T13:00:00Z",
+          "windowStart": "2026-10-23T12:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -1958,20 +1958,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.8325,
-          "localTime": "23:00",
-          "minutesAhead": 137.5,
-          "probability": 0.1109,
-          "rawScore": 0.1332,
+          "horizonScale": 0.8629,
+          "localTime": "06:00",
+          "minutesAhead": 110.6,
+          "probability": 0.1212,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T07:00:00Z",
-          "windowStart": "2026-10-23T06:00:00Z"
+          "windowEnd": "2026-10-23T14:00:00Z",
+          "windowStart": "2026-10-23T13:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -1987,20 +1987,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "00:00",
-          "minutesAhead": 197.5,
-          "probability": 0.1069,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7966,
+          "localTime": "07:00",
+          "minutesAhead": 170.6,
+          "probability": 0.1119,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T08:00:00Z",
-          "windowStart": "2026-10-23T07:00:00Z"
+          "windowEnd": "2026-10-23T15:00:00Z",
+          "windowStart": "2026-10-23T14:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -2016,20 +2016,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7094,
-          "localTime": "01:00",
-          "minutesAhead": 257.5,
-          "probability": 0.0987,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7353,
+          "localTime": "08:00",
+          "minutesAhead": 230.6,
+          "probability": 0.1033,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T09:00:00Z",
-          "windowStart": "2026-10-23T08:00:00Z"
+          "windowEnd": "2026-10-23T16:00:00Z",
+          "windowStart": "2026-10-23T15:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -2045,20 +2045,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6548,
-          "localTime": "02:00",
-          "minutesAhead": 317.5,
-          "probability": 0.0911,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6788,
+          "localTime": "09:00",
+          "minutesAhead": 290.6,
+          "probability": 0.0954,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T10:00:00Z",
-          "windowStart": "2026-10-23T09:00:00Z"
+          "windowEnd": "2026-10-23T17:00:00Z",
+          "windowStart": "2026-10-23T16:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.2073
           },
           "explanation": {
             "reasons": [
@@ -2074,20 +2074,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6045,
-          "localTime": "03:00",
-          "minutesAhead": 377.5,
-          "probability": 0.0841,
-          "rawScore": 0.1391,
+          "horizonScale": 0.455,
+          "localTime": "14:00",
+          "minutesAhead": 590.6,
+          "probability": 0.0943,
+          "rawScore": 0.2073,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T11:00:00Z",
-          "windowStart": "2026-10-23T10:00:00Z"
+          "windowEnd": "2026-10-23T22:00:00Z",
+          "windowStart": "2026-10-23T21:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -2103,15 +2103,15 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.558,
-          "localTime": "04:00",
-          "minutesAhead": 437.5,
-          "probability": 0.0776,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6266,
+          "localTime": "10:00",
+          "minutesAhead": 350.6,
+          "probability": 0.088,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T12:00:00Z",
-          "windowStart": "2026-10-23T11:00:00Z"
+          "windowEnd": "2026-10-23T18:00:00Z",
+          "windowStart": "2026-10-23T17:00:00Z"
         }
       ]
     },
@@ -2137,7 +2137,7 @@
         },
         "interval": null,
         "lastKnownStatus": {
-          "ageHours": 3915.2,
+          "ageHours": 3922.6,
           "availability": "AVAILABLE",
           "evidenceClass": "COMMUNITY_TIMESTAMPED",
           "observedAt": "2026-05-13T00:32:09Z",
@@ -2151,9 +2151,9 @@
         "meanMatchConfidence": 1.0,
         "meanSourceConfidence": 0.65,
         "minutePattern": null,
-        "minutesSinceLastAvailable": 234910.3,
+        "minutesSinceLastAvailable": 235357.3,
         "minutesSinceLastNotAvailable": null,
-        "minutesSinceLastPositive": 234910.3,
+        "minutesSinceLastPositive": 235357.3,
         "minutesSinceLastPurchase": null,
         "minutesSinceSuspectedRestock": null,
         "nearby": {
@@ -2180,16 +2180,16 @@
           "1:17": 1.0
         }
       },
-      "generatedAt": "2026-10-23T03:42:27Z",
+      "generatedAt": "2026-10-23T11:09:25Z",
       "machineId": "recVYWXIOZFAuR6qt",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1534,
+        "baseRate": 0.1546,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
-          "11": 0.0615,
-          "12": 0.0588,
+          "11": 0.0629,
+          "12": 0.0605,
           "14": 0.25,
           "15": 0.125,
           "16": 0.4615,
@@ -2203,17 +2203,17 @@
         "weekdayRate": {
           "0": 0.1667,
           "1": 0.1818,
-          "2": 0.2442,
-          "3": 0.086,
-          "4": 0.1058,
-          "5": 0.0696,
+          "2": 0.2457,
+          "3": 0.0872,
+          "4": 0.1076,
+          "5": 0.0699,
           "6": 0.2778
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.1332
+          "network_rate": 0.3553
         },
         "explanation": {
           "reasons": [
@@ -2229,15 +2229,15 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.9769,
-        "localTime": "21:00",
-        "minutesAhead": 17.5,
-        "probability": 0.1301,
-        "rawScore": 0.1332,
+        "horizonScale": 0.3877,
+        "localTime": "16:00",
+        "minutesAhead": 710.6,
+        "probability": 0.1378,
+        "rawScore": 0.3553,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-10-23T05:00:00Z",
-        "windowStart": "2026-10-23T04:00:00Z"
+        "windowEnd": "2026-10-24T00:00:00Z",
+        "windowStart": "2026-10-23T23:00:00Z"
       },
       "observationCount": 1,
       "status": "NETWORK_PATTERN",
@@ -2246,7 +2246,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.3553
           },
           "explanation": {
             "reasons": [
@@ -2262,20 +2262,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9769,
-          "localTime": "21:00",
-          "minutesAhead": 17.5,
-          "probability": 0.1301,
-          "rawScore": 0.1332,
+          "horizonScale": 0.3877,
+          "localTime": "16:00",
+          "minutesAhead": 710.6,
+          "probability": 0.1378,
+          "rawScore": 0.3553,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T05:00:00Z",
-          "windowStart": "2026-10-23T04:00:00Z"
+          "windowEnd": "2026-10-24T00:00:00Z",
+          "windowStart": "2026-10-23T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -2291,20 +2291,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9018,
-          "localTime": "22:00",
-          "minutesAhead": 77.5,
-          "probability": 0.1201,
-          "rawScore": 0.1332,
+          "horizonScale": 0.9348,
+          "localTime": "05:00",
+          "minutesAhead": 50.6,
+          "probability": 0.1313,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T06:00:00Z",
-          "windowStart": "2026-10-23T05:00:00Z"
+          "windowEnd": "2026-10-23T13:00:00Z",
+          "windowStart": "2026-10-23T12:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -2320,20 +2320,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.8325,
-          "localTime": "23:00",
-          "minutesAhead": 137.5,
-          "probability": 0.1109,
-          "rawScore": 0.1332,
+          "horizonScale": 0.8629,
+          "localTime": "06:00",
+          "minutesAhead": 110.6,
+          "probability": 0.1212,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T07:00:00Z",
-          "windowStart": "2026-10-23T06:00:00Z"
+          "windowEnd": "2026-10-23T14:00:00Z",
+          "windowStart": "2026-10-23T13:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -2349,20 +2349,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "00:00",
-          "minutesAhead": 197.5,
-          "probability": 0.1069,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7966,
+          "localTime": "07:00",
+          "minutesAhead": 170.6,
+          "probability": 0.1119,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T08:00:00Z",
-          "windowStart": "2026-10-23T07:00:00Z"
+          "windowEnd": "2026-10-23T15:00:00Z",
+          "windowStart": "2026-10-23T14:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -2378,20 +2378,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7094,
-          "localTime": "01:00",
-          "minutesAhead": 257.5,
-          "probability": 0.0987,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7353,
+          "localTime": "08:00",
+          "minutesAhead": 230.6,
+          "probability": 0.1033,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T09:00:00Z",
-          "windowStart": "2026-10-23T08:00:00Z"
+          "windowEnd": "2026-10-23T16:00:00Z",
+          "windowStart": "2026-10-23T15:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -2407,20 +2407,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6548,
-          "localTime": "02:00",
-          "minutesAhead": 317.5,
-          "probability": 0.0911,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6788,
+          "localTime": "09:00",
+          "minutesAhead": 290.6,
+          "probability": 0.0954,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T10:00:00Z",
-          "windowStart": "2026-10-23T09:00:00Z"
+          "windowEnd": "2026-10-23T17:00:00Z",
+          "windowStart": "2026-10-23T16:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.2073
           },
           "explanation": {
             "reasons": [
@@ -2436,20 +2436,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6045,
-          "localTime": "03:00",
-          "minutesAhead": 377.5,
-          "probability": 0.0841,
-          "rawScore": 0.1391,
+          "horizonScale": 0.455,
+          "localTime": "14:00",
+          "minutesAhead": 590.6,
+          "probability": 0.0943,
+          "rawScore": 0.2073,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T11:00:00Z",
-          "windowStart": "2026-10-23T10:00:00Z"
+          "windowEnd": "2026-10-23T22:00:00Z",
+          "windowStart": "2026-10-23T21:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -2465,15 +2465,15 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.558,
-          "localTime": "04:00",
-          "minutesAhead": 437.5,
-          "probability": 0.0776,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6266,
+          "localTime": "10:00",
+          "minutesAhead": 350.6,
+          "probability": 0.088,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T12:00:00Z",
-          "windowStart": "2026-10-23T11:00:00Z"
+          "windowEnd": "2026-10-23T18:00:00Z",
+          "windowStart": "2026-10-23T17:00:00Z"
         }
       ]
     },
@@ -2527,16 +2527,16 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-10-23T03:42:27Z",
+      "generatedAt": "2026-10-23T11:09:25Z",
       "machineId": "rec5ierZUGzMxwT1i",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1534,
+        "baseRate": 0.1546,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
-          "11": 0.0615,
-          "12": 0.0588,
+          "11": 0.0629,
+          "12": 0.0605,
           "14": 0.25,
           "15": 0.125,
           "16": 0.4615,
@@ -2550,17 +2550,17 @@
         "weekdayRate": {
           "0": 0.1667,
           "1": 0.1818,
-          "2": 0.2442,
-          "3": 0.086,
-          "4": 0.1058,
-          "5": 0.0696,
+          "2": 0.2457,
+          "3": 0.0872,
+          "4": 0.1076,
+          "5": 0.0699,
           "6": 0.2778
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.1332
+          "network_rate": 0.3553
         },
         "explanation": {
           "reasons": [
@@ -2576,15 +2576,15 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.9769,
-        "localTime": "21:00",
-        "minutesAhead": 17.5,
-        "probability": 0.1301,
-        "rawScore": 0.1332,
+        "horizonScale": 0.3877,
+        "localTime": "16:00",
+        "minutesAhead": 710.6,
+        "probability": 0.1378,
+        "rawScore": 0.3553,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-10-23T05:00:00Z",
-        "windowStart": "2026-10-23T04:00:00Z"
+        "windowEnd": "2026-10-24T00:00:00Z",
+        "windowStart": "2026-10-23T23:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
@@ -2593,7 +2593,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.3553
           },
           "explanation": {
             "reasons": [
@@ -2609,20 +2609,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9769,
-          "localTime": "21:00",
-          "minutesAhead": 17.5,
-          "probability": 0.1301,
-          "rawScore": 0.1332,
+          "horizonScale": 0.3877,
+          "localTime": "16:00",
+          "minutesAhead": 710.6,
+          "probability": 0.1378,
+          "rawScore": 0.3553,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T05:00:00Z",
-          "windowStart": "2026-10-23T04:00:00Z"
+          "windowEnd": "2026-10-24T00:00:00Z",
+          "windowStart": "2026-10-23T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -2638,20 +2638,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9018,
-          "localTime": "22:00",
-          "minutesAhead": 77.5,
-          "probability": 0.1201,
-          "rawScore": 0.1332,
+          "horizonScale": 0.9348,
+          "localTime": "05:00",
+          "minutesAhead": 50.6,
+          "probability": 0.1313,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T06:00:00Z",
-          "windowStart": "2026-10-23T05:00:00Z"
+          "windowEnd": "2026-10-23T13:00:00Z",
+          "windowStart": "2026-10-23T12:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -2667,20 +2667,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.8325,
-          "localTime": "23:00",
-          "minutesAhead": 137.5,
-          "probability": 0.1109,
-          "rawScore": 0.1332,
+          "horizonScale": 0.8629,
+          "localTime": "06:00",
+          "minutesAhead": 110.6,
+          "probability": 0.1212,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T07:00:00Z",
-          "windowStart": "2026-10-23T06:00:00Z"
+          "windowEnd": "2026-10-23T14:00:00Z",
+          "windowStart": "2026-10-23T13:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -2696,20 +2696,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "00:00",
-          "minutesAhead": 197.5,
-          "probability": 0.1069,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7966,
+          "localTime": "07:00",
+          "minutesAhead": 170.6,
+          "probability": 0.1119,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T08:00:00Z",
-          "windowStart": "2026-10-23T07:00:00Z"
+          "windowEnd": "2026-10-23T15:00:00Z",
+          "windowStart": "2026-10-23T14:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -2725,20 +2725,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7094,
-          "localTime": "01:00",
-          "minutesAhead": 257.5,
-          "probability": 0.0987,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7353,
+          "localTime": "08:00",
+          "minutesAhead": 230.6,
+          "probability": 0.1033,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T09:00:00Z",
-          "windowStart": "2026-10-23T08:00:00Z"
+          "windowEnd": "2026-10-23T16:00:00Z",
+          "windowStart": "2026-10-23T15:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -2754,20 +2754,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6548,
-          "localTime": "02:00",
-          "minutesAhead": 317.5,
-          "probability": 0.0911,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6788,
+          "localTime": "09:00",
+          "minutesAhead": 290.6,
+          "probability": 0.0954,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T10:00:00Z",
-          "windowStart": "2026-10-23T09:00:00Z"
+          "windowEnd": "2026-10-23T17:00:00Z",
+          "windowStart": "2026-10-23T16:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.2073
           },
           "explanation": {
             "reasons": [
@@ -2783,20 +2783,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6045,
-          "localTime": "03:00",
-          "minutesAhead": 377.5,
-          "probability": 0.0841,
-          "rawScore": 0.1391,
+          "horizonScale": 0.455,
+          "localTime": "14:00",
+          "minutesAhead": 590.6,
+          "probability": 0.0943,
+          "rawScore": 0.2073,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T11:00:00Z",
-          "windowStart": "2026-10-23T10:00:00Z"
+          "windowEnd": "2026-10-23T22:00:00Z",
+          "windowStart": "2026-10-23T21:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -2812,15 +2812,15 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.558,
-          "localTime": "04:00",
-          "minutesAhead": 437.5,
-          "probability": 0.0776,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6266,
+          "localTime": "10:00",
+          "minutesAhead": 350.6,
+          "probability": 0.088,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T12:00:00Z",
-          "windowStart": "2026-10-23T11:00:00Z"
+          "windowEnd": "2026-10-23T18:00:00Z",
+          "windowStart": "2026-10-23T17:00:00Z"
         }
       ]
     },
@@ -2874,16 +2874,16 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-10-23T03:42:27Z",
+      "generatedAt": "2026-10-23T11:09:25Z",
       "machineId": "rec5Dr0p20HFkMQQW",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1534,
+        "baseRate": 0.1546,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
-          "11": 0.0615,
-          "12": 0.0588,
+          "11": 0.0629,
+          "12": 0.0605,
           "14": 0.25,
           "15": 0.125,
           "16": 0.4615,
@@ -2897,17 +2897,17 @@
         "weekdayRate": {
           "0": 0.1667,
           "1": 0.1818,
-          "2": 0.2442,
-          "3": 0.086,
-          "4": 0.1058,
-          "5": 0.0696,
+          "2": 0.2457,
+          "3": 0.0872,
+          "4": 0.1076,
+          "5": 0.0699,
           "6": 0.2778
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.1332
+          "network_rate": 0.3553
         },
         "explanation": {
           "reasons": [
@@ -2923,15 +2923,15 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.9769,
-        "localTime": "21:00",
-        "minutesAhead": 17.5,
-        "probability": 0.1301,
-        "rawScore": 0.1332,
+        "horizonScale": 0.3877,
+        "localTime": "16:00",
+        "minutesAhead": 710.6,
+        "probability": 0.1378,
+        "rawScore": 0.3553,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-10-23T05:00:00Z",
-        "windowStart": "2026-10-23T04:00:00Z"
+        "windowEnd": "2026-10-24T00:00:00Z",
+        "windowStart": "2026-10-23T23:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
@@ -2940,7 +2940,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.3553
           },
           "explanation": {
             "reasons": [
@@ -2956,20 +2956,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9769,
-          "localTime": "21:00",
-          "minutesAhead": 17.5,
-          "probability": 0.1301,
-          "rawScore": 0.1332,
+          "horizonScale": 0.3877,
+          "localTime": "16:00",
+          "minutesAhead": 710.6,
+          "probability": 0.1378,
+          "rawScore": 0.3553,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T05:00:00Z",
-          "windowStart": "2026-10-23T04:00:00Z"
+          "windowEnd": "2026-10-24T00:00:00Z",
+          "windowStart": "2026-10-23T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -2985,20 +2985,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9018,
-          "localTime": "22:00",
-          "minutesAhead": 77.5,
-          "probability": 0.1201,
-          "rawScore": 0.1332,
+          "horizonScale": 0.9348,
+          "localTime": "05:00",
+          "minutesAhead": 50.6,
+          "probability": 0.1313,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T06:00:00Z",
-          "windowStart": "2026-10-23T05:00:00Z"
+          "windowEnd": "2026-10-23T13:00:00Z",
+          "windowStart": "2026-10-23T12:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -3014,20 +3014,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.8325,
-          "localTime": "23:00",
-          "minutesAhead": 137.5,
-          "probability": 0.1109,
-          "rawScore": 0.1332,
+          "horizonScale": 0.8629,
+          "localTime": "06:00",
+          "minutesAhead": 110.6,
+          "probability": 0.1212,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T07:00:00Z",
-          "windowStart": "2026-10-23T06:00:00Z"
+          "windowEnd": "2026-10-23T14:00:00Z",
+          "windowStart": "2026-10-23T13:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -3043,20 +3043,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "00:00",
-          "minutesAhead": 197.5,
-          "probability": 0.1069,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7966,
+          "localTime": "07:00",
+          "minutesAhead": 170.6,
+          "probability": 0.1119,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T08:00:00Z",
-          "windowStart": "2026-10-23T07:00:00Z"
+          "windowEnd": "2026-10-23T15:00:00Z",
+          "windowStart": "2026-10-23T14:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -3072,20 +3072,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7094,
-          "localTime": "01:00",
-          "minutesAhead": 257.5,
-          "probability": 0.0987,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7353,
+          "localTime": "08:00",
+          "minutesAhead": 230.6,
+          "probability": 0.1033,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T09:00:00Z",
-          "windowStart": "2026-10-23T08:00:00Z"
+          "windowEnd": "2026-10-23T16:00:00Z",
+          "windowStart": "2026-10-23T15:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -3101,20 +3101,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6548,
-          "localTime": "02:00",
-          "minutesAhead": 317.5,
-          "probability": 0.0911,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6788,
+          "localTime": "09:00",
+          "minutesAhead": 290.6,
+          "probability": 0.0954,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T10:00:00Z",
-          "windowStart": "2026-10-23T09:00:00Z"
+          "windowEnd": "2026-10-23T17:00:00Z",
+          "windowStart": "2026-10-23T16:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.2073
           },
           "explanation": {
             "reasons": [
@@ -3130,20 +3130,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6045,
-          "localTime": "03:00",
-          "minutesAhead": 377.5,
-          "probability": 0.0841,
-          "rawScore": 0.1391,
+          "horizonScale": 0.455,
+          "localTime": "14:00",
+          "minutesAhead": 590.6,
+          "probability": 0.0943,
+          "rawScore": 0.2073,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T11:00:00Z",
-          "windowStart": "2026-10-23T10:00:00Z"
+          "windowEnd": "2026-10-23T22:00:00Z",
+          "windowStart": "2026-10-23T21:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -3159,15 +3159,15 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.558,
-          "localTime": "04:00",
-          "minutesAhead": 437.5,
-          "probability": 0.0776,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6266,
+          "localTime": "10:00",
+          "minutesAhead": 350.6,
+          "probability": 0.088,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T12:00:00Z",
-          "windowStart": "2026-10-23T11:00:00Z"
+          "windowEnd": "2026-10-23T18:00:00Z",
+          "windowStart": "2026-10-23T17:00:00Z"
         }
       ]
     },
@@ -3221,16 +3221,16 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-10-23T03:42:27Z",
+      "generatedAt": "2026-10-23T11:09:25Z",
       "machineId": "recsdam4nxLQLFEze",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1534,
+        "baseRate": 0.1546,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
-          "11": 0.0615,
-          "12": 0.0588,
+          "11": 0.0629,
+          "12": 0.0605,
           "14": 0.25,
           "15": 0.125,
           "16": 0.4615,
@@ -3244,17 +3244,17 @@
         "weekdayRate": {
           "0": 0.1667,
           "1": 0.1818,
-          "2": 0.2442,
-          "3": 0.086,
-          "4": 0.1058,
-          "5": 0.0696,
+          "2": 0.2457,
+          "3": 0.0872,
+          "4": 0.1076,
+          "5": 0.0699,
           "6": 0.2778
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.1332
+          "network_rate": 0.3553
         },
         "explanation": {
           "reasons": [
@@ -3270,15 +3270,15 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.9769,
-        "localTime": "21:00",
-        "minutesAhead": 17.5,
-        "probability": 0.1301,
-        "rawScore": 0.1332,
+        "horizonScale": 0.3877,
+        "localTime": "16:00",
+        "minutesAhead": 710.6,
+        "probability": 0.1378,
+        "rawScore": 0.3553,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-10-23T05:00:00Z",
-        "windowStart": "2026-10-23T04:00:00Z"
+        "windowEnd": "2026-10-24T00:00:00Z",
+        "windowStart": "2026-10-23T23:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
@@ -3287,7 +3287,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.3553
           },
           "explanation": {
             "reasons": [
@@ -3303,20 +3303,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9769,
-          "localTime": "21:00",
-          "minutesAhead": 17.5,
-          "probability": 0.1301,
-          "rawScore": 0.1332,
+          "horizonScale": 0.3877,
+          "localTime": "16:00",
+          "minutesAhead": 710.6,
+          "probability": 0.1378,
+          "rawScore": 0.3553,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T05:00:00Z",
-          "windowStart": "2026-10-23T04:00:00Z"
+          "windowEnd": "2026-10-24T00:00:00Z",
+          "windowStart": "2026-10-23T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -3332,20 +3332,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9018,
-          "localTime": "22:00",
-          "minutesAhead": 77.5,
-          "probability": 0.1201,
-          "rawScore": 0.1332,
+          "horizonScale": 0.9348,
+          "localTime": "05:00",
+          "minutesAhead": 50.6,
+          "probability": 0.1313,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T06:00:00Z",
-          "windowStart": "2026-10-23T05:00:00Z"
+          "windowEnd": "2026-10-23T13:00:00Z",
+          "windowStart": "2026-10-23T12:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -3361,20 +3361,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.8325,
-          "localTime": "23:00",
-          "minutesAhead": 137.5,
-          "probability": 0.1109,
-          "rawScore": 0.1332,
+          "horizonScale": 0.8629,
+          "localTime": "06:00",
+          "minutesAhead": 110.6,
+          "probability": 0.1212,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T07:00:00Z",
-          "windowStart": "2026-10-23T06:00:00Z"
+          "windowEnd": "2026-10-23T14:00:00Z",
+          "windowStart": "2026-10-23T13:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -3390,20 +3390,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "00:00",
-          "minutesAhead": 197.5,
-          "probability": 0.1069,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7966,
+          "localTime": "07:00",
+          "minutesAhead": 170.6,
+          "probability": 0.1119,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T08:00:00Z",
-          "windowStart": "2026-10-23T07:00:00Z"
+          "windowEnd": "2026-10-23T15:00:00Z",
+          "windowStart": "2026-10-23T14:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -3419,20 +3419,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7094,
-          "localTime": "01:00",
-          "minutesAhead": 257.5,
-          "probability": 0.0987,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7353,
+          "localTime": "08:00",
+          "minutesAhead": 230.6,
+          "probability": 0.1033,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T09:00:00Z",
-          "windowStart": "2026-10-23T08:00:00Z"
+          "windowEnd": "2026-10-23T16:00:00Z",
+          "windowStart": "2026-10-23T15:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -3448,20 +3448,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6548,
-          "localTime": "02:00",
-          "minutesAhead": 317.5,
-          "probability": 0.0911,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6788,
+          "localTime": "09:00",
+          "minutesAhead": 290.6,
+          "probability": 0.0954,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T10:00:00Z",
-          "windowStart": "2026-10-23T09:00:00Z"
+          "windowEnd": "2026-10-23T17:00:00Z",
+          "windowStart": "2026-10-23T16:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.2073
           },
           "explanation": {
             "reasons": [
@@ -3477,20 +3477,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6045,
-          "localTime": "03:00",
-          "minutesAhead": 377.5,
-          "probability": 0.0841,
-          "rawScore": 0.1391,
+          "horizonScale": 0.455,
+          "localTime": "14:00",
+          "minutesAhead": 590.6,
+          "probability": 0.0943,
+          "rawScore": 0.2073,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T11:00:00Z",
-          "windowStart": "2026-10-23T10:00:00Z"
+          "windowEnd": "2026-10-23T22:00:00Z",
+          "windowStart": "2026-10-23T21:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -3506,15 +3506,15 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.558,
-          "localTime": "04:00",
-          "minutesAhead": 437.5,
-          "probability": 0.0776,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6266,
+          "localTime": "10:00",
+          "minutesAhead": 350.6,
+          "probability": 0.088,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T12:00:00Z",
-          "windowStart": "2026-10-23T11:00:00Z"
+          "windowEnd": "2026-10-23T18:00:00Z",
+          "windowStart": "2026-10-23T17:00:00Z"
         }
       ]
     },
@@ -3568,16 +3568,16 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-10-23T03:42:27Z",
+      "generatedAt": "2026-10-23T11:09:25Z",
       "machineId": "recTc5NuQKDA66RV9",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1534,
+        "baseRate": 0.1546,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
-          "11": 0.0615,
-          "12": 0.0588,
+          "11": 0.0629,
+          "12": 0.0605,
           "14": 0.25,
           "15": 0.125,
           "16": 0.4615,
@@ -3591,17 +3591,17 @@
         "weekdayRate": {
           "0": 0.1667,
           "1": 0.1818,
-          "2": 0.2442,
-          "3": 0.086,
-          "4": 0.1058,
-          "5": 0.0696,
+          "2": 0.2457,
+          "3": 0.0872,
+          "4": 0.1076,
+          "5": 0.0699,
           "6": 0.2778
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.1332
+          "network_rate": 0.3553
         },
         "explanation": {
           "reasons": [
@@ -3617,15 +3617,15 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.9769,
-        "localTime": "21:00",
-        "minutesAhead": 17.5,
-        "probability": 0.1301,
-        "rawScore": 0.1332,
+        "horizonScale": 0.3877,
+        "localTime": "16:00",
+        "minutesAhead": 710.6,
+        "probability": 0.1378,
+        "rawScore": 0.3553,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-10-23T05:00:00Z",
-        "windowStart": "2026-10-23T04:00:00Z"
+        "windowEnd": "2026-10-24T00:00:00Z",
+        "windowStart": "2026-10-23T23:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
@@ -3634,7 +3634,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.3553
           },
           "explanation": {
             "reasons": [
@@ -3650,20 +3650,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9769,
-          "localTime": "21:00",
-          "minutesAhead": 17.5,
-          "probability": 0.1301,
-          "rawScore": 0.1332,
+          "horizonScale": 0.3877,
+          "localTime": "16:00",
+          "minutesAhead": 710.6,
+          "probability": 0.1378,
+          "rawScore": 0.3553,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T05:00:00Z",
-          "windowStart": "2026-10-23T04:00:00Z"
+          "windowEnd": "2026-10-24T00:00:00Z",
+          "windowStart": "2026-10-23T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -3679,20 +3679,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9018,
-          "localTime": "22:00",
-          "minutesAhead": 77.5,
-          "probability": 0.1201,
-          "rawScore": 0.1332,
+          "horizonScale": 0.9348,
+          "localTime": "05:00",
+          "minutesAhead": 50.6,
+          "probability": 0.1313,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T06:00:00Z",
-          "windowStart": "2026-10-23T05:00:00Z"
+          "windowEnd": "2026-10-23T13:00:00Z",
+          "windowStart": "2026-10-23T12:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -3708,20 +3708,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.8325,
-          "localTime": "23:00",
-          "minutesAhead": 137.5,
-          "probability": 0.1109,
-          "rawScore": 0.1332,
+          "horizonScale": 0.8629,
+          "localTime": "06:00",
+          "minutesAhead": 110.6,
+          "probability": 0.1212,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T07:00:00Z",
-          "windowStart": "2026-10-23T06:00:00Z"
+          "windowEnd": "2026-10-23T14:00:00Z",
+          "windowStart": "2026-10-23T13:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -3737,20 +3737,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "00:00",
-          "minutesAhead": 197.5,
-          "probability": 0.1069,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7966,
+          "localTime": "07:00",
+          "minutesAhead": 170.6,
+          "probability": 0.1119,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T08:00:00Z",
-          "windowStart": "2026-10-23T07:00:00Z"
+          "windowEnd": "2026-10-23T15:00:00Z",
+          "windowStart": "2026-10-23T14:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -3766,20 +3766,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7094,
-          "localTime": "01:00",
-          "minutesAhead": 257.5,
-          "probability": 0.0987,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7353,
+          "localTime": "08:00",
+          "minutesAhead": 230.6,
+          "probability": 0.1033,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T09:00:00Z",
-          "windowStart": "2026-10-23T08:00:00Z"
+          "windowEnd": "2026-10-23T16:00:00Z",
+          "windowStart": "2026-10-23T15:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -3795,20 +3795,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6548,
-          "localTime": "02:00",
-          "minutesAhead": 317.5,
-          "probability": 0.0911,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6788,
+          "localTime": "09:00",
+          "minutesAhead": 290.6,
+          "probability": 0.0954,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T10:00:00Z",
-          "windowStart": "2026-10-23T09:00:00Z"
+          "windowEnd": "2026-10-23T17:00:00Z",
+          "windowStart": "2026-10-23T16:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.2073
           },
           "explanation": {
             "reasons": [
@@ -3824,20 +3824,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6045,
-          "localTime": "03:00",
-          "minutesAhead": 377.5,
-          "probability": 0.0841,
-          "rawScore": 0.1391,
+          "horizonScale": 0.455,
+          "localTime": "14:00",
+          "minutesAhead": 590.6,
+          "probability": 0.0943,
+          "rawScore": 0.2073,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T11:00:00Z",
-          "windowStart": "2026-10-23T10:00:00Z"
+          "windowEnd": "2026-10-23T22:00:00Z",
+          "windowStart": "2026-10-23T21:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -3853,15 +3853,15 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.558,
-          "localTime": "04:00",
-          "minutesAhead": 437.5,
-          "probability": 0.0776,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6266,
+          "localTime": "10:00",
+          "minutesAhead": 350.6,
+          "probability": 0.088,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T12:00:00Z",
-          "windowStart": "2026-10-23T11:00:00Z"
+          "windowEnd": "2026-10-23T18:00:00Z",
+          "windowStart": "2026-10-23T17:00:00Z"
         }
       ]
     },
@@ -3915,16 +3915,16 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-10-23T03:42:27Z",
+      "generatedAt": "2026-10-23T11:09:25Z",
       "machineId": "recdDsMc0U3XlHmdj",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1534,
+        "baseRate": 0.1546,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
-          "11": 0.0615,
-          "12": 0.0588,
+          "11": 0.0629,
+          "12": 0.0605,
           "14": 0.25,
           "15": 0.125,
           "16": 0.4615,
@@ -3938,17 +3938,17 @@
         "weekdayRate": {
           "0": 0.1667,
           "1": 0.1818,
-          "2": 0.2442,
-          "3": 0.086,
-          "4": 0.1058,
-          "5": 0.0696,
+          "2": 0.2457,
+          "3": 0.0872,
+          "4": 0.1076,
+          "5": 0.0699,
           "6": 0.2778
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.1332
+          "network_rate": 0.3553
         },
         "explanation": {
           "reasons": [
@@ -3964,15 +3964,15 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.9769,
-        "localTime": "21:00",
-        "minutesAhead": 17.5,
-        "probability": 0.1301,
-        "rawScore": 0.1332,
+        "horizonScale": 0.3877,
+        "localTime": "16:00",
+        "minutesAhead": 710.6,
+        "probability": 0.1378,
+        "rawScore": 0.3553,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-10-23T05:00:00Z",
-        "windowStart": "2026-10-23T04:00:00Z"
+        "windowEnd": "2026-10-24T00:00:00Z",
+        "windowStart": "2026-10-23T23:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
@@ -3981,7 +3981,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.3553
           },
           "explanation": {
             "reasons": [
@@ -3997,20 +3997,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9769,
-          "localTime": "21:00",
-          "minutesAhead": 17.5,
-          "probability": 0.1301,
-          "rawScore": 0.1332,
+          "horizonScale": 0.3877,
+          "localTime": "16:00",
+          "minutesAhead": 710.6,
+          "probability": 0.1378,
+          "rawScore": 0.3553,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T05:00:00Z",
-          "windowStart": "2026-10-23T04:00:00Z"
+          "windowEnd": "2026-10-24T00:00:00Z",
+          "windowStart": "2026-10-23T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -4026,20 +4026,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9018,
-          "localTime": "22:00",
-          "minutesAhead": 77.5,
-          "probability": 0.1201,
-          "rawScore": 0.1332,
+          "horizonScale": 0.9348,
+          "localTime": "05:00",
+          "minutesAhead": 50.6,
+          "probability": 0.1313,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T06:00:00Z",
-          "windowStart": "2026-10-23T05:00:00Z"
+          "windowEnd": "2026-10-23T13:00:00Z",
+          "windowStart": "2026-10-23T12:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -4055,20 +4055,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.8325,
-          "localTime": "23:00",
-          "minutesAhead": 137.5,
-          "probability": 0.1109,
-          "rawScore": 0.1332,
+          "horizonScale": 0.8629,
+          "localTime": "06:00",
+          "minutesAhead": 110.6,
+          "probability": 0.1212,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T07:00:00Z",
-          "windowStart": "2026-10-23T06:00:00Z"
+          "windowEnd": "2026-10-23T14:00:00Z",
+          "windowStart": "2026-10-23T13:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -4084,20 +4084,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "00:00",
-          "minutesAhead": 197.5,
-          "probability": 0.1069,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7966,
+          "localTime": "07:00",
+          "minutesAhead": 170.6,
+          "probability": 0.1119,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T08:00:00Z",
-          "windowStart": "2026-10-23T07:00:00Z"
+          "windowEnd": "2026-10-23T15:00:00Z",
+          "windowStart": "2026-10-23T14:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -4113,20 +4113,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7094,
-          "localTime": "01:00",
-          "minutesAhead": 257.5,
-          "probability": 0.0987,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7353,
+          "localTime": "08:00",
+          "minutesAhead": 230.6,
+          "probability": 0.1033,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T09:00:00Z",
-          "windowStart": "2026-10-23T08:00:00Z"
+          "windowEnd": "2026-10-23T16:00:00Z",
+          "windowStart": "2026-10-23T15:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -4142,20 +4142,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6548,
-          "localTime": "02:00",
-          "minutesAhead": 317.5,
-          "probability": 0.0911,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6788,
+          "localTime": "09:00",
+          "minutesAhead": 290.6,
+          "probability": 0.0954,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T10:00:00Z",
-          "windowStart": "2026-10-23T09:00:00Z"
+          "windowEnd": "2026-10-23T17:00:00Z",
+          "windowStart": "2026-10-23T16:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.2073
           },
           "explanation": {
             "reasons": [
@@ -4171,20 +4171,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6045,
-          "localTime": "03:00",
-          "minutesAhead": 377.5,
-          "probability": 0.0841,
-          "rawScore": 0.1391,
+          "horizonScale": 0.455,
+          "localTime": "14:00",
+          "minutesAhead": 590.6,
+          "probability": 0.0943,
+          "rawScore": 0.2073,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T11:00:00Z",
-          "windowStart": "2026-10-23T10:00:00Z"
+          "windowEnd": "2026-10-23T22:00:00Z",
+          "windowStart": "2026-10-23T21:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -4200,15 +4200,15 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.558,
-          "localTime": "04:00",
-          "minutesAhead": 437.5,
-          "probability": 0.0776,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6266,
+          "localTime": "10:00",
+          "minutesAhead": 350.6,
+          "probability": 0.088,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T12:00:00Z",
-          "windowStart": "2026-10-23T11:00:00Z"
+          "windowEnd": "2026-10-23T18:00:00Z",
+          "windowStart": "2026-10-23T17:00:00Z"
         }
       ]
     },
@@ -4262,16 +4262,16 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-10-23T03:42:27Z",
+      "generatedAt": "2026-10-23T11:09:25Z",
       "machineId": "recURNyhKwDrZsDGG",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1534,
+        "baseRate": 0.1546,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
-          "11": 0.0615,
-          "12": 0.0588,
+          "11": 0.0629,
+          "12": 0.0605,
           "14": 0.25,
           "15": 0.125,
           "16": 0.4615,
@@ -4285,17 +4285,17 @@
         "weekdayRate": {
           "0": 0.1667,
           "1": 0.1818,
-          "2": 0.2442,
-          "3": 0.086,
-          "4": 0.1058,
-          "5": 0.0696,
+          "2": 0.2457,
+          "3": 0.0872,
+          "4": 0.1076,
+          "5": 0.0699,
           "6": 0.2778
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.1332
+          "network_rate": 0.3553
         },
         "explanation": {
           "reasons": [
@@ -4311,15 +4311,15 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.9769,
-        "localTime": "21:00",
-        "minutesAhead": 17.5,
-        "probability": 0.1301,
-        "rawScore": 0.1332,
+        "horizonScale": 0.3877,
+        "localTime": "16:00",
+        "minutesAhead": 710.6,
+        "probability": 0.1378,
+        "rawScore": 0.3553,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-10-23T05:00:00Z",
-        "windowStart": "2026-10-23T04:00:00Z"
+        "windowEnd": "2026-10-24T00:00:00Z",
+        "windowStart": "2026-10-23T23:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
@@ -4328,7 +4328,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.3553
           },
           "explanation": {
             "reasons": [
@@ -4344,20 +4344,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9769,
-          "localTime": "21:00",
-          "minutesAhead": 17.5,
-          "probability": 0.1301,
-          "rawScore": 0.1332,
+          "horizonScale": 0.3877,
+          "localTime": "16:00",
+          "minutesAhead": 710.6,
+          "probability": 0.1378,
+          "rawScore": 0.3553,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T05:00:00Z",
-          "windowStart": "2026-10-23T04:00:00Z"
+          "windowEnd": "2026-10-24T00:00:00Z",
+          "windowStart": "2026-10-23T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -4373,20 +4373,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9018,
-          "localTime": "22:00",
-          "minutesAhead": 77.5,
-          "probability": 0.1201,
-          "rawScore": 0.1332,
+          "horizonScale": 0.9348,
+          "localTime": "05:00",
+          "minutesAhead": 50.6,
+          "probability": 0.1313,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T06:00:00Z",
-          "windowStart": "2026-10-23T05:00:00Z"
+          "windowEnd": "2026-10-23T13:00:00Z",
+          "windowStart": "2026-10-23T12:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -4402,20 +4402,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.8325,
-          "localTime": "23:00",
-          "minutesAhead": 137.5,
-          "probability": 0.1109,
-          "rawScore": 0.1332,
+          "horizonScale": 0.8629,
+          "localTime": "06:00",
+          "minutesAhead": 110.6,
+          "probability": 0.1212,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T07:00:00Z",
-          "windowStart": "2026-10-23T06:00:00Z"
+          "windowEnd": "2026-10-23T14:00:00Z",
+          "windowStart": "2026-10-23T13:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -4431,20 +4431,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "00:00",
-          "minutesAhead": 197.5,
-          "probability": 0.1069,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7966,
+          "localTime": "07:00",
+          "minutesAhead": 170.6,
+          "probability": 0.1119,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T08:00:00Z",
-          "windowStart": "2026-10-23T07:00:00Z"
+          "windowEnd": "2026-10-23T15:00:00Z",
+          "windowStart": "2026-10-23T14:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -4460,20 +4460,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7094,
-          "localTime": "01:00",
-          "minutesAhead": 257.5,
-          "probability": 0.0987,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7353,
+          "localTime": "08:00",
+          "minutesAhead": 230.6,
+          "probability": 0.1033,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T09:00:00Z",
-          "windowStart": "2026-10-23T08:00:00Z"
+          "windowEnd": "2026-10-23T16:00:00Z",
+          "windowStart": "2026-10-23T15:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -4489,20 +4489,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6548,
-          "localTime": "02:00",
-          "minutesAhead": 317.5,
-          "probability": 0.0911,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6788,
+          "localTime": "09:00",
+          "minutesAhead": 290.6,
+          "probability": 0.0954,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T10:00:00Z",
-          "windowStart": "2026-10-23T09:00:00Z"
+          "windowEnd": "2026-10-23T17:00:00Z",
+          "windowStart": "2026-10-23T16:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.2073
           },
           "explanation": {
             "reasons": [
@@ -4518,20 +4518,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6045,
-          "localTime": "03:00",
-          "minutesAhead": 377.5,
-          "probability": 0.0841,
-          "rawScore": 0.1391,
+          "horizonScale": 0.455,
+          "localTime": "14:00",
+          "minutesAhead": 590.6,
+          "probability": 0.0943,
+          "rawScore": 0.2073,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T11:00:00Z",
-          "windowStart": "2026-10-23T10:00:00Z"
+          "windowEnd": "2026-10-23T22:00:00Z",
+          "windowStart": "2026-10-23T21:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -4547,15 +4547,15 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.558,
-          "localTime": "04:00",
-          "minutesAhead": 437.5,
-          "probability": 0.0776,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6266,
+          "localTime": "10:00",
+          "minutesAhead": 350.6,
+          "probability": 0.088,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T12:00:00Z",
-          "windowStart": "2026-10-23T11:00:00Z"
+          "windowEnd": "2026-10-23T18:00:00Z",
+          "windowStart": "2026-10-23T17:00:00Z"
         }
       ]
     },
@@ -4609,16 +4609,16 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-10-23T03:42:27Z",
+      "generatedAt": "2026-10-23T11:09:25Z",
       "machineId": "rec1u8cRmzJiJsdeS",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1534,
+        "baseRate": 0.1546,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
-          "11": 0.0615,
-          "12": 0.0588,
+          "11": 0.0629,
+          "12": 0.0605,
           "14": 0.25,
           "15": 0.125,
           "16": 0.4615,
@@ -4632,17 +4632,17 @@
         "weekdayRate": {
           "0": 0.1667,
           "1": 0.1818,
-          "2": 0.2442,
-          "3": 0.086,
-          "4": 0.1058,
-          "5": 0.0696,
+          "2": 0.2457,
+          "3": 0.0872,
+          "4": 0.1076,
+          "5": 0.0699,
           "6": 0.2778
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.1332
+          "network_rate": 0.3553
         },
         "explanation": {
           "reasons": [
@@ -4658,15 +4658,15 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.9769,
-        "localTime": "21:00",
-        "minutesAhead": 17.5,
-        "probability": 0.1301,
-        "rawScore": 0.1332,
+        "horizonScale": 0.3877,
+        "localTime": "16:00",
+        "minutesAhead": 710.6,
+        "probability": 0.1378,
+        "rawScore": 0.3553,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-10-23T05:00:00Z",
-        "windowStart": "2026-10-23T04:00:00Z"
+        "windowEnd": "2026-10-24T00:00:00Z",
+        "windowStart": "2026-10-23T23:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
@@ -4675,7 +4675,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.3553
           },
           "explanation": {
             "reasons": [
@@ -4691,20 +4691,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9769,
-          "localTime": "21:00",
-          "minutesAhead": 17.5,
-          "probability": 0.1301,
-          "rawScore": 0.1332,
+          "horizonScale": 0.3877,
+          "localTime": "16:00",
+          "minutesAhead": 710.6,
+          "probability": 0.1378,
+          "rawScore": 0.3553,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T05:00:00Z",
-          "windowStart": "2026-10-23T04:00:00Z"
+          "windowEnd": "2026-10-24T00:00:00Z",
+          "windowStart": "2026-10-23T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -4720,20 +4720,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9018,
-          "localTime": "22:00",
-          "minutesAhead": 77.5,
-          "probability": 0.1201,
-          "rawScore": 0.1332,
+          "horizonScale": 0.9348,
+          "localTime": "05:00",
+          "minutesAhead": 50.6,
+          "probability": 0.1313,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T06:00:00Z",
-          "windowStart": "2026-10-23T05:00:00Z"
+          "windowEnd": "2026-10-23T13:00:00Z",
+          "windowStart": "2026-10-23T12:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -4749,20 +4749,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.8325,
-          "localTime": "23:00",
-          "minutesAhead": 137.5,
-          "probability": 0.1109,
-          "rawScore": 0.1332,
+          "horizonScale": 0.8629,
+          "localTime": "06:00",
+          "minutesAhead": 110.6,
+          "probability": 0.1212,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T07:00:00Z",
-          "windowStart": "2026-10-23T06:00:00Z"
+          "windowEnd": "2026-10-23T14:00:00Z",
+          "windowStart": "2026-10-23T13:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -4778,20 +4778,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "00:00",
-          "minutesAhead": 197.5,
-          "probability": 0.1069,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7966,
+          "localTime": "07:00",
+          "minutesAhead": 170.6,
+          "probability": 0.1119,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T08:00:00Z",
-          "windowStart": "2026-10-23T07:00:00Z"
+          "windowEnd": "2026-10-23T15:00:00Z",
+          "windowStart": "2026-10-23T14:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -4807,20 +4807,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7094,
-          "localTime": "01:00",
-          "minutesAhead": 257.5,
-          "probability": 0.0987,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7353,
+          "localTime": "08:00",
+          "minutesAhead": 230.6,
+          "probability": 0.1033,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T09:00:00Z",
-          "windowStart": "2026-10-23T08:00:00Z"
+          "windowEnd": "2026-10-23T16:00:00Z",
+          "windowStart": "2026-10-23T15:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -4836,20 +4836,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6548,
-          "localTime": "02:00",
-          "minutesAhead": 317.5,
-          "probability": 0.0911,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6788,
+          "localTime": "09:00",
+          "minutesAhead": 290.6,
+          "probability": 0.0954,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T10:00:00Z",
-          "windowStart": "2026-10-23T09:00:00Z"
+          "windowEnd": "2026-10-23T17:00:00Z",
+          "windowStart": "2026-10-23T16:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.2073
           },
           "explanation": {
             "reasons": [
@@ -4865,20 +4865,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6045,
-          "localTime": "03:00",
-          "minutesAhead": 377.5,
-          "probability": 0.0841,
-          "rawScore": 0.1391,
+          "horizonScale": 0.455,
+          "localTime": "14:00",
+          "minutesAhead": 590.6,
+          "probability": 0.0943,
+          "rawScore": 0.2073,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T11:00:00Z",
-          "windowStart": "2026-10-23T10:00:00Z"
+          "windowEnd": "2026-10-23T22:00:00Z",
+          "windowStart": "2026-10-23T21:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -4894,15 +4894,15 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.558,
-          "localTime": "04:00",
-          "minutesAhead": 437.5,
-          "probability": 0.0776,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6266,
+          "localTime": "10:00",
+          "minutesAhead": 350.6,
+          "probability": 0.088,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T12:00:00Z",
-          "windowStart": "2026-10-23T11:00:00Z"
+          "windowEnd": "2026-10-23T18:00:00Z",
+          "windowStart": "2026-10-23T17:00:00Z"
         }
       ]
     },
@@ -4956,16 +4956,16 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-10-23T03:42:27Z",
+      "generatedAt": "2026-10-23T11:09:25Z",
       "machineId": "recbcwbwRADJNCFrJ",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1534,
+        "baseRate": 0.1546,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
-          "11": 0.0615,
-          "12": 0.0588,
+          "11": 0.0629,
+          "12": 0.0605,
           "14": 0.25,
           "15": 0.125,
           "16": 0.4615,
@@ -4979,17 +4979,17 @@
         "weekdayRate": {
           "0": 0.1667,
           "1": 0.1818,
-          "2": 0.2442,
-          "3": 0.086,
-          "4": 0.1058,
-          "5": 0.0696,
+          "2": 0.2457,
+          "3": 0.0872,
+          "4": 0.1076,
+          "5": 0.0699,
           "6": 0.2778
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.1332
+          "network_rate": 0.3553
         },
         "explanation": {
           "reasons": [
@@ -5005,15 +5005,15 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.9769,
-        "localTime": "21:00",
-        "minutesAhead": 17.5,
-        "probability": 0.1301,
-        "rawScore": 0.1332,
+        "horizonScale": 0.3877,
+        "localTime": "16:00",
+        "minutesAhead": 710.6,
+        "probability": 0.1378,
+        "rawScore": 0.3553,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-10-23T05:00:00Z",
-        "windowStart": "2026-10-23T04:00:00Z"
+        "windowEnd": "2026-10-24T00:00:00Z",
+        "windowStart": "2026-10-23T23:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
@@ -5022,7 +5022,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.3553
           },
           "explanation": {
             "reasons": [
@@ -5038,20 +5038,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9769,
-          "localTime": "21:00",
-          "minutesAhead": 17.5,
-          "probability": 0.1301,
-          "rawScore": 0.1332,
+          "horizonScale": 0.3877,
+          "localTime": "16:00",
+          "minutesAhead": 710.6,
+          "probability": 0.1378,
+          "rawScore": 0.3553,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T05:00:00Z",
-          "windowStart": "2026-10-23T04:00:00Z"
+          "windowEnd": "2026-10-24T00:00:00Z",
+          "windowStart": "2026-10-23T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -5067,20 +5067,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9018,
-          "localTime": "22:00",
-          "minutesAhead": 77.5,
-          "probability": 0.1201,
-          "rawScore": 0.1332,
+          "horizonScale": 0.9348,
+          "localTime": "05:00",
+          "minutesAhead": 50.6,
+          "probability": 0.1313,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T06:00:00Z",
-          "windowStart": "2026-10-23T05:00:00Z"
+          "windowEnd": "2026-10-23T13:00:00Z",
+          "windowStart": "2026-10-23T12:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -5096,20 +5096,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.8325,
-          "localTime": "23:00",
-          "minutesAhead": 137.5,
-          "probability": 0.1109,
-          "rawScore": 0.1332,
+          "horizonScale": 0.8629,
+          "localTime": "06:00",
+          "minutesAhead": 110.6,
+          "probability": 0.1212,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T07:00:00Z",
-          "windowStart": "2026-10-23T06:00:00Z"
+          "windowEnd": "2026-10-23T14:00:00Z",
+          "windowStart": "2026-10-23T13:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -5125,20 +5125,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "00:00",
-          "minutesAhead": 197.5,
-          "probability": 0.1069,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7966,
+          "localTime": "07:00",
+          "minutesAhead": 170.6,
+          "probability": 0.1119,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T08:00:00Z",
-          "windowStart": "2026-10-23T07:00:00Z"
+          "windowEnd": "2026-10-23T15:00:00Z",
+          "windowStart": "2026-10-23T14:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -5154,20 +5154,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7094,
-          "localTime": "01:00",
-          "minutesAhead": 257.5,
-          "probability": 0.0987,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7353,
+          "localTime": "08:00",
+          "minutesAhead": 230.6,
+          "probability": 0.1033,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T09:00:00Z",
-          "windowStart": "2026-10-23T08:00:00Z"
+          "windowEnd": "2026-10-23T16:00:00Z",
+          "windowStart": "2026-10-23T15:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -5183,20 +5183,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6548,
-          "localTime": "02:00",
-          "minutesAhead": 317.5,
-          "probability": 0.0911,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6788,
+          "localTime": "09:00",
+          "minutesAhead": 290.6,
+          "probability": 0.0954,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T10:00:00Z",
-          "windowStart": "2026-10-23T09:00:00Z"
+          "windowEnd": "2026-10-23T17:00:00Z",
+          "windowStart": "2026-10-23T16:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.2073
           },
           "explanation": {
             "reasons": [
@@ -5212,20 +5212,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6045,
-          "localTime": "03:00",
-          "minutesAhead": 377.5,
-          "probability": 0.0841,
-          "rawScore": 0.1391,
+          "horizonScale": 0.455,
+          "localTime": "14:00",
+          "minutesAhead": 590.6,
+          "probability": 0.0943,
+          "rawScore": 0.2073,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T11:00:00Z",
-          "windowStart": "2026-10-23T10:00:00Z"
+          "windowEnd": "2026-10-23T22:00:00Z",
+          "windowStart": "2026-10-23T21:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -5241,15 +5241,15 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.558,
-          "localTime": "04:00",
-          "minutesAhead": 437.5,
-          "probability": 0.0776,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6266,
+          "localTime": "10:00",
+          "minutesAhead": 350.6,
+          "probability": 0.088,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T12:00:00Z",
-          "windowStart": "2026-10-23T11:00:00Z"
+          "windowEnd": "2026-10-23T18:00:00Z",
+          "windowStart": "2026-10-23T17:00:00Z"
         }
       ]
     },
@@ -5303,16 +5303,16 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-10-23T03:42:27Z",
+      "generatedAt": "2026-10-23T11:09:25Z",
       "machineId": "rec9EIDVfntkPNLoJ",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1534,
+        "baseRate": 0.1546,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
-          "11": 0.0615,
-          "12": 0.0588,
+          "11": 0.0629,
+          "12": 0.0605,
           "14": 0.25,
           "15": 0.125,
           "16": 0.4615,
@@ -5326,17 +5326,17 @@
         "weekdayRate": {
           "0": 0.1667,
           "1": 0.1818,
-          "2": 0.2442,
-          "3": 0.086,
-          "4": 0.1058,
-          "5": 0.0696,
+          "2": 0.2457,
+          "3": 0.0872,
+          "4": 0.1076,
+          "5": 0.0699,
           "6": 0.2778
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.1332
+          "network_rate": 0.3553
         },
         "explanation": {
           "reasons": [
@@ -5352,15 +5352,15 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.9769,
-        "localTime": "21:00",
-        "minutesAhead": 17.5,
-        "probability": 0.1301,
-        "rawScore": 0.1332,
+        "horizonScale": 0.3877,
+        "localTime": "16:00",
+        "minutesAhead": 710.6,
+        "probability": 0.1378,
+        "rawScore": 0.3553,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-10-23T05:00:00Z",
-        "windowStart": "2026-10-23T04:00:00Z"
+        "windowEnd": "2026-10-24T00:00:00Z",
+        "windowStart": "2026-10-23T23:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
@@ -5369,7 +5369,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.3553
           },
           "explanation": {
             "reasons": [
@@ -5385,20 +5385,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9769,
-          "localTime": "21:00",
-          "minutesAhead": 17.5,
-          "probability": 0.1301,
-          "rawScore": 0.1332,
+          "horizonScale": 0.3877,
+          "localTime": "16:00",
+          "minutesAhead": 710.6,
+          "probability": 0.1378,
+          "rawScore": 0.3553,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T05:00:00Z",
-          "windowStart": "2026-10-23T04:00:00Z"
+          "windowEnd": "2026-10-24T00:00:00Z",
+          "windowStart": "2026-10-23T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -5414,20 +5414,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9018,
-          "localTime": "22:00",
-          "minutesAhead": 77.5,
-          "probability": 0.1201,
-          "rawScore": 0.1332,
+          "horizonScale": 0.9348,
+          "localTime": "05:00",
+          "minutesAhead": 50.6,
+          "probability": 0.1313,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T06:00:00Z",
-          "windowStart": "2026-10-23T05:00:00Z"
+          "windowEnd": "2026-10-23T13:00:00Z",
+          "windowStart": "2026-10-23T12:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1332
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -5443,20 +5443,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.8325,
-          "localTime": "23:00",
-          "minutesAhead": 137.5,
-          "probability": 0.1109,
-          "rawScore": 0.1332,
+          "horizonScale": 0.8629,
+          "localTime": "06:00",
+          "minutesAhead": 110.6,
+          "probability": 0.1212,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T07:00:00Z",
-          "windowStart": "2026-10-23T06:00:00Z"
+          "windowEnd": "2026-10-23T14:00:00Z",
+          "windowStart": "2026-10-23T13:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -5472,20 +5472,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "00:00",
-          "minutesAhead": 197.5,
-          "probability": 0.1069,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7966,
+          "localTime": "07:00",
+          "minutesAhead": 170.6,
+          "probability": 0.1119,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T08:00:00Z",
-          "windowStart": "2026-10-23T07:00:00Z"
+          "windowEnd": "2026-10-23T15:00:00Z",
+          "windowStart": "2026-10-23T14:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -5501,20 +5501,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7094,
-          "localTime": "01:00",
-          "minutesAhead": 257.5,
-          "probability": 0.0987,
-          "rawScore": 0.1391,
+          "horizonScale": 0.7353,
+          "localTime": "08:00",
+          "minutesAhead": 230.6,
+          "probability": 0.1033,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T09:00:00Z",
-          "windowStart": "2026-10-23T08:00:00Z"
+          "windowEnd": "2026-10-23T16:00:00Z",
+          "windowStart": "2026-10-23T15:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -5530,20 +5530,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6548,
-          "localTime": "02:00",
-          "minutesAhead": 317.5,
-          "probability": 0.0911,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6788,
+          "localTime": "09:00",
+          "minutesAhead": 290.6,
+          "probability": 0.0954,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T10:00:00Z",
-          "windowStart": "2026-10-23T09:00:00Z"
+          "windowEnd": "2026-10-23T17:00:00Z",
+          "windowStart": "2026-10-23T16:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.2073
           },
           "explanation": {
             "reasons": [
@@ -5559,20 +5559,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6045,
-          "localTime": "03:00",
-          "minutesAhead": 377.5,
-          "probability": 0.0841,
-          "rawScore": 0.1391,
+          "horizonScale": 0.455,
+          "localTime": "14:00",
+          "minutesAhead": 590.6,
+          "probability": 0.0943,
+          "rawScore": 0.2073,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T11:00:00Z",
-          "windowStart": "2026-10-23T10:00:00Z"
+          "windowEnd": "2026-10-23T22:00:00Z",
+          "windowStart": "2026-10-23T21:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1391
+            "network_rate": 0.1405
           },
           "explanation": {
             "reasons": [
@@ -5588,18 +5588,18 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.558,
-          "localTime": "04:00",
-          "minutesAhead": 437.5,
-          "probability": 0.0776,
-          "rawScore": 0.1391,
+          "horizonScale": 0.6266,
+          "localTime": "10:00",
+          "minutesAhead": 350.6,
+          "probability": 0.088,
+          "rawScore": 0.1405,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-10-23T12:00:00Z",
-          "windowStart": "2026-10-23T11:00:00Z"
+          "windowEnd": "2026-10-23T18:00:00Z",
+          "windowStart": "2026-10-23T17:00:00Z"
         }
       ]
     }
   ],
-  "generatedAt": "2026-10-23T03:42:27Z"
+  "generatedAt": "2026-10-23T11:09:25Z"
 }
