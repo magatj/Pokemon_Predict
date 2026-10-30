@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T18:08:38Z",
+  "generatedAt": "2026-10-30T00:39:59Z",
   "observations": [
     {
       "availability": "NOT_AVAILABLE",
@@ -1691,6 +1691,22 @@
       "machineMatchConfidence": 0.0,
       "observedAt": "2026-10-29T16:48:06Z",
       "postedAt": "2026-10-29T16:48:06Z",
+      "product": null,
+      "purchaseConfirmed": false,
+      "retailer": "Albertsons",
+      "source": "PUBLIC_WEB",
+      "sourceUrl": "https://pokemonmap.com/"
+    },
+    {
+      "availability": "NOT_AVAILABLE",
+      "confidence": 0.65,
+      "evidenceClass": "COMMUNITY_TIMESTAMPED",
+      "id": "94a2553250f78a882642455b651bf8ac",
+      "locationText": "10700 W Ustick Rd, Boise, ID",
+      "machineId": null,
+      "machineMatchConfidence": 0.0,
+      "observedAt": "2026-10-29T18:15:58Z",
+      "postedAt": "2026-10-29T18:15:58Z",
       "product": null,
       "purchaseConfirmed": false,
       "retailer": "Albertsons",
