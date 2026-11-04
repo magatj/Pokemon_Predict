@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T20:48:25Z",
+  "generatedAt": "2026-11-04T01:05:12Z",
   "observations": [
     {
       "availability": "NOT_AVAILABLE",
@@ -1710,6 +1710,22 @@
       "product": null,
       "purchaseConfirmed": false,
       "retailer": "Albertsons",
+      "source": "PUBLIC_WEB",
+      "sourceUrl": "https://pokemonmap.com/"
+    },
+    {
+      "availability": "NOT_AVAILABLE",
+      "confidence": 0.65,
+      "evidenceClass": "COMMUNITY_TIMESTAMPED",
+      "id": "27199bffe9a8c6037d41a8f5afe14b2b",
+      "locationText": "21045 Bothell Everett Hwy, Bothell, WA",
+      "machineId": null,
+      "machineMatchConfidence": 0.175,
+      "observedAt": "2026-11-03T22:26:47Z",
+      "postedAt": "2026-11-03T22:26:47Z",
+      "product": null,
+      "purchaseConfirmed": false,
+      "retailer": "Fred Meyer",
       "source": "PUBLIC_WEB",
       "sourceUrl": "https://pokemonmap.com/"
     }
