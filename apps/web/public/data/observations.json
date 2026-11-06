@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T01:25:17Z",
+  "generatedAt": "2026-11-06T10:29:13Z",
   "observations": [
     {
       "availability": "NOT_AVAILABLE",
@@ -1723,6 +1723,22 @@
       "machineMatchConfidence": 0.175,
       "observedAt": "2026-11-03T22:26:47Z",
       "postedAt": "2026-11-03T22:26:47Z",
+      "product": null,
+      "purchaseConfirmed": false,
+      "retailer": "Fred Meyer",
+      "source": "PUBLIC_WEB",
+      "sourceUrl": "https://pokemonmap.com/"
+    },
+    {
+      "availability": "NOT_AVAILABLE",
+      "confidence": 0.65,
+      "evidenceClass": "COMMUNITY_TIMESTAMPED",
+      "id": "c40b181a8f22d3ed71816c7097f2e13a",
+      "locationText": "5230 W Franklin Rd, Boise, ID",
+      "machineId": null,
+      "machineMatchConfidence": 0.175,
+      "observedAt": "2026-11-06T01:54:48Z",
+      "postedAt": "2026-11-06T01:54:48Z",
       "product": null,
       "purchaseConfirmed": false,
       "retailer": "Fred Meyer",
