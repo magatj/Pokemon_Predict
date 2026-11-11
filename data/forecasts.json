@@ -50,21 +50,21 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-11-11T13:42:33Z",
+      "generatedAt": "2026-11-11T21:46:37Z",
       "machineId": "rec6hmX1D2NKNAa62",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1654,
+        "baseRate": 0.166,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
           "11": 0.1111,
           "12": 0.1111,
-          "14": 0.1341,
+          "14": 0.1371,
           "15": 0.125,
           "16": 0.4615,
           "18": 0.0909,
-          "8": 0.2246
+          "8": 0.2268
         },
         "machineCount": 97,
         "positiveCount": 18,
@@ -73,18 +73,18 @@
         "scope": "REGIONAL",
         "weekdayRate": {
           "0": 0.1667,
-          "1": 0.1117,
+          "1": 0.1137,
           "2": 0.2667,
           "3": 0.1176,
           "4": 0.1579,
           "5": 0.0714,
-          "6": 0.2512
+          "6": 0.2523
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.2372
+          "network_rate": 0.4031
         },
         "explanation": {
           "reasons": [
@@ -100,78 +100,20 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.8326,
-        "localTime": "08:00",
-        "minutesAhead": 137.4,
-        "probability": 0.1975,
-        "rawScore": 0.2372,
+        "horizonScale": 0.8371,
+        "localTime": "16:00",
+        "minutesAhead": 133.4,
+        "probability": 0.3374,
+        "rawScore": 0.4031,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-11-11T17:00:00Z",
-        "windowStart": "2026-11-11T16:00:00Z"
+        "windowEnd": "2026-11-12T01:00:00Z",
+        "windowStart": "2026-11-12T00:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
       "windowMinutes": 5,
       "windows": [
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.2372
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.8326,
-          "localTime": "08:00",
-          "minutesAhead": 137.4,
-          "probability": 0.1975,
-          "rawScore": 0.2372,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T17:00:00Z",
-          "windowStart": "2026-11-11T16:00:00Z"
-        },
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.1958
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.977,
-          "localTime": "06:00",
-          "minutesAhead": 17.4,
-          "probability": 0.1913,
-          "rawScore": 0.1958,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T15:00:00Z",
-          "windowStart": "2026-11-11T14:00:00Z"
-        },
         {
           "basis": "NETWORK",
           "components": {
@@ -191,10 +133,10 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.439,
+          "horizonScale": 0.8371,
           "localTime": "16:00",
-          "minutesAhead": 617.4,
-          "probability": 0.1769,
+          "minutesAhead": 133.4,
+          "probability": 0.3374,
           "rawScore": 0.4031,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
@@ -204,7 +146,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.176
           },
           "explanation": {
             "reasons": [
@@ -220,20 +162,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9019,
-          "localTime": "07:00",
-          "minutesAhead": 77.4,
-          "probability": 0.1766,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9823,
+          "localTime": "14:00",
+          "minutesAhead": 13.4,
+          "probability": 0.1729,
+          "rawScore": 0.176,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T16:00:00Z",
-          "windowStart": "2026-11-11T15:00:00Z"
+          "windowEnd": "2026-11-11T23:00:00Z",
+          "windowStart": "2026-11-11T22:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1675
           },
           "explanation": {
             "reasons": [
@@ -249,20 +191,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "09:00",
-          "minutesAhead": 197.4,
-          "probability": 0.1505,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9068,
+          "localTime": "15:00",
+          "minutesAhead": 73.4,
+          "probability": 0.1519,
+          "rawScore": 0.1675,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T18:00:00Z",
-          "windowStart": "2026-11-11T17:00:00Z"
+          "windowEnd": "2026-11-12T00:00:00Z",
+          "windowStart": "2026-11-11T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -278,20 +220,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7095,
-          "localTime": "10:00",
-          "minutesAhead": 257.4,
-          "probability": 0.1389,
-          "rawScore": 0.1958,
+          "horizonScale": 0.7727,
+          "localTime": "17:00",
+          "minutesAhead": 193.4,
+          "probability": 0.1516,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T19:00:00Z",
-          "windowStart": "2026-11-11T18:00:00Z"
+          "windowEnd": "2026-11-12T02:00:00Z",
+          "windowStart": "2026-11-12T01:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -307,20 +249,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.5581,
-          "localTime": "13:00",
-          "minutesAhead": 437.4,
-          "probability": 0.1093,
-          "rawScore": 0.1958,
+          "horizonScale": 0.6585,
+          "localTime": "19:00",
+          "minutesAhead": 313.4,
+          "probability": 0.1292,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T22:00:00Z",
-          "windowStart": "2026-11-11T21:00:00Z"
+          "windowEnd": "2026-11-12T04:00:00Z",
+          "windowStart": "2026-11-12T03:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1578
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -336,15 +278,73 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6549,
-          "localTime": "11:00",
-          "minutesAhead": 317.4,
-          "probability": 0.1033,
-          "rawScore": 0.1578,
+          "horizonScale": 0.6078,
+          "localTime": "20:00",
+          "minutesAhead": 373.4,
+          "probability": 0.1193,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T20:00:00Z",
-          "windowStart": "2026-11-11T19:00:00Z"
+          "windowEnd": "2026-11-12T05:00:00Z",
+          "windowStart": "2026-11-12T04:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1962
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5611,
+          "localTime": "21:00",
+          "minutesAhead": 433.4,
+          "probability": 0.1101,
+          "rawScore": 0.1962,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T06:00:00Z",
+          "windowStart": "2026-11-12T05:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1436
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7133,
+          "localTime": "18:00",
+          "minutesAhead": 253.4,
+          "probability": 0.1025,
+          "rawScore": 0.1436,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T03:00:00Z",
+          "windowStart": "2026-11-12T02:00:00Z"
         }
       ]
     },
@@ -371,7 +371,7 @@
         },
         "interval": null,
         "lastKnownStatus": {
-          "ageHours": 641.0,
+          "ageHours": 649.0,
           "availability": "NOT_AVAILABLE",
           "evidenceClass": "COMMUNITY_TIMESTAMPED",
           "observedAt": "2026-10-15T20:44:29Z",
@@ -385,9 +385,9 @@
         "meanMatchConfidence": 1.0,
         "meanSourceConfidence": 0.65,
         "minutePattern": null,
-        "minutesSinceLastAvailable": 255677.7,
-        "minutesSinceLastNotAvailable": 38458.1,
-        "minutesSinceLastPositive": 255677.7,
+        "minutesSinceLastAvailable": 256161.8,
+        "minutesSinceLastNotAvailable": 38942.1,
+        "minutesSinceLastPositive": 256161.8,
         "minutesSinceLastPurchase": null,
         "minutesSinceSuspectedRestock": null,
         "nearby": {
@@ -406,7 +406,7 @@
         "observationCount": 2,
         "positiveCount": 1,
         "purchaseCount": 0,
-        "totalWeight": 0.0158,
+        "totalWeight": 0.0151,
         "weekdayHitRate": {
           "3": 0.0,
           "6": 1.0
@@ -416,21 +416,21 @@
           "6:17": 1.0
         }
       },
-      "generatedAt": "2026-11-11T13:42:33Z",
+      "generatedAt": "2026-11-11T21:46:37Z",
       "machineId": "recYObHvIXSety8F8",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1654,
+        "baseRate": 0.166,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
           "11": 0.1111,
           "12": 0.1111,
-          "14": 0.1341,
+          "14": 0.1371,
           "15": 0.125,
           "16": 0.4615,
           "18": 0.0909,
-          "8": 0.2246
+          "8": 0.2268
         },
         "machineCount": 97,
         "positiveCount": 18,
@@ -439,18 +439,18 @@
         "scope": "REGIONAL",
         "weekdayRate": {
           "0": 0.1667,
-          "1": 0.1117,
+          "1": 0.1137,
           "2": 0.2667,
           "3": 0.1176,
           "4": 0.1579,
           "5": 0.0714,
-          "6": 0.2512
+          "6": 0.2523
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.2372
+          "network_rate": 0.4031
         },
         "explanation": {
           "reasons": [
@@ -466,78 +466,20 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.8326,
-        "localTime": "08:00",
-        "minutesAhead": 137.4,
-        "probability": 0.1975,
-        "rawScore": 0.2372,
+        "horizonScale": 0.8371,
+        "localTime": "16:00",
+        "minutesAhead": 133.4,
+        "probability": 0.3374,
+        "rawScore": 0.4031,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-11-11T17:00:00Z",
-        "windowStart": "2026-11-11T16:00:00Z"
+        "windowEnd": "2026-11-12T01:00:00Z",
+        "windowStart": "2026-11-12T00:00:00Z"
       },
       "observationCount": 2,
       "status": "NETWORK_PATTERN",
       "windowMinutes": 5,
       "windows": [
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.2372
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 2 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "2",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.8326,
-          "localTime": "08:00",
-          "minutesAhead": 137.4,
-          "probability": 0.1975,
-          "rawScore": 0.2372,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T17:00:00Z",
-          "windowStart": "2026-11-11T16:00:00Z"
-        },
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.1958
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 2 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "2",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.977,
-          "localTime": "06:00",
-          "minutesAhead": 17.4,
-          "probability": 0.1913,
-          "rawScore": 0.1958,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T15:00:00Z",
-          "windowStart": "2026-11-11T14:00:00Z"
-        },
         {
           "basis": "NETWORK",
           "components": {
@@ -557,10 +499,10 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.439,
+          "horizonScale": 0.8371,
           "localTime": "16:00",
-          "minutesAhead": 617.4,
-          "probability": 0.1769,
+          "minutesAhead": 133.4,
+          "probability": 0.3374,
           "rawScore": 0.4031,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
@@ -570,7 +512,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.176
           },
           "explanation": {
             "reasons": [
@@ -586,20 +528,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9019,
-          "localTime": "07:00",
-          "minutesAhead": 77.4,
-          "probability": 0.1766,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9823,
+          "localTime": "14:00",
+          "minutesAhead": 13.4,
+          "probability": 0.1729,
+          "rawScore": 0.176,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T16:00:00Z",
-          "windowStart": "2026-11-11T15:00:00Z"
+          "windowEnd": "2026-11-11T23:00:00Z",
+          "windowStart": "2026-11-11T22:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1675
           },
           "explanation": {
             "reasons": [
@@ -615,20 +557,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "09:00",
-          "minutesAhead": 197.4,
-          "probability": 0.1505,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9068,
+          "localTime": "15:00",
+          "minutesAhead": 73.4,
+          "probability": 0.1519,
+          "rawScore": 0.1675,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T18:00:00Z",
-          "windowStart": "2026-11-11T17:00:00Z"
+          "windowEnd": "2026-11-12T00:00:00Z",
+          "windowStart": "2026-11-11T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -644,20 +586,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7095,
-          "localTime": "10:00",
-          "minutesAhead": 257.4,
-          "probability": 0.1389,
-          "rawScore": 0.1958,
+          "horizonScale": 0.7727,
+          "localTime": "17:00",
+          "minutesAhead": 193.4,
+          "probability": 0.1516,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T19:00:00Z",
-          "windowStart": "2026-11-11T18:00:00Z"
+          "windowEnd": "2026-11-12T02:00:00Z",
+          "windowStart": "2026-11-12T01:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -673,20 +615,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.5581,
-          "localTime": "13:00",
-          "minutesAhead": 437.4,
-          "probability": 0.1093,
-          "rawScore": 0.1958,
+          "horizonScale": 0.6585,
+          "localTime": "19:00",
+          "minutesAhead": 313.4,
+          "probability": 0.1292,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T22:00:00Z",
-          "windowStart": "2026-11-11T21:00:00Z"
+          "windowEnd": "2026-11-12T04:00:00Z",
+          "windowStart": "2026-11-12T03:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1578
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -702,15 +644,73 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6549,
-          "localTime": "11:00",
-          "minutesAhead": 317.4,
-          "probability": 0.1033,
-          "rawScore": 0.1578,
+          "horizonScale": 0.6078,
+          "localTime": "20:00",
+          "minutesAhead": 373.4,
+          "probability": 0.1193,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T20:00:00Z",
-          "windowStart": "2026-11-11T19:00:00Z"
+          "windowEnd": "2026-11-12T05:00:00Z",
+          "windowStart": "2026-11-12T04:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1962
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 2 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "2",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5611,
+          "localTime": "21:00",
+          "minutesAhead": 433.4,
+          "probability": 0.1101,
+          "rawScore": 0.1962,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T06:00:00Z",
+          "windowStart": "2026-11-12T05:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1436
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 2 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "2",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7133,
+          "localTime": "18:00",
+          "minutesAhead": 253.4,
+          "probability": 0.1025,
+          "rawScore": 0.1436,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T03:00:00Z",
+          "windowStart": "2026-11-12T02:00:00Z"
         }
       ]
     },
@@ -764,21 +764,21 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-11-11T13:42:33Z",
+      "generatedAt": "2026-11-11T21:46:37Z",
       "machineId": "reczMH2OpSZ8uPBrp",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1654,
+        "baseRate": 0.166,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
           "11": 0.1111,
           "12": 0.1111,
-          "14": 0.1341,
+          "14": 0.1371,
           "15": 0.125,
           "16": 0.4615,
           "18": 0.0909,
-          "8": 0.2246
+          "8": 0.2268
         },
         "machineCount": 97,
         "positiveCount": 18,
@@ -787,18 +787,18 @@
         "scope": "REGIONAL",
         "weekdayRate": {
           "0": 0.1667,
-          "1": 0.1117,
+          "1": 0.1137,
           "2": 0.2667,
           "3": 0.1176,
           "4": 0.1579,
           "5": 0.0714,
-          "6": 0.2512
+          "6": 0.2523
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.2372
+          "network_rate": 0.4031
         },
         "explanation": {
           "reasons": [
@@ -814,78 +814,20 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.8326,
-        "localTime": "08:00",
-        "minutesAhead": 137.4,
-        "probability": 0.1975,
-        "rawScore": 0.2372,
+        "horizonScale": 0.8371,
+        "localTime": "16:00",
+        "minutesAhead": 133.4,
+        "probability": 0.3374,
+        "rawScore": 0.4031,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-11-11T17:00:00Z",
-        "windowStart": "2026-11-11T16:00:00Z"
+        "windowEnd": "2026-11-12T01:00:00Z",
+        "windowStart": "2026-11-12T00:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
       "windowMinutes": 5,
       "windows": [
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.2372
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.8326,
-          "localTime": "08:00",
-          "minutesAhead": 137.4,
-          "probability": 0.1975,
-          "rawScore": 0.2372,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T17:00:00Z",
-          "windowStart": "2026-11-11T16:00:00Z"
-        },
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.1958
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.977,
-          "localTime": "06:00",
-          "minutesAhead": 17.4,
-          "probability": 0.1913,
-          "rawScore": 0.1958,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T15:00:00Z",
-          "windowStart": "2026-11-11T14:00:00Z"
-        },
         {
           "basis": "NETWORK",
           "components": {
@@ -905,10 +847,10 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.439,
+          "horizonScale": 0.8371,
           "localTime": "16:00",
-          "minutesAhead": 617.4,
-          "probability": 0.1769,
+          "minutesAhead": 133.4,
+          "probability": 0.3374,
           "rawScore": 0.4031,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
@@ -918,7 +860,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.176
           },
           "explanation": {
             "reasons": [
@@ -934,20 +876,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9019,
-          "localTime": "07:00",
-          "minutesAhead": 77.4,
-          "probability": 0.1766,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9823,
+          "localTime": "14:00",
+          "minutesAhead": 13.4,
+          "probability": 0.1729,
+          "rawScore": 0.176,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T16:00:00Z",
-          "windowStart": "2026-11-11T15:00:00Z"
+          "windowEnd": "2026-11-11T23:00:00Z",
+          "windowStart": "2026-11-11T22:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1675
           },
           "explanation": {
             "reasons": [
@@ -963,20 +905,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "09:00",
-          "minutesAhead": 197.4,
-          "probability": 0.1505,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9068,
+          "localTime": "15:00",
+          "minutesAhead": 73.4,
+          "probability": 0.1519,
+          "rawScore": 0.1675,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T18:00:00Z",
-          "windowStart": "2026-11-11T17:00:00Z"
+          "windowEnd": "2026-11-12T00:00:00Z",
+          "windowStart": "2026-11-11T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -992,20 +934,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7095,
-          "localTime": "10:00",
-          "minutesAhead": 257.4,
-          "probability": 0.1389,
-          "rawScore": 0.1958,
+          "horizonScale": 0.7727,
+          "localTime": "17:00",
+          "minutesAhead": 193.4,
+          "probability": 0.1516,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T19:00:00Z",
-          "windowStart": "2026-11-11T18:00:00Z"
+          "windowEnd": "2026-11-12T02:00:00Z",
+          "windowStart": "2026-11-12T01:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -1021,20 +963,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.5581,
-          "localTime": "13:00",
-          "minutesAhead": 437.4,
-          "probability": 0.1093,
-          "rawScore": 0.1958,
+          "horizonScale": 0.6585,
+          "localTime": "19:00",
+          "minutesAhead": 313.4,
+          "probability": 0.1292,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T22:00:00Z",
-          "windowStart": "2026-11-11T21:00:00Z"
+          "windowEnd": "2026-11-12T04:00:00Z",
+          "windowStart": "2026-11-12T03:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1578
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -1050,15 +992,73 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6549,
-          "localTime": "11:00",
-          "minutesAhead": 317.4,
-          "probability": 0.1033,
-          "rawScore": 0.1578,
+          "horizonScale": 0.6078,
+          "localTime": "20:00",
+          "minutesAhead": 373.4,
+          "probability": 0.1193,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T20:00:00Z",
-          "windowStart": "2026-11-11T19:00:00Z"
+          "windowEnd": "2026-11-12T05:00:00Z",
+          "windowStart": "2026-11-12T04:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1962
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5611,
+          "localTime": "21:00",
+          "minutesAhead": 433.4,
+          "probability": 0.1101,
+          "rawScore": 0.1962,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T06:00:00Z",
+          "windowStart": "2026-11-12T05:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1436
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7133,
+          "localTime": "18:00",
+          "minutesAhead": 253.4,
+          "probability": 0.1025,
+          "rawScore": 0.1436,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T03:00:00Z",
+          "windowStart": "2026-11-12T02:00:00Z"
         }
       ]
     },
@@ -1084,7 +1084,7 @@
         },
         "interval": null,
         "lastKnownStatus": {
-          "ageHours": 6685.1,
+          "ageHours": 6693.2,
           "availability": "NOT_AVAILABLE",
           "evidenceClass": "COMMUNITY_TIMESTAMPED",
           "observedAt": "2026-02-06T00:35:37Z",
@@ -1099,7 +1099,7 @@
         "meanSourceConfidence": 0.65,
         "minutePattern": null,
         "minutesSinceLastAvailable": null,
-        "minutesSinceLastNotAvailable": 401106.9,
+        "minutesSinceLastNotAvailable": 401591.0,
         "minutesSinceLastPositive": null,
         "minutesSinceLastPurchase": null,
         "minutesSinceSuspectedRestock": null,
@@ -1127,21 +1127,21 @@
           "3:16": 0.0
         }
       },
-      "generatedAt": "2026-11-11T13:42:33Z",
+      "generatedAt": "2026-11-11T21:46:37Z",
       "machineId": "recNV8fRPmce3gojW",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1654,
+        "baseRate": 0.166,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
           "11": 0.1111,
           "12": 0.1111,
-          "14": 0.1341,
+          "14": 0.1371,
           "15": 0.125,
           "16": 0.4615,
           "18": 0.0909,
-          "8": 0.2246
+          "8": 0.2268
         },
         "machineCount": 97,
         "positiveCount": 18,
@@ -1150,18 +1150,18 @@
         "scope": "REGIONAL",
         "weekdayRate": {
           "0": 0.1667,
-          "1": 0.1117,
+          "1": 0.1137,
           "2": 0.2667,
           "3": 0.1176,
           "4": 0.1579,
           "5": 0.0714,
-          "6": 0.2512
+          "6": 0.2523
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.2372
+          "network_rate": 0.4031
         },
         "explanation": {
           "reasons": [
@@ -1177,78 +1177,20 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.8326,
-        "localTime": "08:00",
-        "minutesAhead": 137.4,
-        "probability": 0.1975,
-        "rawScore": 0.2372,
+        "horizonScale": 0.8371,
+        "localTime": "16:00",
+        "minutesAhead": 133.4,
+        "probability": 0.3374,
+        "rawScore": 0.4031,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-11-11T17:00:00Z",
-        "windowStart": "2026-11-11T16:00:00Z"
+        "windowEnd": "2026-11-12T01:00:00Z",
+        "windowStart": "2026-11-12T00:00:00Z"
       },
       "observationCount": 1,
       "status": "NETWORK_PATTERN",
       "windowMinutes": 5,
       "windows": [
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.2372
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "1",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.8326,
-          "localTime": "08:00",
-          "minutesAhead": 137.4,
-          "probability": 0.1975,
-          "rawScore": 0.2372,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T17:00:00Z",
-          "windowStart": "2026-11-11T16:00:00Z"
-        },
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.1958
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "1",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.977,
-          "localTime": "06:00",
-          "minutesAhead": 17.4,
-          "probability": 0.1913,
-          "rawScore": 0.1958,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T15:00:00Z",
-          "windowStart": "2026-11-11T14:00:00Z"
-        },
         {
           "basis": "NETWORK",
           "components": {
@@ -1268,10 +1210,10 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.439,
+          "horizonScale": 0.8371,
           "localTime": "16:00",
-          "minutesAhead": 617.4,
-          "probability": 0.1769,
+          "minutesAhead": 133.4,
+          "probability": 0.3374,
           "rawScore": 0.4031,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
@@ -1281,7 +1223,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.176
           },
           "explanation": {
             "reasons": [
@@ -1297,20 +1239,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9019,
-          "localTime": "07:00",
-          "minutesAhead": 77.4,
-          "probability": 0.1766,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9823,
+          "localTime": "14:00",
+          "minutesAhead": 13.4,
+          "probability": 0.1729,
+          "rawScore": 0.176,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T16:00:00Z",
-          "windowStart": "2026-11-11T15:00:00Z"
+          "windowEnd": "2026-11-11T23:00:00Z",
+          "windowStart": "2026-11-11T22:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1675
           },
           "explanation": {
             "reasons": [
@@ -1326,20 +1268,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "09:00",
-          "minutesAhead": 197.4,
-          "probability": 0.1505,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9068,
+          "localTime": "15:00",
+          "minutesAhead": 73.4,
+          "probability": 0.1519,
+          "rawScore": 0.1675,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T18:00:00Z",
-          "windowStart": "2026-11-11T17:00:00Z"
+          "windowEnd": "2026-11-12T00:00:00Z",
+          "windowStart": "2026-11-11T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -1355,20 +1297,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7095,
-          "localTime": "10:00",
-          "minutesAhead": 257.4,
-          "probability": 0.1389,
-          "rawScore": 0.1958,
+          "horizonScale": 0.7727,
+          "localTime": "17:00",
+          "minutesAhead": 193.4,
+          "probability": 0.1516,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T19:00:00Z",
-          "windowStart": "2026-11-11T18:00:00Z"
+          "windowEnd": "2026-11-12T02:00:00Z",
+          "windowStart": "2026-11-12T01:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -1384,20 +1326,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.5581,
-          "localTime": "13:00",
-          "minutesAhead": 437.4,
-          "probability": 0.1093,
-          "rawScore": 0.1958,
+          "horizonScale": 0.6585,
+          "localTime": "19:00",
+          "minutesAhead": 313.4,
+          "probability": 0.1292,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T22:00:00Z",
-          "windowStart": "2026-11-11T21:00:00Z"
+          "windowEnd": "2026-11-12T04:00:00Z",
+          "windowStart": "2026-11-12T03:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1578
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -1413,15 +1355,73 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6549,
-          "localTime": "11:00",
-          "minutesAhead": 317.4,
-          "probability": 0.1033,
-          "rawScore": 0.1578,
+          "horizonScale": 0.6078,
+          "localTime": "20:00",
+          "minutesAhead": 373.4,
+          "probability": 0.1193,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T20:00:00Z",
-          "windowStart": "2026-11-11T19:00:00Z"
+          "windowEnd": "2026-11-12T05:00:00Z",
+          "windowStart": "2026-11-12T04:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1962
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5611,
+          "localTime": "21:00",
+          "minutesAhead": 433.4,
+          "probability": 0.1101,
+          "rawScore": 0.1962,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T06:00:00Z",
+          "windowStart": "2026-11-12T05:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1436
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7133,
+          "localTime": "18:00",
+          "minutesAhead": 253.4,
+          "probability": 0.1025,
+          "rawScore": 0.1436,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T03:00:00Z",
+          "windowStart": "2026-11-12T02:00:00Z"
         }
       ]
     },
@@ -1475,21 +1475,21 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-11-11T13:42:33Z",
+      "generatedAt": "2026-11-11T21:46:37Z",
       "machineId": "recSpV6YcTTtJTpa7",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1654,
+        "baseRate": 0.166,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
           "11": 0.1111,
           "12": 0.1111,
-          "14": 0.1341,
+          "14": 0.1371,
           "15": 0.125,
           "16": 0.4615,
           "18": 0.0909,
-          "8": 0.2246
+          "8": 0.2268
         },
         "machineCount": 97,
         "positiveCount": 18,
@@ -1498,18 +1498,18 @@
         "scope": "REGIONAL",
         "weekdayRate": {
           "0": 0.1667,
-          "1": 0.1117,
+          "1": 0.1137,
           "2": 0.2667,
           "3": 0.1176,
           "4": 0.1579,
           "5": 0.0714,
-          "6": 0.2512
+          "6": 0.2523
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.2372
+          "network_rate": 0.4031
         },
         "explanation": {
           "reasons": [
@@ -1525,78 +1525,20 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.8326,
-        "localTime": "08:00",
-        "minutesAhead": 137.4,
-        "probability": 0.1975,
-        "rawScore": 0.2372,
+        "horizonScale": 0.8371,
+        "localTime": "16:00",
+        "minutesAhead": 133.4,
+        "probability": 0.3374,
+        "rawScore": 0.4031,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-11-11T17:00:00Z",
-        "windowStart": "2026-11-11T16:00:00Z"
+        "windowEnd": "2026-11-12T01:00:00Z",
+        "windowStart": "2026-11-12T00:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
       "windowMinutes": 5,
       "windows": [
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.2372
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.8326,
-          "localTime": "08:00",
-          "minutesAhead": 137.4,
-          "probability": 0.1975,
-          "rawScore": 0.2372,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T17:00:00Z",
-          "windowStart": "2026-11-11T16:00:00Z"
-        },
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.1958
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.977,
-          "localTime": "06:00",
-          "minutesAhead": 17.4,
-          "probability": 0.1913,
-          "rawScore": 0.1958,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T15:00:00Z",
-          "windowStart": "2026-11-11T14:00:00Z"
-        },
         {
           "basis": "NETWORK",
           "components": {
@@ -1616,10 +1558,10 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.439,
+          "horizonScale": 0.8371,
           "localTime": "16:00",
-          "minutesAhead": 617.4,
-          "probability": 0.1769,
+          "minutesAhead": 133.4,
+          "probability": 0.3374,
           "rawScore": 0.4031,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
@@ -1629,7 +1571,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.176
           },
           "explanation": {
             "reasons": [
@@ -1645,20 +1587,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9019,
-          "localTime": "07:00",
-          "minutesAhead": 77.4,
-          "probability": 0.1766,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9823,
+          "localTime": "14:00",
+          "minutesAhead": 13.4,
+          "probability": 0.1729,
+          "rawScore": 0.176,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T16:00:00Z",
-          "windowStart": "2026-11-11T15:00:00Z"
+          "windowEnd": "2026-11-11T23:00:00Z",
+          "windowStart": "2026-11-11T22:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1675
           },
           "explanation": {
             "reasons": [
@@ -1674,20 +1616,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "09:00",
-          "minutesAhead": 197.4,
-          "probability": 0.1505,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9068,
+          "localTime": "15:00",
+          "minutesAhead": 73.4,
+          "probability": 0.1519,
+          "rawScore": 0.1675,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T18:00:00Z",
-          "windowStart": "2026-11-11T17:00:00Z"
+          "windowEnd": "2026-11-12T00:00:00Z",
+          "windowStart": "2026-11-11T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -1703,20 +1645,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7095,
-          "localTime": "10:00",
-          "minutesAhead": 257.4,
-          "probability": 0.1389,
-          "rawScore": 0.1958,
+          "horizonScale": 0.7727,
+          "localTime": "17:00",
+          "minutesAhead": 193.4,
+          "probability": 0.1516,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T19:00:00Z",
-          "windowStart": "2026-11-11T18:00:00Z"
+          "windowEnd": "2026-11-12T02:00:00Z",
+          "windowStart": "2026-11-12T01:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -1732,20 +1674,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.5581,
-          "localTime": "13:00",
-          "minutesAhead": 437.4,
-          "probability": 0.1093,
-          "rawScore": 0.1958,
+          "horizonScale": 0.6585,
+          "localTime": "19:00",
+          "minutesAhead": 313.4,
+          "probability": 0.1292,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T22:00:00Z",
-          "windowStart": "2026-11-11T21:00:00Z"
+          "windowEnd": "2026-11-12T04:00:00Z",
+          "windowStart": "2026-11-12T03:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1578
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -1761,15 +1703,73 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6549,
-          "localTime": "11:00",
-          "minutesAhead": 317.4,
-          "probability": 0.1033,
-          "rawScore": 0.1578,
+          "horizonScale": 0.6078,
+          "localTime": "20:00",
+          "minutesAhead": 373.4,
+          "probability": 0.1193,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T20:00:00Z",
-          "windowStart": "2026-11-11T19:00:00Z"
+          "windowEnd": "2026-11-12T05:00:00Z",
+          "windowStart": "2026-11-12T04:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1962
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5611,
+          "localTime": "21:00",
+          "minutesAhead": 433.4,
+          "probability": 0.1101,
+          "rawScore": 0.1962,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T06:00:00Z",
+          "windowStart": "2026-11-12T05:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1436
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7133,
+          "localTime": "18:00",
+          "minutesAhead": 253.4,
+          "probability": 0.1025,
+          "rawScore": 0.1436,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T03:00:00Z",
+          "windowStart": "2026-11-12T02:00:00Z"
         }
       ]
     },
@@ -1823,21 +1823,21 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-11-11T13:42:33Z",
+      "generatedAt": "2026-11-11T21:46:37Z",
       "machineId": "recDRDzItBxXkjJTy",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1654,
+        "baseRate": 0.166,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
           "11": 0.1111,
           "12": 0.1111,
-          "14": 0.1341,
+          "14": 0.1371,
           "15": 0.125,
           "16": 0.4615,
           "18": 0.0909,
-          "8": 0.2246
+          "8": 0.2268
         },
         "machineCount": 97,
         "positiveCount": 18,
@@ -1846,18 +1846,18 @@
         "scope": "REGIONAL",
         "weekdayRate": {
           "0": 0.1667,
-          "1": 0.1117,
+          "1": 0.1137,
           "2": 0.2667,
           "3": 0.1176,
           "4": 0.1579,
           "5": 0.0714,
-          "6": 0.2512
+          "6": 0.2523
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.2372
+          "network_rate": 0.4031
         },
         "explanation": {
           "reasons": [
@@ -1873,78 +1873,20 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.8326,
-        "localTime": "08:00",
-        "minutesAhead": 137.4,
-        "probability": 0.1975,
-        "rawScore": 0.2372,
+        "horizonScale": 0.8371,
+        "localTime": "16:00",
+        "minutesAhead": 133.4,
+        "probability": 0.3374,
+        "rawScore": 0.4031,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-11-11T17:00:00Z",
-        "windowStart": "2026-11-11T16:00:00Z"
+        "windowEnd": "2026-11-12T01:00:00Z",
+        "windowStart": "2026-11-12T00:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
       "windowMinutes": 5,
       "windows": [
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.2372
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.8326,
-          "localTime": "08:00",
-          "minutesAhead": 137.4,
-          "probability": 0.1975,
-          "rawScore": 0.2372,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T17:00:00Z",
-          "windowStart": "2026-11-11T16:00:00Z"
-        },
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.1958
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.977,
-          "localTime": "06:00",
-          "minutesAhead": 17.4,
-          "probability": 0.1913,
-          "rawScore": 0.1958,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T15:00:00Z",
-          "windowStart": "2026-11-11T14:00:00Z"
-        },
         {
           "basis": "NETWORK",
           "components": {
@@ -1964,10 +1906,10 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.439,
+          "horizonScale": 0.8371,
           "localTime": "16:00",
-          "minutesAhead": 617.4,
-          "probability": 0.1769,
+          "minutesAhead": 133.4,
+          "probability": 0.3374,
           "rawScore": 0.4031,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
@@ -1977,7 +1919,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.176
           },
           "explanation": {
             "reasons": [
@@ -1993,20 +1935,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9019,
-          "localTime": "07:00",
-          "minutesAhead": 77.4,
-          "probability": 0.1766,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9823,
+          "localTime": "14:00",
+          "minutesAhead": 13.4,
+          "probability": 0.1729,
+          "rawScore": 0.176,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T16:00:00Z",
-          "windowStart": "2026-11-11T15:00:00Z"
+          "windowEnd": "2026-11-11T23:00:00Z",
+          "windowStart": "2026-11-11T22:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1675
           },
           "explanation": {
             "reasons": [
@@ -2022,20 +1964,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "09:00",
-          "minutesAhead": 197.4,
-          "probability": 0.1505,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9068,
+          "localTime": "15:00",
+          "minutesAhead": 73.4,
+          "probability": 0.1519,
+          "rawScore": 0.1675,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T18:00:00Z",
-          "windowStart": "2026-11-11T17:00:00Z"
+          "windowEnd": "2026-11-12T00:00:00Z",
+          "windowStart": "2026-11-11T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -2051,20 +1993,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7095,
-          "localTime": "10:00",
-          "minutesAhead": 257.4,
-          "probability": 0.1389,
-          "rawScore": 0.1958,
+          "horizonScale": 0.7727,
+          "localTime": "17:00",
+          "minutesAhead": 193.4,
+          "probability": 0.1516,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T19:00:00Z",
-          "windowStart": "2026-11-11T18:00:00Z"
+          "windowEnd": "2026-11-12T02:00:00Z",
+          "windowStart": "2026-11-12T01:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -2080,20 +2022,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.5581,
-          "localTime": "13:00",
-          "minutesAhead": 437.4,
-          "probability": 0.1093,
-          "rawScore": 0.1958,
+          "horizonScale": 0.6585,
+          "localTime": "19:00",
+          "minutesAhead": 313.4,
+          "probability": 0.1292,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T22:00:00Z",
-          "windowStart": "2026-11-11T21:00:00Z"
+          "windowEnd": "2026-11-12T04:00:00Z",
+          "windowStart": "2026-11-12T03:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1578
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -2109,15 +2051,73 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6549,
-          "localTime": "11:00",
-          "minutesAhead": 317.4,
-          "probability": 0.1033,
-          "rawScore": 0.1578,
+          "horizonScale": 0.6078,
+          "localTime": "20:00",
+          "minutesAhead": 373.4,
+          "probability": 0.1193,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T20:00:00Z",
-          "windowStart": "2026-11-11T19:00:00Z"
+          "windowEnd": "2026-11-12T05:00:00Z",
+          "windowStart": "2026-11-12T04:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1962
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5611,
+          "localTime": "21:00",
+          "minutesAhead": 433.4,
+          "probability": 0.1101,
+          "rawScore": 0.1962,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T06:00:00Z",
+          "windowStart": "2026-11-12T05:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1436
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7133,
+          "localTime": "18:00",
+          "minutesAhead": 253.4,
+          "probability": 0.1025,
+          "rawScore": 0.1436,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T03:00:00Z",
+          "windowStart": "2026-11-12T02:00:00Z"
         }
       ]
     },
@@ -2143,7 +2143,7 @@
         },
         "interval": null,
         "lastKnownStatus": {
-          "ageHours": 4381.2,
+          "ageHours": 4389.2,
           "availability": "AVAILABLE",
           "evidenceClass": "COMMUNITY_TIMESTAMPED",
           "observedAt": "2026-05-13T00:32:09Z",
@@ -2157,9 +2157,9 @@
         "meanMatchConfidence": 1.0,
         "meanSourceConfidence": 0.65,
         "minutePattern": null,
-        "minutesSinceLastAvailable": 262870.4,
+        "minutesSinceLastAvailable": 263354.5,
         "minutesSinceLastNotAvailable": null,
-        "minutesSinceLastPositive": 262870.4,
+        "minutesSinceLastPositive": 263354.5,
         "minutesSinceLastPurchase": null,
         "minutesSinceSuspectedRestock": null,
         "nearby": {
@@ -2186,21 +2186,21 @@
           "1:17": 1.0
         }
       },
-      "generatedAt": "2026-11-11T13:42:33Z",
+      "generatedAt": "2026-11-11T21:46:37Z",
       "machineId": "recVYWXIOZFAuR6qt",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1654,
+        "baseRate": 0.166,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
           "11": 0.1111,
           "12": 0.1111,
-          "14": 0.1341,
+          "14": 0.1371,
           "15": 0.125,
           "16": 0.4615,
           "18": 0.0909,
-          "8": 0.2246
+          "8": 0.2268
         },
         "machineCount": 97,
         "positiveCount": 18,
@@ -2209,18 +2209,18 @@
         "scope": "REGIONAL",
         "weekdayRate": {
           "0": 0.1667,
-          "1": 0.1117,
+          "1": 0.1137,
           "2": 0.2667,
           "3": 0.1176,
           "4": 0.1579,
           "5": 0.0714,
-          "6": 0.2512
+          "6": 0.2523
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.2372
+          "network_rate": 0.4031
         },
         "explanation": {
           "reasons": [
@@ -2236,78 +2236,20 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.8326,
-        "localTime": "08:00",
-        "minutesAhead": 137.4,
-        "probability": 0.1975,
-        "rawScore": 0.2372,
+        "horizonScale": 0.8371,
+        "localTime": "16:00",
+        "minutesAhead": 133.4,
+        "probability": 0.3374,
+        "rawScore": 0.4031,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-11-11T17:00:00Z",
-        "windowStart": "2026-11-11T16:00:00Z"
+        "windowEnd": "2026-11-12T01:00:00Z",
+        "windowStart": "2026-11-12T00:00:00Z"
       },
       "observationCount": 1,
       "status": "NETWORK_PATTERN",
       "windowMinutes": 5,
       "windows": [
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.2372
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "1",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.8326,
-          "localTime": "08:00",
-          "minutesAhead": 137.4,
-          "probability": 0.1975,
-          "rawScore": 0.2372,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T17:00:00Z",
-          "windowStart": "2026-11-11T16:00:00Z"
-        },
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.1958
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "1",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.977,
-          "localTime": "06:00",
-          "minutesAhead": 17.4,
-          "probability": 0.1913,
-          "rawScore": 0.1958,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T15:00:00Z",
-          "windowStart": "2026-11-11T14:00:00Z"
-        },
         {
           "basis": "NETWORK",
           "components": {
@@ -2327,10 +2269,10 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.439,
+          "horizonScale": 0.8371,
           "localTime": "16:00",
-          "minutesAhead": 617.4,
-          "probability": 0.1769,
+          "minutesAhead": 133.4,
+          "probability": 0.3374,
           "rawScore": 0.4031,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
@@ -2340,7 +2282,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.176
           },
           "explanation": {
             "reasons": [
@@ -2356,20 +2298,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9019,
-          "localTime": "07:00",
-          "minutesAhead": 77.4,
-          "probability": 0.1766,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9823,
+          "localTime": "14:00",
+          "minutesAhead": 13.4,
+          "probability": 0.1729,
+          "rawScore": 0.176,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T16:00:00Z",
-          "windowStart": "2026-11-11T15:00:00Z"
+          "windowEnd": "2026-11-11T23:00:00Z",
+          "windowStart": "2026-11-11T22:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1675
           },
           "explanation": {
             "reasons": [
@@ -2385,20 +2327,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "09:00",
-          "minutesAhead": 197.4,
-          "probability": 0.1505,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9068,
+          "localTime": "15:00",
+          "minutesAhead": 73.4,
+          "probability": 0.1519,
+          "rawScore": 0.1675,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T18:00:00Z",
-          "windowStart": "2026-11-11T17:00:00Z"
+          "windowEnd": "2026-11-12T00:00:00Z",
+          "windowStart": "2026-11-11T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -2414,20 +2356,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7095,
-          "localTime": "10:00",
-          "minutesAhead": 257.4,
-          "probability": 0.1389,
-          "rawScore": 0.1958,
+          "horizonScale": 0.7727,
+          "localTime": "17:00",
+          "minutesAhead": 193.4,
+          "probability": 0.1516,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T19:00:00Z",
-          "windowStart": "2026-11-11T18:00:00Z"
+          "windowEnd": "2026-11-12T02:00:00Z",
+          "windowStart": "2026-11-12T01:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -2443,20 +2385,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.5581,
-          "localTime": "13:00",
-          "minutesAhead": 437.4,
-          "probability": 0.1093,
-          "rawScore": 0.1958,
+          "horizonScale": 0.6585,
+          "localTime": "19:00",
+          "minutesAhead": 313.4,
+          "probability": 0.1292,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T22:00:00Z",
-          "windowStart": "2026-11-11T21:00:00Z"
+          "windowEnd": "2026-11-12T04:00:00Z",
+          "windowStart": "2026-11-12T03:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1578
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -2472,15 +2414,73 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6549,
-          "localTime": "11:00",
-          "minutesAhead": 317.4,
-          "probability": 0.1033,
-          "rawScore": 0.1578,
+          "horizonScale": 0.6078,
+          "localTime": "20:00",
+          "minutesAhead": 373.4,
+          "probability": 0.1193,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T20:00:00Z",
-          "windowStart": "2026-11-11T19:00:00Z"
+          "windowEnd": "2026-11-12T05:00:00Z",
+          "windowStart": "2026-11-12T04:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1962
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5611,
+          "localTime": "21:00",
+          "minutesAhead": 433.4,
+          "probability": 0.1101,
+          "rawScore": 0.1962,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T06:00:00Z",
+          "windowStart": "2026-11-12T05:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1436
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 1 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "1",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7133,
+          "localTime": "18:00",
+          "minutesAhead": 253.4,
+          "probability": 0.1025,
+          "rawScore": 0.1436,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T03:00:00Z",
+          "windowStart": "2026-11-12T02:00:00Z"
         }
       ]
     },
@@ -2534,21 +2534,21 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-11-11T13:42:33Z",
+      "generatedAt": "2026-11-11T21:46:37Z",
       "machineId": "rec5ierZUGzMxwT1i",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1654,
+        "baseRate": 0.166,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
           "11": 0.1111,
           "12": 0.1111,
-          "14": 0.1341,
+          "14": 0.1371,
           "15": 0.125,
           "16": 0.4615,
           "18": 0.0909,
-          "8": 0.2246
+          "8": 0.2268
         },
         "machineCount": 97,
         "positiveCount": 18,
@@ -2557,18 +2557,18 @@
         "scope": "REGIONAL",
         "weekdayRate": {
           "0": 0.1667,
-          "1": 0.1117,
+          "1": 0.1137,
           "2": 0.2667,
           "3": 0.1176,
           "4": 0.1579,
           "5": 0.0714,
-          "6": 0.2512
+          "6": 0.2523
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.2372
+          "network_rate": 0.4031
         },
         "explanation": {
           "reasons": [
@@ -2584,78 +2584,20 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.8326,
-        "localTime": "08:00",
-        "minutesAhead": 137.4,
-        "probability": 0.1975,
-        "rawScore": 0.2372,
+        "horizonScale": 0.8371,
+        "localTime": "16:00",
+        "minutesAhead": 133.4,
+        "probability": 0.3374,
+        "rawScore": 0.4031,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-11-11T17:00:00Z",
-        "windowStart": "2026-11-11T16:00:00Z"
+        "windowEnd": "2026-11-12T01:00:00Z",
+        "windowStart": "2026-11-12T00:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
       "windowMinutes": 5,
       "windows": [
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.2372
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.8326,
-          "localTime": "08:00",
-          "minutesAhead": 137.4,
-          "probability": 0.1975,
-          "rawScore": 0.2372,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T17:00:00Z",
-          "windowStart": "2026-11-11T16:00:00Z"
-        },
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.1958
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.977,
-          "localTime": "06:00",
-          "minutesAhead": 17.4,
-          "probability": 0.1913,
-          "rawScore": 0.1958,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T15:00:00Z",
-          "windowStart": "2026-11-11T14:00:00Z"
-        },
         {
           "basis": "NETWORK",
           "components": {
@@ -2675,10 +2617,10 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.439,
+          "horizonScale": 0.8371,
           "localTime": "16:00",
-          "minutesAhead": 617.4,
-          "probability": 0.1769,
+          "minutesAhead": 133.4,
+          "probability": 0.3374,
           "rawScore": 0.4031,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
@@ -2688,7 +2630,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.176
           },
           "explanation": {
             "reasons": [
@@ -2704,20 +2646,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9019,
-          "localTime": "07:00",
-          "minutesAhead": 77.4,
-          "probability": 0.1766,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9823,
+          "localTime": "14:00",
+          "minutesAhead": 13.4,
+          "probability": 0.1729,
+          "rawScore": 0.176,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T16:00:00Z",
-          "windowStart": "2026-11-11T15:00:00Z"
+          "windowEnd": "2026-11-11T23:00:00Z",
+          "windowStart": "2026-11-11T22:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1675
           },
           "explanation": {
             "reasons": [
@@ -2733,20 +2675,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "09:00",
-          "minutesAhead": 197.4,
-          "probability": 0.1505,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9068,
+          "localTime": "15:00",
+          "minutesAhead": 73.4,
+          "probability": 0.1519,
+          "rawScore": 0.1675,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T18:00:00Z",
-          "windowStart": "2026-11-11T17:00:00Z"
+          "windowEnd": "2026-11-12T00:00:00Z",
+          "windowStart": "2026-11-11T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -2762,20 +2704,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7095,
-          "localTime": "10:00",
-          "minutesAhead": 257.4,
-          "probability": 0.1389,
-          "rawScore": 0.1958,
+          "horizonScale": 0.7727,
+          "localTime": "17:00",
+          "minutesAhead": 193.4,
+          "probability": 0.1516,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T19:00:00Z",
-          "windowStart": "2026-11-11T18:00:00Z"
+          "windowEnd": "2026-11-12T02:00:00Z",
+          "windowStart": "2026-11-12T01:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -2791,20 +2733,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.5581,
-          "localTime": "13:00",
-          "minutesAhead": 437.4,
-          "probability": 0.1093,
-          "rawScore": 0.1958,
+          "horizonScale": 0.6585,
+          "localTime": "19:00",
+          "minutesAhead": 313.4,
+          "probability": 0.1292,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T22:00:00Z",
-          "windowStart": "2026-11-11T21:00:00Z"
+          "windowEnd": "2026-11-12T04:00:00Z",
+          "windowStart": "2026-11-12T03:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1578
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -2820,15 +2762,73 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6549,
-          "localTime": "11:00",
-          "minutesAhead": 317.4,
-          "probability": 0.1033,
-          "rawScore": 0.1578,
+          "horizonScale": 0.6078,
+          "localTime": "20:00",
+          "minutesAhead": 373.4,
+          "probability": 0.1193,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T20:00:00Z",
-          "windowStart": "2026-11-11T19:00:00Z"
+          "windowEnd": "2026-11-12T05:00:00Z",
+          "windowStart": "2026-11-12T04:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1962
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5611,
+          "localTime": "21:00",
+          "minutesAhead": 433.4,
+          "probability": 0.1101,
+          "rawScore": 0.1962,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T06:00:00Z",
+          "windowStart": "2026-11-12T05:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1436
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7133,
+          "localTime": "18:00",
+          "minutesAhead": 253.4,
+          "probability": 0.1025,
+          "rawScore": 0.1436,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T03:00:00Z",
+          "windowStart": "2026-11-12T02:00:00Z"
         }
       ]
     },
@@ -2882,21 +2882,21 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-11-11T13:42:33Z",
+      "generatedAt": "2026-11-11T21:46:37Z",
       "machineId": "rec5Dr0p20HFkMQQW",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1654,
+        "baseRate": 0.166,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
           "11": 0.1111,
           "12": 0.1111,
-          "14": 0.1341,
+          "14": 0.1371,
           "15": 0.125,
           "16": 0.4615,
           "18": 0.0909,
-          "8": 0.2246
+          "8": 0.2268
         },
         "machineCount": 97,
         "positiveCount": 18,
@@ -2905,18 +2905,18 @@
         "scope": "REGIONAL",
         "weekdayRate": {
           "0": 0.1667,
-          "1": 0.1117,
+          "1": 0.1137,
           "2": 0.2667,
           "3": 0.1176,
           "4": 0.1579,
           "5": 0.0714,
-          "6": 0.2512
+          "6": 0.2523
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.2372
+          "network_rate": 0.4031
         },
         "explanation": {
           "reasons": [
@@ -2932,78 +2932,20 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.8326,
-        "localTime": "08:00",
-        "minutesAhead": 137.4,
-        "probability": 0.1975,
-        "rawScore": 0.2372,
+        "horizonScale": 0.8371,
+        "localTime": "16:00",
+        "minutesAhead": 133.4,
+        "probability": 0.3374,
+        "rawScore": 0.4031,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-11-11T17:00:00Z",
-        "windowStart": "2026-11-11T16:00:00Z"
+        "windowEnd": "2026-11-12T01:00:00Z",
+        "windowStart": "2026-11-12T00:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
       "windowMinutes": 5,
       "windows": [
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.2372
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.8326,
-          "localTime": "08:00",
-          "minutesAhead": 137.4,
-          "probability": 0.1975,
-          "rawScore": 0.2372,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T17:00:00Z",
-          "windowStart": "2026-11-11T16:00:00Z"
-        },
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.1958
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.977,
-          "localTime": "06:00",
-          "minutesAhead": 17.4,
-          "probability": 0.1913,
-          "rawScore": 0.1958,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T15:00:00Z",
-          "windowStart": "2026-11-11T14:00:00Z"
-        },
         {
           "basis": "NETWORK",
           "components": {
@@ -3023,10 +2965,10 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.439,
+          "horizonScale": 0.8371,
           "localTime": "16:00",
-          "minutesAhead": 617.4,
-          "probability": 0.1769,
+          "minutesAhead": 133.4,
+          "probability": 0.3374,
           "rawScore": 0.4031,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
@@ -3036,7 +2978,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.176
           },
           "explanation": {
             "reasons": [
@@ -3052,20 +2994,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9019,
-          "localTime": "07:00",
-          "minutesAhead": 77.4,
-          "probability": 0.1766,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9823,
+          "localTime": "14:00",
+          "minutesAhead": 13.4,
+          "probability": 0.1729,
+          "rawScore": 0.176,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T16:00:00Z",
-          "windowStart": "2026-11-11T15:00:00Z"
+          "windowEnd": "2026-11-11T23:00:00Z",
+          "windowStart": "2026-11-11T22:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1675
           },
           "explanation": {
             "reasons": [
@@ -3081,20 +3023,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "09:00",
-          "minutesAhead": 197.4,
-          "probability": 0.1505,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9068,
+          "localTime": "15:00",
+          "minutesAhead": 73.4,
+          "probability": 0.1519,
+          "rawScore": 0.1675,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T18:00:00Z",
-          "windowStart": "2026-11-11T17:00:00Z"
+          "windowEnd": "2026-11-12T00:00:00Z",
+          "windowStart": "2026-11-11T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -3110,20 +3052,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7095,
-          "localTime": "10:00",
-          "minutesAhead": 257.4,
-          "probability": 0.1389,
-          "rawScore": 0.1958,
+          "horizonScale": 0.7727,
+          "localTime": "17:00",
+          "minutesAhead": 193.4,
+          "probability": 0.1516,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T19:00:00Z",
-          "windowStart": "2026-11-11T18:00:00Z"
+          "windowEnd": "2026-11-12T02:00:00Z",
+          "windowStart": "2026-11-12T01:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -3139,20 +3081,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.5581,
-          "localTime": "13:00",
-          "minutesAhead": 437.4,
-          "probability": 0.1093,
-          "rawScore": 0.1958,
+          "horizonScale": 0.6585,
+          "localTime": "19:00",
+          "minutesAhead": 313.4,
+          "probability": 0.1292,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T22:00:00Z",
-          "windowStart": "2026-11-11T21:00:00Z"
+          "windowEnd": "2026-11-12T04:00:00Z",
+          "windowStart": "2026-11-12T03:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1578
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -3168,15 +3110,73 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6549,
-          "localTime": "11:00",
-          "minutesAhead": 317.4,
-          "probability": 0.1033,
-          "rawScore": 0.1578,
+          "horizonScale": 0.6078,
+          "localTime": "20:00",
+          "minutesAhead": 373.4,
+          "probability": 0.1193,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T20:00:00Z",
-          "windowStart": "2026-11-11T19:00:00Z"
+          "windowEnd": "2026-11-12T05:00:00Z",
+          "windowStart": "2026-11-12T04:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1962
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5611,
+          "localTime": "21:00",
+          "minutesAhead": 433.4,
+          "probability": 0.1101,
+          "rawScore": 0.1962,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T06:00:00Z",
+          "windowStart": "2026-11-12T05:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1436
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7133,
+          "localTime": "18:00",
+          "minutesAhead": 253.4,
+          "probability": 0.1025,
+          "rawScore": 0.1436,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T03:00:00Z",
+          "windowStart": "2026-11-12T02:00:00Z"
         }
       ]
     },
@@ -3230,21 +3230,21 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-11-11T13:42:33Z",
+      "generatedAt": "2026-11-11T21:46:37Z",
       "machineId": "recsdam4nxLQLFEze",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1654,
+        "baseRate": 0.166,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
           "11": 0.1111,
           "12": 0.1111,
-          "14": 0.1341,
+          "14": 0.1371,
           "15": 0.125,
           "16": 0.4615,
           "18": 0.0909,
-          "8": 0.2246
+          "8": 0.2268
         },
         "machineCount": 97,
         "positiveCount": 18,
@@ -3253,18 +3253,18 @@
         "scope": "REGIONAL",
         "weekdayRate": {
           "0": 0.1667,
-          "1": 0.1117,
+          "1": 0.1137,
           "2": 0.2667,
           "3": 0.1176,
           "4": 0.1579,
           "5": 0.0714,
-          "6": 0.2512
+          "6": 0.2523
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.2372
+          "network_rate": 0.4031
         },
         "explanation": {
           "reasons": [
@@ -3280,78 +3280,20 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.8326,
-        "localTime": "08:00",
-        "minutesAhead": 137.4,
-        "probability": 0.1975,
-        "rawScore": 0.2372,
+        "horizonScale": 0.8371,
+        "localTime": "16:00",
+        "minutesAhead": 133.4,
+        "probability": 0.3374,
+        "rawScore": 0.4031,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-11-11T17:00:00Z",
-        "windowStart": "2026-11-11T16:00:00Z"
+        "windowEnd": "2026-11-12T01:00:00Z",
+        "windowStart": "2026-11-12T00:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
       "windowMinutes": 5,
       "windows": [
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.2372
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.8326,
-          "localTime": "08:00",
-          "minutesAhead": 137.4,
-          "probability": 0.1975,
-          "rawScore": 0.2372,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T17:00:00Z",
-          "windowStart": "2026-11-11T16:00:00Z"
-        },
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.1958
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.977,
-          "localTime": "06:00",
-          "minutesAhead": 17.4,
-          "probability": 0.1913,
-          "rawScore": 0.1958,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T15:00:00Z",
-          "windowStart": "2026-11-11T14:00:00Z"
-        },
         {
           "basis": "NETWORK",
           "components": {
@@ -3371,10 +3313,10 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.439,
+          "horizonScale": 0.8371,
           "localTime": "16:00",
-          "minutesAhead": 617.4,
-          "probability": 0.1769,
+          "minutesAhead": 133.4,
+          "probability": 0.3374,
           "rawScore": 0.4031,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
@@ -3384,7 +3326,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.176
           },
           "explanation": {
             "reasons": [
@@ -3400,20 +3342,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9019,
-          "localTime": "07:00",
-          "minutesAhead": 77.4,
-          "probability": 0.1766,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9823,
+          "localTime": "14:00",
+          "minutesAhead": 13.4,
+          "probability": 0.1729,
+          "rawScore": 0.176,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T16:00:00Z",
-          "windowStart": "2026-11-11T15:00:00Z"
+          "windowEnd": "2026-11-11T23:00:00Z",
+          "windowStart": "2026-11-11T22:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1675
           },
           "explanation": {
             "reasons": [
@@ -3429,20 +3371,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "09:00",
-          "minutesAhead": 197.4,
-          "probability": 0.1505,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9068,
+          "localTime": "15:00",
+          "minutesAhead": 73.4,
+          "probability": 0.1519,
+          "rawScore": 0.1675,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T18:00:00Z",
-          "windowStart": "2026-11-11T17:00:00Z"
+          "windowEnd": "2026-11-12T00:00:00Z",
+          "windowStart": "2026-11-11T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -3458,20 +3400,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7095,
-          "localTime": "10:00",
-          "minutesAhead": 257.4,
-          "probability": 0.1389,
-          "rawScore": 0.1958,
+          "horizonScale": 0.7727,
+          "localTime": "17:00",
+          "minutesAhead": 193.4,
+          "probability": 0.1516,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T19:00:00Z",
-          "windowStart": "2026-11-11T18:00:00Z"
+          "windowEnd": "2026-11-12T02:00:00Z",
+          "windowStart": "2026-11-12T01:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -3487,20 +3429,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.5581,
-          "localTime": "13:00",
-          "minutesAhead": 437.4,
-          "probability": 0.1093,
-          "rawScore": 0.1958,
+          "horizonScale": 0.6585,
+          "localTime": "19:00",
+          "minutesAhead": 313.4,
+          "probability": 0.1292,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T22:00:00Z",
-          "windowStart": "2026-11-11T21:00:00Z"
+          "windowEnd": "2026-11-12T04:00:00Z",
+          "windowStart": "2026-11-12T03:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1578
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -3516,15 +3458,73 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6549,
-          "localTime": "11:00",
-          "minutesAhead": 317.4,
-          "probability": 0.1033,
-          "rawScore": 0.1578,
+          "horizonScale": 0.6078,
+          "localTime": "20:00",
+          "minutesAhead": 373.4,
+          "probability": 0.1193,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T20:00:00Z",
-          "windowStart": "2026-11-11T19:00:00Z"
+          "windowEnd": "2026-11-12T05:00:00Z",
+          "windowStart": "2026-11-12T04:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1962
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5611,
+          "localTime": "21:00",
+          "minutesAhead": 433.4,
+          "probability": 0.1101,
+          "rawScore": 0.1962,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T06:00:00Z",
+          "windowStart": "2026-11-12T05:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1436
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7133,
+          "localTime": "18:00",
+          "minutesAhead": 253.4,
+          "probability": 0.1025,
+          "rawScore": 0.1436,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T03:00:00Z",
+          "windowStart": "2026-11-12T02:00:00Z"
         }
       ]
     },
@@ -3578,21 +3578,21 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-11-11T13:42:33Z",
+      "generatedAt": "2026-11-11T21:46:37Z",
       "machineId": "recTc5NuQKDA66RV9",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1654,
+        "baseRate": 0.166,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
           "11": 0.1111,
           "12": 0.1111,
-          "14": 0.1341,
+          "14": 0.1371,
           "15": 0.125,
           "16": 0.4615,
           "18": 0.0909,
-          "8": 0.2246
+          "8": 0.2268
         },
         "machineCount": 97,
         "positiveCount": 18,
@@ -3601,18 +3601,18 @@
         "scope": "REGIONAL",
         "weekdayRate": {
           "0": 0.1667,
-          "1": 0.1117,
+          "1": 0.1137,
           "2": 0.2667,
           "3": 0.1176,
           "4": 0.1579,
           "5": 0.0714,
-          "6": 0.2512
+          "6": 0.2523
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.2372
+          "network_rate": 0.4031
         },
         "explanation": {
           "reasons": [
@@ -3628,78 +3628,20 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.8326,
-        "localTime": "08:00",
-        "minutesAhead": 137.4,
-        "probability": 0.1975,
-        "rawScore": 0.2372,
+        "horizonScale": 0.8371,
+        "localTime": "16:00",
+        "minutesAhead": 133.4,
+        "probability": 0.3374,
+        "rawScore": 0.4031,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-11-11T17:00:00Z",
-        "windowStart": "2026-11-11T16:00:00Z"
+        "windowEnd": "2026-11-12T01:00:00Z",
+        "windowStart": "2026-11-12T00:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
       "windowMinutes": 5,
       "windows": [
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.2372
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.8326,
-          "localTime": "08:00",
-          "minutesAhead": 137.4,
-          "probability": 0.1975,
-          "rawScore": 0.2372,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T17:00:00Z",
-          "windowStart": "2026-11-11T16:00:00Z"
-        },
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.1958
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.977,
-          "localTime": "06:00",
-          "minutesAhead": 17.4,
-          "probability": 0.1913,
-          "rawScore": 0.1958,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T15:00:00Z",
-          "windowStart": "2026-11-11T14:00:00Z"
-        },
         {
           "basis": "NETWORK",
           "components": {
@@ -3719,10 +3661,10 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.439,
+          "horizonScale": 0.8371,
           "localTime": "16:00",
-          "minutesAhead": 617.4,
-          "probability": 0.1769,
+          "minutesAhead": 133.4,
+          "probability": 0.3374,
           "rawScore": 0.4031,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
@@ -3732,7 +3674,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.176
           },
           "explanation": {
             "reasons": [
@@ -3748,20 +3690,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9019,
-          "localTime": "07:00",
-          "minutesAhead": 77.4,
-          "probability": 0.1766,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9823,
+          "localTime": "14:00",
+          "minutesAhead": 13.4,
+          "probability": 0.1729,
+          "rawScore": 0.176,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T16:00:00Z",
-          "windowStart": "2026-11-11T15:00:00Z"
+          "windowEnd": "2026-11-11T23:00:00Z",
+          "windowStart": "2026-11-11T22:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1675
           },
           "explanation": {
             "reasons": [
@@ -3777,20 +3719,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "09:00",
-          "minutesAhead": 197.4,
-          "probability": 0.1505,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9068,
+          "localTime": "15:00",
+          "minutesAhead": 73.4,
+          "probability": 0.1519,
+          "rawScore": 0.1675,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T18:00:00Z",
-          "windowStart": "2026-11-11T17:00:00Z"
+          "windowEnd": "2026-11-12T00:00:00Z",
+          "windowStart": "2026-11-11T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -3806,20 +3748,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7095,
-          "localTime": "10:00",
-          "minutesAhead": 257.4,
-          "probability": 0.1389,
-          "rawScore": 0.1958,
+          "horizonScale": 0.7727,
+          "localTime": "17:00",
+          "minutesAhead": 193.4,
+          "probability": 0.1516,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T19:00:00Z",
-          "windowStart": "2026-11-11T18:00:00Z"
+          "windowEnd": "2026-11-12T02:00:00Z",
+          "windowStart": "2026-11-12T01:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -3835,20 +3777,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.5581,
-          "localTime": "13:00",
-          "minutesAhead": 437.4,
-          "probability": 0.1093,
-          "rawScore": 0.1958,
+          "horizonScale": 0.6585,
+          "localTime": "19:00",
+          "minutesAhead": 313.4,
+          "probability": 0.1292,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T22:00:00Z",
-          "windowStart": "2026-11-11T21:00:00Z"
+          "windowEnd": "2026-11-12T04:00:00Z",
+          "windowStart": "2026-11-12T03:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1578
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -3864,15 +3806,73 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6549,
-          "localTime": "11:00",
-          "minutesAhead": 317.4,
-          "probability": 0.1033,
-          "rawScore": 0.1578,
+          "horizonScale": 0.6078,
+          "localTime": "20:00",
+          "minutesAhead": 373.4,
+          "probability": 0.1193,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T20:00:00Z",
-          "windowStart": "2026-11-11T19:00:00Z"
+          "windowEnd": "2026-11-12T05:00:00Z",
+          "windowStart": "2026-11-12T04:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1962
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5611,
+          "localTime": "21:00",
+          "minutesAhead": 433.4,
+          "probability": 0.1101,
+          "rawScore": 0.1962,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T06:00:00Z",
+          "windowStart": "2026-11-12T05:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1436
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7133,
+          "localTime": "18:00",
+          "minutesAhead": 253.4,
+          "probability": 0.1025,
+          "rawScore": 0.1436,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T03:00:00Z",
+          "windowStart": "2026-11-12T02:00:00Z"
         }
       ]
     },
@@ -3926,21 +3926,21 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-11-11T13:42:33Z",
+      "generatedAt": "2026-11-11T21:46:37Z",
       "machineId": "recdDsMc0U3XlHmdj",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1654,
+        "baseRate": 0.166,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
           "11": 0.1111,
           "12": 0.1111,
-          "14": 0.1341,
+          "14": 0.1371,
           "15": 0.125,
           "16": 0.4615,
           "18": 0.0909,
-          "8": 0.2246
+          "8": 0.2268
         },
         "machineCount": 97,
         "positiveCount": 18,
@@ -3949,18 +3949,18 @@
         "scope": "REGIONAL",
         "weekdayRate": {
           "0": 0.1667,
-          "1": 0.1117,
+          "1": 0.1137,
           "2": 0.2667,
           "3": 0.1176,
           "4": 0.1579,
           "5": 0.0714,
-          "6": 0.2512
+          "6": 0.2523
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.2372
+          "network_rate": 0.4031
         },
         "explanation": {
           "reasons": [
@@ -3976,78 +3976,20 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.8326,
-        "localTime": "08:00",
-        "minutesAhead": 137.4,
-        "probability": 0.1975,
-        "rawScore": 0.2372,
+        "horizonScale": 0.8371,
+        "localTime": "16:00",
+        "minutesAhead": 133.4,
+        "probability": 0.3374,
+        "rawScore": 0.4031,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-11-11T17:00:00Z",
-        "windowStart": "2026-11-11T16:00:00Z"
+        "windowEnd": "2026-11-12T01:00:00Z",
+        "windowStart": "2026-11-12T00:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
       "windowMinutes": 5,
       "windows": [
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.2372
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.8326,
-          "localTime": "08:00",
-          "minutesAhead": 137.4,
-          "probability": 0.1975,
-          "rawScore": 0.2372,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T17:00:00Z",
-          "windowStart": "2026-11-11T16:00:00Z"
-        },
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.1958
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.977,
-          "localTime": "06:00",
-          "minutesAhead": 17.4,
-          "probability": 0.1913,
-          "rawScore": 0.1958,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T15:00:00Z",
-          "windowStart": "2026-11-11T14:00:00Z"
-        },
         {
           "basis": "NETWORK",
           "components": {
@@ -4067,10 +4009,10 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.439,
+          "horizonScale": 0.8371,
           "localTime": "16:00",
-          "minutesAhead": 617.4,
-          "probability": 0.1769,
+          "minutesAhead": 133.4,
+          "probability": 0.3374,
           "rawScore": 0.4031,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
@@ -4080,7 +4022,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.176
           },
           "explanation": {
             "reasons": [
@@ -4096,20 +4038,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9019,
-          "localTime": "07:00",
-          "minutesAhead": 77.4,
-          "probability": 0.1766,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9823,
+          "localTime": "14:00",
+          "minutesAhead": 13.4,
+          "probability": 0.1729,
+          "rawScore": 0.176,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T16:00:00Z",
-          "windowStart": "2026-11-11T15:00:00Z"
+          "windowEnd": "2026-11-11T23:00:00Z",
+          "windowStart": "2026-11-11T22:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1675
           },
           "explanation": {
             "reasons": [
@@ -4125,20 +4067,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "09:00",
-          "minutesAhead": 197.4,
-          "probability": 0.1505,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9068,
+          "localTime": "15:00",
+          "minutesAhead": 73.4,
+          "probability": 0.1519,
+          "rawScore": 0.1675,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T18:00:00Z",
-          "windowStart": "2026-11-11T17:00:00Z"
+          "windowEnd": "2026-11-12T00:00:00Z",
+          "windowStart": "2026-11-11T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -4154,20 +4096,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7095,
-          "localTime": "10:00",
-          "minutesAhead": 257.4,
-          "probability": 0.1389,
-          "rawScore": 0.1958,
+          "horizonScale": 0.7727,
+          "localTime": "17:00",
+          "minutesAhead": 193.4,
+          "probability": 0.1516,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T19:00:00Z",
-          "windowStart": "2026-11-11T18:00:00Z"
+          "windowEnd": "2026-11-12T02:00:00Z",
+          "windowStart": "2026-11-12T01:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -4183,20 +4125,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.5581,
-          "localTime": "13:00",
-          "minutesAhead": 437.4,
-          "probability": 0.1093,
-          "rawScore": 0.1958,
+          "horizonScale": 0.6585,
+          "localTime": "19:00",
+          "minutesAhead": 313.4,
+          "probability": 0.1292,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T22:00:00Z",
-          "windowStart": "2026-11-11T21:00:00Z"
+          "windowEnd": "2026-11-12T04:00:00Z",
+          "windowStart": "2026-11-12T03:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1578
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -4212,15 +4154,73 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6549,
-          "localTime": "11:00",
-          "minutesAhead": 317.4,
-          "probability": 0.1033,
-          "rawScore": 0.1578,
+          "horizonScale": 0.6078,
+          "localTime": "20:00",
+          "minutesAhead": 373.4,
+          "probability": 0.1193,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T20:00:00Z",
-          "windowStart": "2026-11-11T19:00:00Z"
+          "windowEnd": "2026-11-12T05:00:00Z",
+          "windowStart": "2026-11-12T04:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1962
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5611,
+          "localTime": "21:00",
+          "minutesAhead": 433.4,
+          "probability": 0.1101,
+          "rawScore": 0.1962,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T06:00:00Z",
+          "windowStart": "2026-11-12T05:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1436
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7133,
+          "localTime": "18:00",
+          "minutesAhead": 253.4,
+          "probability": 0.1025,
+          "rawScore": 0.1436,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T03:00:00Z",
+          "windowStart": "2026-11-12T02:00:00Z"
         }
       ]
     },
@@ -4274,21 +4274,21 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-11-11T13:42:33Z",
+      "generatedAt": "2026-11-11T21:46:37Z",
       "machineId": "recURNyhKwDrZsDGG",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1654,
+        "baseRate": 0.166,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
           "11": 0.1111,
           "12": 0.1111,
-          "14": 0.1341,
+          "14": 0.1371,
           "15": 0.125,
           "16": 0.4615,
           "18": 0.0909,
-          "8": 0.2246
+          "8": 0.2268
         },
         "machineCount": 97,
         "positiveCount": 18,
@@ -4297,18 +4297,18 @@
         "scope": "REGIONAL",
         "weekdayRate": {
           "0": 0.1667,
-          "1": 0.1117,
+          "1": 0.1137,
           "2": 0.2667,
           "3": 0.1176,
           "4": 0.1579,
           "5": 0.0714,
-          "6": 0.2512
+          "6": 0.2523
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.2372
+          "network_rate": 0.4031
         },
         "explanation": {
           "reasons": [
@@ -4324,78 +4324,20 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.8326,
-        "localTime": "08:00",
-        "minutesAhead": 137.4,
-        "probability": 0.1975,
-        "rawScore": 0.2372,
+        "horizonScale": 0.8371,
+        "localTime": "16:00",
+        "minutesAhead": 133.4,
+        "probability": 0.3374,
+        "rawScore": 0.4031,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-11-11T17:00:00Z",
-        "windowStart": "2026-11-11T16:00:00Z"
+        "windowEnd": "2026-11-12T01:00:00Z",
+        "windowStart": "2026-11-12T00:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
       "windowMinutes": 5,
       "windows": [
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.2372
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.8326,
-          "localTime": "08:00",
-          "minutesAhead": 137.4,
-          "probability": 0.1975,
-          "rawScore": 0.2372,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T17:00:00Z",
-          "windowStart": "2026-11-11T16:00:00Z"
-        },
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.1958
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.977,
-          "localTime": "06:00",
-          "minutesAhead": 17.4,
-          "probability": 0.1913,
-          "rawScore": 0.1958,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T15:00:00Z",
-          "windowStart": "2026-11-11T14:00:00Z"
-        },
         {
           "basis": "NETWORK",
           "components": {
@@ -4415,10 +4357,10 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.439,
+          "horizonScale": 0.8371,
           "localTime": "16:00",
-          "minutesAhead": 617.4,
-          "probability": 0.1769,
+          "minutesAhead": 133.4,
+          "probability": 0.3374,
           "rawScore": 0.4031,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
@@ -4428,7 +4370,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.176
           },
           "explanation": {
             "reasons": [
@@ -4444,20 +4386,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9019,
-          "localTime": "07:00",
-          "minutesAhead": 77.4,
-          "probability": 0.1766,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9823,
+          "localTime": "14:00",
+          "minutesAhead": 13.4,
+          "probability": 0.1729,
+          "rawScore": 0.176,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T16:00:00Z",
-          "windowStart": "2026-11-11T15:00:00Z"
+          "windowEnd": "2026-11-11T23:00:00Z",
+          "windowStart": "2026-11-11T22:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1675
           },
           "explanation": {
             "reasons": [
@@ -4473,20 +4415,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "09:00",
-          "minutesAhead": 197.4,
-          "probability": 0.1505,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9068,
+          "localTime": "15:00",
+          "minutesAhead": 73.4,
+          "probability": 0.1519,
+          "rawScore": 0.1675,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T18:00:00Z",
-          "windowStart": "2026-11-11T17:00:00Z"
+          "windowEnd": "2026-11-12T00:00:00Z",
+          "windowStart": "2026-11-11T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -4502,20 +4444,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7095,
-          "localTime": "10:00",
-          "minutesAhead": 257.4,
-          "probability": 0.1389,
-          "rawScore": 0.1958,
+          "horizonScale": 0.7727,
+          "localTime": "17:00",
+          "minutesAhead": 193.4,
+          "probability": 0.1516,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T19:00:00Z",
-          "windowStart": "2026-11-11T18:00:00Z"
+          "windowEnd": "2026-11-12T02:00:00Z",
+          "windowStart": "2026-11-12T01:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -4531,20 +4473,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.5581,
-          "localTime": "13:00",
-          "minutesAhead": 437.4,
-          "probability": 0.1093,
-          "rawScore": 0.1958,
+          "horizonScale": 0.6585,
+          "localTime": "19:00",
+          "minutesAhead": 313.4,
+          "probability": 0.1292,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T22:00:00Z",
-          "windowStart": "2026-11-11T21:00:00Z"
+          "windowEnd": "2026-11-12T04:00:00Z",
+          "windowStart": "2026-11-12T03:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1578
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -4560,15 +4502,73 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6549,
-          "localTime": "11:00",
-          "minutesAhead": 317.4,
-          "probability": 0.1033,
-          "rawScore": 0.1578,
+          "horizonScale": 0.6078,
+          "localTime": "20:00",
+          "minutesAhead": 373.4,
+          "probability": 0.1193,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T20:00:00Z",
-          "windowStart": "2026-11-11T19:00:00Z"
+          "windowEnd": "2026-11-12T05:00:00Z",
+          "windowStart": "2026-11-12T04:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1962
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5611,
+          "localTime": "21:00",
+          "minutesAhead": 433.4,
+          "probability": 0.1101,
+          "rawScore": 0.1962,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T06:00:00Z",
+          "windowStart": "2026-11-12T05:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1436
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7133,
+          "localTime": "18:00",
+          "minutesAhead": 253.4,
+          "probability": 0.1025,
+          "rawScore": 0.1436,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T03:00:00Z",
+          "windowStart": "2026-11-12T02:00:00Z"
         }
       ]
     },
@@ -4622,21 +4622,21 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-11-11T13:42:33Z",
+      "generatedAt": "2026-11-11T21:46:37Z",
       "machineId": "rec1u8cRmzJiJsdeS",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1654,
+        "baseRate": 0.166,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
           "11": 0.1111,
           "12": 0.1111,
-          "14": 0.1341,
+          "14": 0.1371,
           "15": 0.125,
           "16": 0.4615,
           "18": 0.0909,
-          "8": 0.2246
+          "8": 0.2268
         },
         "machineCount": 97,
         "positiveCount": 18,
@@ -4645,18 +4645,18 @@
         "scope": "REGIONAL",
         "weekdayRate": {
           "0": 0.1667,
-          "1": 0.1117,
+          "1": 0.1137,
           "2": 0.2667,
           "3": 0.1176,
           "4": 0.1579,
           "5": 0.0714,
-          "6": 0.2512
+          "6": 0.2523
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.2372
+          "network_rate": 0.4031
         },
         "explanation": {
           "reasons": [
@@ -4672,78 +4672,20 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.8326,
-        "localTime": "08:00",
-        "minutesAhead": 137.4,
-        "probability": 0.1975,
-        "rawScore": 0.2372,
+        "horizonScale": 0.8371,
+        "localTime": "16:00",
+        "minutesAhead": 133.4,
+        "probability": 0.3374,
+        "rawScore": 0.4031,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-11-11T17:00:00Z",
-        "windowStart": "2026-11-11T16:00:00Z"
+        "windowEnd": "2026-11-12T01:00:00Z",
+        "windowStart": "2026-11-12T00:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
       "windowMinutes": 5,
       "windows": [
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.2372
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.8326,
-          "localTime": "08:00",
-          "minutesAhead": 137.4,
-          "probability": 0.1975,
-          "rawScore": 0.2372,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T17:00:00Z",
-          "windowStart": "2026-11-11T16:00:00Z"
-        },
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.1958
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.977,
-          "localTime": "06:00",
-          "minutesAhead": 17.4,
-          "probability": 0.1913,
-          "rawScore": 0.1958,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T15:00:00Z",
-          "windowStart": "2026-11-11T14:00:00Z"
-        },
         {
           "basis": "NETWORK",
           "components": {
@@ -4763,10 +4705,10 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.439,
+          "horizonScale": 0.8371,
           "localTime": "16:00",
-          "minutesAhead": 617.4,
-          "probability": 0.1769,
+          "minutesAhead": 133.4,
+          "probability": 0.3374,
           "rawScore": 0.4031,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
@@ -4776,7 +4718,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.176
           },
           "explanation": {
             "reasons": [
@@ -4792,20 +4734,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9019,
-          "localTime": "07:00",
-          "minutesAhead": 77.4,
-          "probability": 0.1766,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9823,
+          "localTime": "14:00",
+          "minutesAhead": 13.4,
+          "probability": 0.1729,
+          "rawScore": 0.176,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T16:00:00Z",
-          "windowStart": "2026-11-11T15:00:00Z"
+          "windowEnd": "2026-11-11T23:00:00Z",
+          "windowStart": "2026-11-11T22:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1675
           },
           "explanation": {
             "reasons": [
@@ -4821,20 +4763,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "09:00",
-          "minutesAhead": 197.4,
-          "probability": 0.1505,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9068,
+          "localTime": "15:00",
+          "minutesAhead": 73.4,
+          "probability": 0.1519,
+          "rawScore": 0.1675,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T18:00:00Z",
-          "windowStart": "2026-11-11T17:00:00Z"
+          "windowEnd": "2026-11-12T00:00:00Z",
+          "windowStart": "2026-11-11T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -4850,20 +4792,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7095,
-          "localTime": "10:00",
-          "minutesAhead": 257.4,
-          "probability": 0.1389,
-          "rawScore": 0.1958,
+          "horizonScale": 0.7727,
+          "localTime": "17:00",
+          "minutesAhead": 193.4,
+          "probability": 0.1516,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T19:00:00Z",
-          "windowStart": "2026-11-11T18:00:00Z"
+          "windowEnd": "2026-11-12T02:00:00Z",
+          "windowStart": "2026-11-12T01:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -4879,20 +4821,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.5581,
-          "localTime": "13:00",
-          "minutesAhead": 437.4,
-          "probability": 0.1093,
-          "rawScore": 0.1958,
+          "horizonScale": 0.6585,
+          "localTime": "19:00",
+          "minutesAhead": 313.4,
+          "probability": 0.1292,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T22:00:00Z",
-          "windowStart": "2026-11-11T21:00:00Z"
+          "windowEnd": "2026-11-12T04:00:00Z",
+          "windowStart": "2026-11-12T03:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1578
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -4908,15 +4850,73 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6549,
-          "localTime": "11:00",
-          "minutesAhead": 317.4,
-          "probability": 0.1033,
-          "rawScore": 0.1578,
+          "horizonScale": 0.6078,
+          "localTime": "20:00",
+          "minutesAhead": 373.4,
+          "probability": 0.1193,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T20:00:00Z",
-          "windowStart": "2026-11-11T19:00:00Z"
+          "windowEnd": "2026-11-12T05:00:00Z",
+          "windowStart": "2026-11-12T04:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1962
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5611,
+          "localTime": "21:00",
+          "minutesAhead": 433.4,
+          "probability": 0.1101,
+          "rawScore": 0.1962,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T06:00:00Z",
+          "windowStart": "2026-11-12T05:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1436
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7133,
+          "localTime": "18:00",
+          "minutesAhead": 253.4,
+          "probability": 0.1025,
+          "rawScore": 0.1436,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T03:00:00Z",
+          "windowStart": "2026-11-12T02:00:00Z"
         }
       ]
     },
@@ -4970,21 +4970,21 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-11-11T13:42:33Z",
+      "generatedAt": "2026-11-11T21:46:37Z",
       "machineId": "recbcwbwRADJNCFrJ",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1654,
+        "baseRate": 0.166,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
           "11": 0.1111,
           "12": 0.1111,
-          "14": 0.1341,
+          "14": 0.1371,
           "15": 0.125,
           "16": 0.4615,
           "18": 0.0909,
-          "8": 0.2246
+          "8": 0.2268
         },
         "machineCount": 97,
         "positiveCount": 18,
@@ -4993,18 +4993,18 @@
         "scope": "REGIONAL",
         "weekdayRate": {
           "0": 0.1667,
-          "1": 0.1117,
+          "1": 0.1137,
           "2": 0.2667,
           "3": 0.1176,
           "4": 0.1579,
           "5": 0.0714,
-          "6": 0.2512
+          "6": 0.2523
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.2372
+          "network_rate": 0.4031
         },
         "explanation": {
           "reasons": [
@@ -5020,78 +5020,20 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.8326,
-        "localTime": "08:00",
-        "minutesAhead": 137.4,
-        "probability": 0.1975,
-        "rawScore": 0.2372,
+        "horizonScale": 0.8371,
+        "localTime": "16:00",
+        "minutesAhead": 133.4,
+        "probability": 0.3374,
+        "rawScore": 0.4031,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-11-11T17:00:00Z",
-        "windowStart": "2026-11-11T16:00:00Z"
+        "windowEnd": "2026-11-12T01:00:00Z",
+        "windowStart": "2026-11-12T00:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
       "windowMinutes": 5,
       "windows": [
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.2372
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.8326,
-          "localTime": "08:00",
-          "minutesAhead": 137.4,
-          "probability": 0.1975,
-          "rawScore": 0.2372,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T17:00:00Z",
-          "windowStart": "2026-11-11T16:00:00Z"
-        },
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.1958
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.977,
-          "localTime": "06:00",
-          "minutesAhead": 17.4,
-          "probability": 0.1913,
-          "rawScore": 0.1958,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T15:00:00Z",
-          "windowStart": "2026-11-11T14:00:00Z"
-        },
         {
           "basis": "NETWORK",
           "components": {
@@ -5111,10 +5053,10 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.439,
+          "horizonScale": 0.8371,
           "localTime": "16:00",
-          "minutesAhead": 617.4,
-          "probability": 0.1769,
+          "minutesAhead": 133.4,
+          "probability": 0.3374,
           "rawScore": 0.4031,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
@@ -5124,7 +5066,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.176
           },
           "explanation": {
             "reasons": [
@@ -5140,20 +5082,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9019,
-          "localTime": "07:00",
-          "minutesAhead": 77.4,
-          "probability": 0.1766,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9823,
+          "localTime": "14:00",
+          "minutesAhead": 13.4,
+          "probability": 0.1729,
+          "rawScore": 0.176,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T16:00:00Z",
-          "windowStart": "2026-11-11T15:00:00Z"
+          "windowEnd": "2026-11-11T23:00:00Z",
+          "windowStart": "2026-11-11T22:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1675
           },
           "explanation": {
             "reasons": [
@@ -5169,20 +5111,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "09:00",
-          "minutesAhead": 197.4,
-          "probability": 0.1505,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9068,
+          "localTime": "15:00",
+          "minutesAhead": 73.4,
+          "probability": 0.1519,
+          "rawScore": 0.1675,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T18:00:00Z",
-          "windowStart": "2026-11-11T17:00:00Z"
+          "windowEnd": "2026-11-12T00:00:00Z",
+          "windowStart": "2026-11-11T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -5198,20 +5140,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7095,
-          "localTime": "10:00",
-          "minutesAhead": 257.4,
-          "probability": 0.1389,
-          "rawScore": 0.1958,
+          "horizonScale": 0.7727,
+          "localTime": "17:00",
+          "minutesAhead": 193.4,
+          "probability": 0.1516,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T19:00:00Z",
-          "windowStart": "2026-11-11T18:00:00Z"
+          "windowEnd": "2026-11-12T02:00:00Z",
+          "windowStart": "2026-11-12T01:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -5227,20 +5169,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.5581,
-          "localTime": "13:00",
-          "minutesAhead": 437.4,
-          "probability": 0.1093,
-          "rawScore": 0.1958,
+          "horizonScale": 0.6585,
+          "localTime": "19:00",
+          "minutesAhead": 313.4,
+          "probability": 0.1292,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T22:00:00Z",
-          "windowStart": "2026-11-11T21:00:00Z"
+          "windowEnd": "2026-11-12T04:00:00Z",
+          "windowStart": "2026-11-12T03:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1578
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -5256,15 +5198,73 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6549,
-          "localTime": "11:00",
-          "minutesAhead": 317.4,
-          "probability": 0.1033,
-          "rawScore": 0.1578,
+          "horizonScale": 0.6078,
+          "localTime": "20:00",
+          "minutesAhead": 373.4,
+          "probability": 0.1193,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T20:00:00Z",
-          "windowStart": "2026-11-11T19:00:00Z"
+          "windowEnd": "2026-11-12T05:00:00Z",
+          "windowStart": "2026-11-12T04:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1962
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5611,
+          "localTime": "21:00",
+          "minutesAhead": 433.4,
+          "probability": 0.1101,
+          "rawScore": 0.1962,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T06:00:00Z",
+          "windowStart": "2026-11-12T05:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1436
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7133,
+          "localTime": "18:00",
+          "minutesAhead": 253.4,
+          "probability": 0.1025,
+          "rawScore": 0.1436,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T03:00:00Z",
+          "windowStart": "2026-11-12T02:00:00Z"
         }
       ]
     },
@@ -5318,21 +5318,21 @@
         "weekdayHitRate": {},
         "weekdayHourHitRate": {}
       },
-      "generatedAt": "2026-11-11T13:42:33Z",
+      "generatedAt": "2026-11-11T21:46:37Z",
       "machineId": "rec9EIDVfntkPNLoJ",
       "minimumObservations": 8,
       "networkPrior": {
-        "baseRate": 0.1654,
+        "baseRate": 0.166,
         "bestHour": 16,
         "bestHourRate": 0.4615,
         "hourRate": {
           "11": 0.1111,
           "12": 0.1111,
-          "14": 0.1341,
+          "14": 0.1371,
           "15": 0.125,
           "16": 0.4615,
           "18": 0.0909,
-          "8": 0.2246
+          "8": 0.2268
         },
         "machineCount": 97,
         "positiveCount": 18,
@@ -5341,18 +5341,18 @@
         "scope": "REGIONAL",
         "weekdayRate": {
           "0": 0.1667,
-          "1": 0.1117,
+          "1": 0.1137,
           "2": 0.2667,
           "3": 0.1176,
           "4": 0.1579,
           "5": 0.0714,
-          "6": 0.2512
+          "6": 0.2523
         }
       },
       "next": {
         "basis": "NETWORK",
         "components": {
-          "network_rate": 0.2372
+          "network_rate": 0.4031
         },
         "explanation": {
           "reasons": [
@@ -5368,78 +5368,20 @@
             "scope": "REGIONAL"
           }
         },
-        "horizonScale": 0.8326,
-        "localTime": "08:00",
-        "minutesAhead": 137.4,
-        "probability": 0.1975,
-        "rawScore": 0.2372,
+        "horizonScale": 0.8371,
+        "localTime": "16:00",
+        "minutesAhead": 133.4,
+        "probability": 0.3374,
+        "rawScore": 0.4031,
         "sampleScale": 0.0,
         "sourceScale": 0.0,
-        "windowEnd": "2026-11-11T17:00:00Z",
-        "windowStart": "2026-11-11T16:00:00Z"
+        "windowEnd": "2026-11-12T01:00:00Z",
+        "windowStart": "2026-11-12T00:00:00Z"
       },
       "observationCount": 0,
       "status": "NETWORK_PATTERN",
       "windowMinutes": 5,
       "windows": [
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.2372
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.8326,
-          "localTime": "08:00",
-          "minutesAhead": 137.4,
-          "probability": 0.1975,
-          "rawScore": 0.2372,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T17:00:00Z",
-          "windowStart": "2026-11-11T16:00:00Z"
-        },
-        {
-          "basis": "NETWORK",
-          "components": {
-            "network_rate": 0.1958
-          },
-          "explanation": {
-            "reasons": [
-              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
-              "Showing the pattern from 102 community report(s) within 250 miles.",
-              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
-            ],
-            "reportsUsed": 102,
-            "signals": {
-              "basis": "Network pattern",
-              "machineReports": "0",
-              "networkReports": "102",
-              "scope": "REGIONAL"
-            }
-          },
-          "horizonScale": 0.977,
-          "localTime": "06:00",
-          "minutesAhead": 17.4,
-          "probability": 0.1913,
-          "rawScore": 0.1958,
-          "sampleScale": 0.0,
-          "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T15:00:00Z",
-          "windowStart": "2026-11-11T14:00:00Z"
-        },
         {
           "basis": "NETWORK",
           "components": {
@@ -5459,10 +5401,10 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.439,
+          "horizonScale": 0.8371,
           "localTime": "16:00",
-          "minutesAhead": 617.4,
-          "probability": 0.1769,
+          "minutesAhead": 133.4,
+          "probability": 0.3374,
           "rawScore": 0.4031,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
@@ -5472,7 +5414,7 @@
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.176
           },
           "explanation": {
             "reasons": [
@@ -5488,20 +5430,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.9019,
-          "localTime": "07:00",
-          "minutesAhead": 77.4,
-          "probability": 0.1766,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9823,
+          "localTime": "14:00",
+          "minutesAhead": 13.4,
+          "probability": 0.1729,
+          "rawScore": 0.176,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T16:00:00Z",
-          "windowStart": "2026-11-11T15:00:00Z"
+          "windowEnd": "2026-11-11T23:00:00Z",
+          "windowStart": "2026-11-11T22:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1675
           },
           "explanation": {
             "reasons": [
@@ -5517,20 +5459,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7685,
-          "localTime": "09:00",
-          "minutesAhead": 197.4,
-          "probability": 0.1505,
-          "rawScore": 0.1958,
+          "horizonScale": 0.9068,
+          "localTime": "15:00",
+          "minutesAhead": 73.4,
+          "probability": 0.1519,
+          "rawScore": 0.1675,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T18:00:00Z",
-          "windowStart": "2026-11-11T17:00:00Z"
+          "windowEnd": "2026-11-12T00:00:00Z",
+          "windowStart": "2026-11-11T23:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -5546,20 +5488,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.7095,
-          "localTime": "10:00",
-          "minutesAhead": 257.4,
-          "probability": 0.1389,
-          "rawScore": 0.1958,
+          "horizonScale": 0.7727,
+          "localTime": "17:00",
+          "minutesAhead": 193.4,
+          "probability": 0.1516,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T19:00:00Z",
-          "windowStart": "2026-11-11T18:00:00Z"
+          "windowEnd": "2026-11-12T02:00:00Z",
+          "windowStart": "2026-11-12T01:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1958
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -5575,20 +5517,20 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.5581,
-          "localTime": "13:00",
-          "minutesAhead": 437.4,
-          "probability": 0.1093,
-          "rawScore": 0.1958,
+          "horizonScale": 0.6585,
+          "localTime": "19:00",
+          "minutesAhead": 313.4,
+          "probability": 0.1292,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T22:00:00Z",
-          "windowStart": "2026-11-11T21:00:00Z"
+          "windowEnd": "2026-11-12T04:00:00Z",
+          "windowStart": "2026-11-12T03:00:00Z"
         },
         {
           "basis": "NETWORK",
           "components": {
-            "network_rate": 0.1578
+            "network_rate": 0.1962
           },
           "explanation": {
             "reasons": [
@@ -5604,18 +5546,76 @@
               "scope": "REGIONAL"
             }
           },
-          "horizonScale": 0.6549,
-          "localTime": "11:00",
-          "minutesAhead": 317.4,
-          "probability": 0.1033,
-          "rawScore": 0.1578,
+          "horizonScale": 0.6078,
+          "localTime": "20:00",
+          "minutesAhead": 373.4,
+          "probability": 0.1193,
+          "rawScore": 0.1962,
           "sampleScale": 0.0,
           "sourceScale": 0.0,
-          "windowEnd": "2026-11-11T20:00:00Z",
-          "windowStart": "2026-11-11T19:00:00Z"
+          "windowEnd": "2026-11-12T05:00:00Z",
+          "windowStart": "2026-11-12T04:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1962
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.5611,
+          "localTime": "21:00",
+          "minutesAhead": 433.4,
+          "probability": 0.1101,
+          "rawScore": 0.1962,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T06:00:00Z",
+          "windowStart": "2026-11-12T05:00:00Z"
+        },
+        {
+          "basis": "NETWORK",
+          "components": {
+            "network_rate": 0.1436
+          },
+          "explanation": {
+            "reasons": [
+              "This machine has 0 report(s) of its own - not enough for a machine-specific forecast.",
+              "Showing the pattern from 102 community report(s) within 250 miles.",
+              "Product was most often found in stock around 16:00 local time (46% of reports in that hour)."
+            ],
+            "reportsUsed": 102,
+            "signals": {
+              "basis": "Network pattern",
+              "machineReports": "0",
+              "networkReports": "102",
+              "scope": "REGIONAL"
+            }
+          },
+          "horizonScale": 0.7133,
+          "localTime": "18:00",
+          "minutesAhead": 253.4,
+          "probability": 0.1025,
+          "rawScore": 0.1436,
+          "sampleScale": 0.0,
+          "sourceScale": 0.0,
+          "windowEnd": "2026-11-12T03:00:00Z",
+          "windowStart": "2026-11-12T02:00:00Z"
         }
       ]
     }
   ],
-  "generatedAt": "2026-11-11T13:42:33Z"
+  "generatedAt": "2026-11-11T21:46:37Z"
 }
