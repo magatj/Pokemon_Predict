@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T18:34:23Z",
+  "generatedAt": "2026-11-16T00:48:58Z",
   "observations": [
     {
       "availability": "NOT_AVAILABLE",
@@ -1758,6 +1758,22 @@
       "product": null,
       "purchaseConfirmed": false,
       "retailer": "Fred Meyer",
+      "source": "PUBLIC_WEB",
+      "sourceUrl": "https://pokemonmap.com/"
+    },
+    {
+      "availability": "NOT_AVAILABLE",
+      "confidence": 0.65,
+      "evidenceClass": "COMMUNITY_TIMESTAMPED",
+      "id": "2a217fe38ca63280d774a5e17d4e7138",
+      "locationText": "101 Auburn Way S, Auburn, WA",
+      "machineId": "reczMH2OpSZ8uPBrp",
+      "machineMatchConfidence": 1.0,
+      "observedAt": "2026-11-15T21:42:57Z",
+      "postedAt": "2026-11-15T21:42:57Z",
+      "product": null,
+      "purchaseConfirmed": false,
+      "retailer": "Safeway",
       "source": "PUBLIC_WEB",
       "sourceUrl": "https://pokemonmap.com/"
     }

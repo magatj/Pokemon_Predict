@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-11-15T18:34:23Z",
+  "checkedAt": "2026-11-16T00:48:58Z",
   "sources": [
     {
       "authority": "OFFICIAL",
-      "checked_at": "2026-11-15T18:33:28Z",
+      "checked_at": "2026-11-16T00:47:59Z",
       "details": {},
-      "last_success_at": "2026-11-15T18:33:28Z",
+      "last_success_at": "2026-11-16T00:47:59Z",
       "message": "23 machines discovered across 16 tiles",
       "name": "pokemon_locator",
       "reason": null,
@@ -14,18 +14,18 @@
     },
     {
       "authority": "COMMUNITY",
-      "checked_at": "2026-11-15T18:34:22Z",
+      "checked_at": "2026-11-16T00:48:57Z",
       "details": {},
-      "last_success_at": "2026-11-15T18:34:22Z",
-      "message": "373 record(s) fetched, 103 usable observation(s)",
+      "last_success_at": "2026-11-16T00:48:57Z",
+      "message": "373 record(s) fetched, 104 usable observation(s)",
       "name": "pokemonmap",
       "reason": null,
-      "records": 103,
+      "records": 104,
       "status": "HEALTHY"
     },
     {
       "authority": "COMMUNITY",
-      "checked_at": "2026-11-15T18:34:23Z",
+      "checked_at": "2026-11-16T00:48:58Z",
       "details": {},
       "last_success_at": null,
       "message": "NO_CREDENTIALS: set REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET to enable the reddit source",
@@ -36,7 +36,7 @@
     },
     {
       "authority": "VERIFICATION",
-      "checked_at": "2026-11-15T18:34:22Z",
+      "checked_at": "2026-11-16T00:48:57Z",
       "details": {},
       "last_success_at": null,
       "message": "Fred Meyer disabled in sources.yaml",
@@ -47,13 +47,13 @@
     },
     {
       "authority": "VERIFICATION",
-      "checked_at": "2026-11-15T18:34:22Z",
+      "checked_at": "2026-11-16T00:48:57Z",
       "details": {},
-      "last_success_at": "2026-11-15T18:34:22Z",
-      "message": "store pages permitted; verified 9 machine(s)",
+      "last_success_at": "2026-11-16T00:48:57Z",
+      "message": "store pages permitted; verified 10 machine(s)",
       "name": "retailer_pages:safeway",
       "reason": null,
-      "records": 9,
+      "records": 10,
       "status": "HEALTHY"
     }
   ]
