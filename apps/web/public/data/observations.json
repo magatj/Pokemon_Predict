@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T11:55:40Z",
+  "generatedAt": "2026-11-23T23:29:59Z",
   "observations": [
     {
       "availability": "NOT_AVAILABLE",
@@ -1774,6 +1774,22 @@
       "product": null,
       "purchaseConfirmed": false,
       "retailer": "Safeway",
+      "source": "PUBLIC_WEB",
+      "sourceUrl": "https://pokemonmap.com/"
+    },
+    {
+      "availability": "NOT_AVAILABLE",
+      "confidence": 0.65,
+      "evidenceClass": "COMMUNITY_TIMESTAMPED",
+      "id": "fff4d2b4902554d6e1d5cb5a0edfad71",
+      "locationText": "12906 Bothell Everett Hwy, Everett, WA",
+      "machineId": null,
+      "machineMatchConfidence": 0.175,
+      "observedAt": "2026-11-23T20:58:07Z",
+      "postedAt": "2026-11-23T20:58:07Z",
+      "product": null,
+      "purchaseConfirmed": false,
+      "retailer": "Fred Meyer",
       "source": "PUBLIC_WEB",
       "sourceUrl": "https://pokemonmap.com/"
     }
