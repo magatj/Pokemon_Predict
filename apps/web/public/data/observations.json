@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T18:44:04Z",
+  "generatedAt": "2026-11-28T03:08:38Z",
   "observations": [
     {
       "availability": "NOT_AVAILABLE",
@@ -1790,6 +1790,38 @@
       "product": null,
       "purchaseConfirmed": false,
       "retailer": "Fred Meyer",
+      "source": "PUBLIC_WEB",
+      "sourceUrl": "https://pokemonmap.com/"
+    },
+    {
+      "availability": "AVAILABLE",
+      "confidence": 0.65,
+      "evidenceClass": "COMMUNITY_TIMESTAMPED",
+      "id": "eaa3318b216442c563ceedbb1d23fcf3",
+      "locationText": "31217 Pacific Hwy S, Federal Way, WA",
+      "machineId": null,
+      "machineMatchConfidence": 0.0,
+      "observedAt": "2026-11-27T21:25:11Z",
+      "postedAt": "2026-11-27T21:25:11Z",
+      "product": null,
+      "purchaseConfirmed": false,
+      "retailer": "H Mart",
+      "source": "PUBLIC_WEB",
+      "sourceUrl": "https://pokemonmap.com/"
+    },
+    {
+      "availability": "NOT_AVAILABLE",
+      "confidence": 0.65,
+      "evidenceClass": "COMMUNITY_TIMESTAMPED",
+      "id": "c7ad4c65942168da1eb855fa7d633951",
+      "locationText": "1207 S 320th St, Federal Way, WA",
+      "machineId": null,
+      "machineMatchConfidence": 0.175,
+      "observedAt": "2026-11-27T22:23:20Z",
+      "postedAt": "2026-11-27T22:23:20Z",
+      "product": null,
+      "purchaseConfirmed": false,
+      "retailer": "Safeway",
       "source": "PUBLIC_WEB",
       "sourceUrl": "https://pokemonmap.com/"
     }
